@@ -1,6 +1,6 @@
 # DataDesign_FinalProject
 
-Tips: We mainly use branch dev, make sure it correct before sending your code to main branch,
+Tips: We mainly use branch dev, make sure it is correct before sending your code to main branch,
 which is used as the final version.
 
 
