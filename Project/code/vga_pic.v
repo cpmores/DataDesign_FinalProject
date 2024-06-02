@@ -1,3 +1,6 @@
+
+//this is a test module used to check vga
+//this module is used to generate the picture
 module vga_pic(
 	input vga_clk,
 	input rst_n,
