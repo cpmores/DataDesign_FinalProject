@@ -3,13 +3,13 @@ module top(
 	input rst_n,//复位信号，低位有效
 	output hsync,//行同步信号
 	output vsync,//场同步信号
-	output [15:0] rgb//rgb信号
+	output [11:0] rgb//rgb信号
 );
 
 wire vga_clk;
 wire [9:0] pic_x;
 wire [9:0] pic_y;
-wire [15:0] pic_data;
+wire [11:0] pic_data;
 wire [31:0] div_res;
 
 clk_gen clk_gen_t(

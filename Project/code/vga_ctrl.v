@@ -2,10 +2,10 @@
 module vga_ctrl(
   input vga_clk,//the 25MHz clk
   input rst_n,//复位信号，低电平有效
-  input [15:0] pic_data,//图像处理模块的输出
+  input [11:0] pic_data,//图像处理模块的输出
   output hsync,//同步信号
   output vsync,
-  output [15:0] rgb//rbg信息
+  output [11:0] rgb//rbg信息
   output [9:0] pic_x,
   output [9:0] pic_y
 );
@@ -66,7 +66,7 @@ assign pic_x = (pix_valid) ? cnt_hs - 10'd143 : 10'h3ff;
 assign pic_y = (pix_valid) ? cnt_vs - 10'd35 : 10'h3ff;
 
 //分配rgb
-assign rgb = (rgb_valid) ? pic_data : 16'h0;
+assign rgb = (rgb_valid) ? pic_data : 12'h0;
 
 endmodule
 
