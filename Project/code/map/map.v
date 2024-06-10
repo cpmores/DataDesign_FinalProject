@@ -1,6 +1,6 @@
 module Map(
-	input index_x,
 	input index_y,
+	input index_x,
 	output [3:0] r,
 	output [3:0] g,
 	output [3:0] b,
@@ -8,10 +8,10 @@ module Map(
 );
 
 wire [14:0] data[0:4][0:99];
-assign r = data[index_x][index_y][11:8];
-assign g = data[index_x][index_y][7:4];
-assign b = data[index_x][index_y][3:0];
-assign block_state = data[index_x][index_y][14:12];
+assign r = data[index_y][index_x][11:8];
+assign g = data[index_y][index_x][7:4];
+assign b = data[index_y][index_x][3:0];
+assign block_state = data[index_y][index_x][14:12];
 for(integer i = 0; i <= 4; i = i+1)begin
 	for(integer j = 0; j <= 99; j =j + 1)begin
 		if(i == 0)begin
