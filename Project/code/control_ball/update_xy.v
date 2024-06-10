@@ -3,7 +3,6 @@ module update_xy(
 	input reset,
 	input left,
 	input right,
-	input [9:0]y_now,
 	output [8:0]x_ball,
 	output [9:0]y_ball
 );
@@ -12,7 +11,7 @@ counter_64 Counter(
 	.reset(reset),
 	.count(x_ball)
 );
-reg [9:0]y_calculated = y_now;
+reg [9:0]y_calculated = 10'b0;
 assign y_ball = y_calculated;
 always @(posedge clk)begin
 	if(left == 1'b1 && right == 1'b0)begin
