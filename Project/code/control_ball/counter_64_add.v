@@ -6,8 +6,8 @@ module counter_64bit_add(
 );
 reg check_reg = 1'b1;
 assign check = check_reg;
-if(jump == 1'b1)begin
 always @(posedge clk)
+if(jump == 1'b1)begin
 begin
     if (count == 9'd160) begin
         count <= 9'b0;
