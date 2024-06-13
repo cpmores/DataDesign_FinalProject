@@ -4,9 +4,9 @@ set_property IOSTANDARD LVCMOS18 [get_ports clk]
 
 create_clock -period 10.000 -name clk [get_ports "clk"]
 
-set_property PACKAGE_PIN AA10 [get_ports {rst_n}]
+# set_property PACKAGE_PIN AA10 [get_ports {SW[0]}]
 # set_property PACKAGE_PIN AB10 [get_ports {SW[1]}]
-set_property IOSTANDARD LVCMOS15 [get_ports {rst_n}]
+# set_property IOSTANDARD LVCMOS15 [get_ports {SW[0]}]
 # set_property IOSTANDARD LVCMOS15 [get_ports {SW[1]}]
 
 
