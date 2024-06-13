@@ -1,0 +1,2 @@
+ball.v,verilog,xil_defaultlib,../../../../Rolling_ball.gen/sources_1/ip/ball/sim/ball.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

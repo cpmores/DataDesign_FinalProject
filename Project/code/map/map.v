@@ -1,95 +1,52 @@
-module Map(
-	input index_y,
-	input index_x,
-	output [3:0] r,
-	output [3:0] g,
-	output [3:0] b,
-	output [2:0] block_state
+module map(
+    input [99:0]index_y,
+    input [2:0]index_x,
+    output [11:0]data_map,//12位rgb
+    output [2:0]data_state,
+    output [10:0] len//地图的长度
 );
 
-wire [14:0] data[0:4][0:99];
-assign r = data[index_y][index_x][11:8];
-assign g = data[index_y][index_x][7:4];
-assign b = data[index_y][index_x][3:0];
-assign block_state = data[index_y][index_x][14:12];
-for(integer i = 0; i <= 4; i = i+1)begin
-	for(integer j = 0; j <= 99; j =j + 1)begin
-		if(i == 0)begin
-			assign data[i][j][11:0] = 12'b111100000000; 
-		end
-		else if(i == 1)begin
-			assign data[i][j][11:0] = 12'b000011110000; 
-		end
-		else if(i == 2)begin
-			assign data[i][j][11:0] = 12'b000000001111; 
-		end
-		else if(i == 3)begin
-			assign data[i][j][11:0] = 12'b000011111111; 
-		end
-		else if(i == 4)begin
-			assign data[i][j][11:0] = 12'b111100001111; 
-		end
-	end
+reg [2:0] map1[99:0];
+reg [2:0] map2[99:0];
+reg [2:0] map3[99:0];
+reg [2:0] map4[99:0];
+reg [2:0] map5[99:0];
+initial begin
+    $readmemh("map1", map1);
+    $readmemh("map2", map2);
+    $readmemh("map3", map3);
+    $readmemh("map4", map4);
+    $readmemh("map5", map5);
 end
 
-for(integer i = 0; i <= 4; i = i+1)begin
-	for(integer j = 0; j <= 99; j =j + 1)begin
-		if(i == 0)begin
-			if(j%3 == 1)begin
-				assign data[i][j][14:12] = 3'b000; 
-			end
-			else if (j%10 == 0)begin
-				assign data[i][j][14:12] = 3'b010;
- 			end
- 			else begin
- 				assign data[i][j][14:12] = 3'b001;
-  			end
-		end
-		else if(i == 1)begin
-			if(j%5 == 0)begin
-				assign data[i][j][14:12] = 3'b000; 
-			end
-			else if (j%12 == 3)begin
-				assign data[i][j][14:12] = 3'b010;
- 			end
- 			else begin
- 				assign data[i][j][14:12] = 3'b001;
-  			end
-		end
-		else if(i == 2)begin
-			if(j%4 == 2)begin
-				assign data[i][j][14:12] = 3'b000; 
-			end
-			else if (j%8 == 0)begin
-				assign data[i][j][14:12] = 3'b010;
- 			end
- 			else begin
- 				assign data[i][j][14:12] = 3'b001;
-  			end
-		end
-		else if(i == 3)begin
-			if(j%6 == 4)begin
-				assign data[i][j][14:12] = 3'b000; 
-			end
-			else if (j%9 == 6)begin
-				assign data[i][j][14:12] = 3'b010;
- 			end
- 			else begin
- 				assign data[i][j][14:12] = 3'b001;
-  			end
-		end
-		else if(i == 4)begin
-			if(j%7 == 2)begin
-				assign data[i][j][14:12] = 3'b000; 
-			end
-			else if (j%14 == 4)begin
-				assign data[i][j][14:12] = 3'b010;
- 			end
- 			else begin
- 				assign data[i][j][14:12] = 3'b001;
-  			end
-		end
-	end
+reg [2:0]state;
+always @(*) begin
+    if(index_x == 0) begin
+     state=map1[index_y];
+    end else if(index_x == 1) begin
+     state=map2[index_y];
+    end else if(index_x == 2) begin
+     state=map3[index_y];
+    end else if(index_x == 3) begin
+     state=map4[index_y];
+    end else if(index_x == 4) begin
+     state=map5[index_y];
+    end
+end//xy是对的吗？
+
+
+assign len=87;
+assign data_state=state;
+reg [11:0]data_map_reg;
+assign data_map=data_map_reg;
+always @(*) begin
+    if (state==0)begin
+        data_map_reg=12'h000;
+    end else if (state==1)begin
+        data_map_reg=12'hF00;
+    end else if (state==2)begin
+        data_map_reg=12'hFF0;
+    end
 end
 
 endmodule

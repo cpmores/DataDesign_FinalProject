@@ -1,0 +1,102 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Thu Jun 13 20:57:56 2024
+| Host         : beastern running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7k160t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    24 |
+|    Minimum number of control sets                        |    24 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   144 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    24 |
+| >= 0 to < 4        |    14 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              50 |           24 |
+| No           | No                    | Yes                    |               9 |            3 |
+| No           | Yes                   | No                     |              27 |           11 |
+| Yes          | No                    | No                     |              20 |           13 |
+| Yes          | No                    | Yes                    |              10 |            3 |
+| Yes          | Yes                   | No                     |               4 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+---------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+|                   Clock Signal                  |             Enable Signal             |                Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------------------+---------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+|  vga_display0/map0/data_map_reg_reg[11]/G0      |                                       |                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                  | in0/buffer[0]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                  | in0/buffer[1]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                  | in0/buffer[2]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                  | in0/buffer[3]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                  | in0/buffer[9]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                  | in0/buffer[5]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                  | in0/buffer[7]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                  | in0/buffer[8]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                  | in0/buffer[6]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                  | in0/buffer[4]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
+|  vga_display0/map0/data_map_reg_reg[11]_i_1_n_0 |                                       | vga_display0/map0/data_map_reg_reg[7]_i_1_n_0 |                1 |              1 |         1.00 |
+|  m0/ballbounce0/y_pixel_offset_reg_reg_1        |                                       |                                               |                1 |              1 |         1.00 |
+|  vga_display0/flocation0/E[0]                   |                                       |                                               |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG                                  |                                       | vga_display0/m0/rstn                          |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG                                  | in0/sampling                          | vga_display0/m0/rstn                          |                1 |              4 |         4.00 |
+|  vga_display0/c0/clka                           |                                       |                                               |                3 |              4 |         1.33 |
+|  vga_display0/c0/S[0]                           |                                       | rstn_IBUF                                     |                3 |              9 |         3.00 |
+|  clkdiv[1]                                      |                                       | vga_display0/m0/h_count[9]_i_1_n_0            |                4 |             10 |         2.50 |
+|  clkdiv[1]                                      | vga_display0/m0/v_count               | vga_display0/m0/rstn                          |                3 |             10 |         3.33 |
+|  vga_display0/c0/S[0]                           | m0/update_xy0/x_calculated[9]_i_1_n_0 |                                               |                3 |             10 |         3.33 |
+|  clkdiv[1]                                      |                                       | vga_display0/m0/rdn                           |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG                                  |                                       |                                               |                7 |             20 |         2.86 |
+|  clkdiv[1]                                      |                                       |                                               |               11 |             22 |         2.00 |
++-------------------------------------------------+---------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+
+

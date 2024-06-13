@@ -1,0 +1,1742 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Thu Jun 13 20:58:12 2024
+| Host         : beastern running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation
+| Design       : top
+| Device       : 7k160t-ffg676
+| Speed File   : -2L  PRODUCTION 1.12 2017-02-17
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                     Violations  
+---------  ----------------  ------------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell     119         
+LUTAR-1    Warning           LUT drives async reset alert    2           
+TIMING-20  Warning           Non-clocked latch               5           
+LATCH-1    Advisory          Existing latches in the design  1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (160)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (253)
+5. checking no_input_delay (3)
+6. checking no_output_delay (15)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (1)
+
+1. checking no_clock (160)
+--------------------------
+ There are 38 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: m0/ballbounce0/y_pixel_offset_reg_reg/Q (HIGH)
+
+ There are 7 register/latch pins with no clock driven by root clock pin: vga_display0/c0/clkdiv_reg[0]/Q (HIGH)
+
+ There are 19 register/latch pins with no clock driven by root clock pin: vga_display0/c0/clkdiv_reg[15]/Q (HIGH)
+
+ There are 55 register/latch pins with no clock driven by root clock pin: vga_display0/c0/clkdiv_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[3]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[4]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[5]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[6]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[7]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[8]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/row_addr_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/row_addr_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/row_addr_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/row_addr_reg[3]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/row_addr_reg[4]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/row_addr_reg[5]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/row_addr_reg[6]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/row_addr_reg[7]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/row_addr_reg[8]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/map0/state_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/map0/state_reg[1]/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (253)
+--------------------------------------------------
+ There are 253 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (3)
+------------------------------
+ There are 3 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (15)
+--------------------------------
+ There are 15 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (1)
+----------------------------
+ There is 1 combinational latch loop in the design through latch input (HIGH)
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                  268          inf        0.000                      0                  268           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay           268 Endpoints
+Min Delay           268 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 vga_display0/m0/row_addr_reg[5]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            vga_display0/map0/state_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        54.648ns  (logic 22.639ns (41.427%)  route 32.009ns (58.573%))
+  Logic Levels:           172  (CARRY4=129 FDRE=1 LUT2=8 LUT3=21 LUT4=4 LUT5=2 LUT6=6 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y51          FDRE                         0.000     0.000 r  vga_display0/m0/row_addr_reg[5]/C
+    SLICE_X4Y51          FDRE (Prop_fdre_C_Q)         0.223     0.223 r  vga_display0/m0/row_addr_reg[5]/Q
+                         net (fo=18, routed)          0.940     1.163    vga_display0/m0/row_0[5]
+    SLICE_X10Y54         LUT6 (Prop_lut6_I2_O)        0.043     1.206 f  vga_display0/m0/state_reg[1]_i_224/O
+                         net (fo=76, routed)          0.553     1.759    vga_display0/m0/state_reg[1]_i_224_n_0
+    SLICE_X13Y55         LUT5 (Prop_lut5_I4_O)        0.043     1.802 f  vga_display0/m0/state_reg[1]_i_225/O
+                         net (fo=110, routed)         0.361     2.163    vga_display0/m0/state_reg[1]_i_225_n_0
+    SLICE_X13Y55         LUT6 (Prop_lut6_I5_O)        0.043     2.206 f  vga_display0/m0/state_reg[1]_i_226/O
+                         net (fo=140, routed)         1.041     3.247    vga_display0/m0/row_addr_reg[3]_1
+    SLICE_X13Y62         LUT6 (Prop_lut6_I5_O)        0.043     3.290 r  vga_display0/m0/state_reg[1]_i_325/O
+                         net (fo=36, routed)          0.361     3.652    vga_display0/m0/row_addr_reg[2]_1
+    SLICE_X13Y62         LUT6 (Prop_lut6_I5_O)        0.043     3.695 r  vga_display0/m0/state_reg[1]_i_326/O
+                         net (fo=34, routed)          1.132     4.827    vga_display0/m0/row_addr_reg[2]_2
+    SLICE_X6Y55          LUT2 (Prop_lut2_I1_O)        0.043     4.870 r  vga_display0/m0/state_reg[1]_i_441/O
+                         net (fo=1, routed)           0.000     4.870    vga_display0/m0/state_reg[1]_i_441_n_0
+    SLICE_X6Y55          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.246     5.116 r  vga_display0/m0/state_reg[1]_i_316/CO[3]
+                         net (fo=1, routed)           0.000     5.116    vga_display0/m0/state_reg[1]_i_316_n_0
+    SLICE_X6Y56          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.165     5.281 r  vga_display0/m0/state_reg[1]_i_320/O[1]
+                         net (fo=5, routed)           0.606     5.887    vga_display0/m0/flocation0/x1__0[5]
+    SLICE_X8Y56          LUT2 (Prop_lut2_I1_O)        0.125     6.012 r  vga_display0/m0/state_reg[1]_i_575/O
+                         net (fo=1, routed)           0.000     6.012    vga_display0/m0/state_reg[1]_i_575_n_0
+    SLICE_X8Y56          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     6.268 r  vga_display0/m0/state_reg[1]_i_465/CO[3]
+                         net (fo=1, routed)           0.000     6.268    vga_display0/m0/state_reg[1]_i_465_n_0
+    SLICE_X8Y57          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     6.322 r  vga_display0/m0/state_reg[1]_i_920/CO[3]
+                         net (fo=1, routed)           0.000     6.322    vga_display0/m0/state_reg[1]_i_920_n_0
+    SLICE_X8Y58          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133     6.455 r  vga_display0/m0/state_reg[1]_i_1221/CO[0]
+                         net (fo=13, routed)          0.888     7.343    vga_display0/m0/state_reg[1]_i_1221_n_3
+    SLICE_X7Y61          LUT2 (Prop_lut2_I1_O)        0.128     7.471 r  vga_display0/m0/state_reg[1]_i_1369/O
+                         net (fo=1, routed)           0.000     7.471    vga_display0/m0/state_reg[1]_i_1369_n_0
+    SLICE_X7Y61          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     7.738 r  vga_display0/m0/state_reg[1]_i_1343/CO[3]
+                         net (fo=1, routed)           0.000     7.738    vga_display0/m0/state_reg[1]_i_1343_n_0
+    SLICE_X7Y62          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.111     7.849 r  vga_display0/m0/state_reg[1]_i_1415/O[0]
+                         net (fo=2, routed)           0.490     8.339    vga_display0/m0/x00_in[27]
+    SLICE_X13Y62         LUT2 (Prop_lut2_I1_O)        0.124     8.463 r  vga_display0/m0/state_reg[1]_i_1419/O
+                         net (fo=1, routed)           0.000     8.463    vga_display0/flocation0/S[0]
+    SLICE_X13Y62         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.259     8.722 r  vga_display0/flocation0/state_reg[1]_i_1393/CO[3]
+                         net (fo=1, routed)           0.000     8.722    vga_display0/flocation0/state_reg[1]_i_1393_n_0
+    SLICE_X13Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     8.775 r  vga_display0/flocation0/state_reg[1]_i_1388/CO[3]
+                         net (fo=1, routed)           0.000     8.775    vga_display0/flocation0/state_reg[1]_i_1388_n_0
+    SLICE_X13Y64         CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.110     8.885 r  vga_display0/flocation0/state_reg[1]_i_1387/CO[2]
+                         net (fo=13, routed)          0.559     9.444    vga_display0/flocation0/CO[0]
+    SLICE_X14Y62         LUT3 (Prop_lut3_I0_O)        0.129     9.573 r  vga_display0/flocation0/state_reg[1]_i_1400/O
+                         net (fo=1, routed)           0.000     9.573    vga_display0/flocation0/state_reg[1]_i_1400_n_0
+    SLICE_X14Y62         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     9.829 r  vga_display0/flocation0/state_reg[1]_i_1379/CO[3]
+                         net (fo=1, routed)           0.000     9.829    vga_display0/flocation0/state_reg[1]_i_1379_n_0
+    SLICE_X14Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     9.883 r  vga_display0/flocation0/state_reg[1]_i_1374/CO[3]
+                         net (fo=1, routed)           0.000     9.883    vga_display0/flocation0/state_reg[1]_i_1374_n_0
+    SLICE_X14Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     9.937 r  vga_display0/flocation0/state_reg[1]_i_1373/CO[3]
+                         net (fo=1, routed)           0.000     9.937    vga_display0/flocation0/state_reg[1]_i_1373_n_0
+    SLICE_X14Y65         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    10.070 r  vga_display0/flocation0/state_reg[1]_i_1371/CO[0]
+                         net (fo=15, routed)          0.631    10.702    vga_display0/m0/state_reg[1]_i_1350[0]
+    SLICE_X15Y64         LUT4 (Prop_lut4_I2_O)        0.128    10.830 r  vga_display0/m0/state_reg[1]_i_1382/O
+                         net (fo=1, routed)           0.000    10.830    vga_display0/flocation0/state_reg[1]_i_1358[0]
+    SLICE_X15Y64         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    11.097 r  vga_display0/flocation0/state_reg[1]_i_1350/CO[3]
+                         net (fo=1, routed)           0.000    11.097    vga_display0/flocation0/state_reg[1]_i_1350_n_0
+    SLICE_X15Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.150 r  vga_display0/flocation0/state_reg[1]_i_1349/CO[3]
+                         net (fo=1, routed)           0.000    11.150    vga_display0/flocation0/state_reg[1]_i_1349_n_0
+    SLICE_X15Y66         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    11.289 r  vga_display0/flocation0/state_reg[1]_i_1347/CO[0]
+                         net (fo=15, routed)          0.739    12.028    vga_display0/flocation0/state_reg[1]_i_1372_0[0]
+    SLICE_X12Y63         LUT3 (Prop_lut3_I0_O)        0.131    12.159 r  vga_display0/flocation0/state_reg[1]_i_1362/O
+                         net (fo=1, routed)           0.000    12.159    vga_display0/flocation0/state_reg[1]_i_1362_n_0
+    SLICE_X12Y63         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    12.415 r  vga_display0/flocation0/state_reg[1]_i_1338/CO[3]
+                         net (fo=1, routed)           0.000    12.415    vga_display0/flocation0/state_reg[1]_i_1338_n_0
+    SLICE_X12Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    12.469 r  vga_display0/flocation0/state_reg[1]_i_1333/CO[3]
+                         net (fo=1, routed)           0.000    12.469    vga_display0/flocation0/state_reg[1]_i_1333_n_0
+    SLICE_X12Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    12.523 r  vga_display0/flocation0/state_reg[1]_i_1332/CO[3]
+                         net (fo=1, routed)           0.000    12.523    vga_display0/flocation0/state_reg[1]_i_1332_n_0
+    SLICE_X12Y66         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    12.656 r  vga_display0/flocation0/state_reg[1]_i_1330/CO[0]
+                         net (fo=15, routed)          0.684    13.340    vga_display0/flocation0/state_reg[1]_i_1348_0[0]
+    SLICE_X10Y64         LUT3 (Prop_lut3_I0_O)        0.128    13.468 r  vga_display0/flocation0/state_reg[1]_i_1346/O
+                         net (fo=1, routed)           0.000    13.468    vga_display0/flocation0/state_reg[1]_i_1346_n_0
+    SLICE_X10Y64         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    13.724 r  vga_display0/flocation0/state_reg[1]_i_1322/CO[3]
+                         net (fo=1, routed)           0.000    13.724    vga_display0/flocation0/state_reg[1]_i_1322_n_0
+    SLICE_X10Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    13.778 r  vga_display0/flocation0/state_reg[1]_i_1317/CO[3]
+                         net (fo=1, routed)           0.000    13.778    vga_display0/flocation0/state_reg[1]_i_1317_n_0
+    SLICE_X10Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    13.832 r  vga_display0/flocation0/state_reg[1]_i_1316/CO[3]
+                         net (fo=1, routed)           0.000    13.832    vga_display0/flocation0/state_reg[1]_i_1316_n_0
+    SLICE_X10Y67         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    13.965 r  vga_display0/flocation0/state_reg[1]_i_1314/CO[0]
+                         net (fo=15, routed)          0.727    14.692    vga_display0/flocation0/state_reg[1]_i_1331_0[0]
+    SLICE_X9Y64          LUT3 (Prop_lut3_I0_O)        0.128    14.820 r  vga_display0/flocation0/state_reg[1]_i_1329/O
+                         net (fo=1, routed)           0.000    14.820    vga_display0/flocation0/state_reg[1]_i_1329_n_0
+    SLICE_X9Y64          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    15.087 r  vga_display0/flocation0/state_reg[1]_i_1306/CO[3]
+                         net (fo=1, routed)           0.000    15.087    vga_display0/flocation0/state_reg[1]_i_1306_n_0
+    SLICE_X9Y65          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.140 r  vga_display0/flocation0/state_reg[1]_i_1301/CO[3]
+                         net (fo=1, routed)           0.000    15.140    vga_display0/flocation0/state_reg[1]_i_1301_n_0
+    SLICE_X9Y66          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.193 r  vga_display0/flocation0/state_reg[1]_i_1300/CO[3]
+                         net (fo=1, routed)           0.000    15.193    vga_display0/flocation0/state_reg[1]_i_1300_n_0
+    SLICE_X9Y67          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    15.332 r  vga_display0/flocation0/state_reg[1]_i_1298/CO[0]
+                         net (fo=15, routed)          0.777    16.109    vga_display0/flocation0/state_reg[1]_i_1315_0[0]
+    SLICE_X7Y63          LUT3 (Prop_lut3_I0_O)        0.131    16.240 r  vga_display0/flocation0/state_reg[1]_i_1313/O
+                         net (fo=1, routed)           0.000    16.240    vga_display0/flocation0/state_reg[1]_i_1313_n_0
+    SLICE_X7Y63          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    16.507 r  vga_display0/flocation0/state_reg[1]_i_1282/CO[3]
+                         net (fo=1, routed)           0.000    16.507    vga_display0/flocation0/state_reg[1]_i_1282_n_0
+    SLICE_X7Y64          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    16.560 r  vga_display0/flocation0/state_reg[1]_i_1277/CO[3]
+                         net (fo=1, routed)           0.000    16.560    vga_display0/flocation0/state_reg[1]_i_1277_n_0
+    SLICE_X7Y65          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    16.613 r  vga_display0/flocation0/state_reg[1]_i_1276/CO[3]
+                         net (fo=1, routed)           0.000    16.613    vga_display0/flocation0/state_reg[1]_i_1276_n_0
+    SLICE_X7Y66          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    16.752 r  vga_display0/flocation0/state_reg[1]_i_1274/CO[0]
+                         net (fo=15, routed)          0.673    17.425    vga_display0/flocation0/state_reg[1]_i_1299_0[0]
+    SLICE_X8Y63          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.385    17.810 r  vga_display0/flocation0/state_reg[1]_i_1265/CO[3]
+                         net (fo=1, routed)           0.000    17.810    vga_display0/flocation0/state_reg[1]_i_1265_n_0
+    SLICE_X8Y64          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    17.864 r  vga_display0/flocation0/state_reg[1]_i_1260/CO[3]
+                         net (fo=1, routed)           0.000    17.864    vga_display0/flocation0/state_reg[1]_i_1260_n_0
+    SLICE_X8Y65          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    17.918 r  vga_display0/flocation0/state_reg[1]_i_1259/CO[3]
+                         net (fo=1, routed)           0.000    17.918    vga_display0/flocation0/state_reg[1]_i_1259_n_0
+    SLICE_X8Y66          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    18.051 r  vga_display0/flocation0/state_reg[1]_i_1254/CO[0]
+                         net (fo=15, routed)          0.637    18.688    vga_display0/flocation0/state_reg[1]_i_1275_0[0]
+    SLICE_X8Y69          LUT3 (Prop_lut3_I0_O)        0.128    18.816 r  vga_display0/flocation0/state_reg[1]_i_1263/O
+                         net (fo=1, routed)           0.000    18.816    vga_display0/flocation0/state_reg[1]_i_1263_n_0
+    SLICE_X8Y69          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    19.072 r  vga_display0/flocation0/state_reg[1]_i_1240/CO[3]
+                         net (fo=1, routed)           0.000    19.072    vga_display0/flocation0/state_reg[1]_i_1240_n_0
+    SLICE_X8Y70          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    19.205 r  vga_display0/flocation0/state_reg[1]_i_1222/CO[0]
+                         net (fo=15, routed)          0.795    20.000    vga_display0/flocation0/state_reg[1]_i_1255_0[0]
+    SLICE_X7Y67          LUT3 (Prop_lut3_I0_O)        0.128    20.128 r  vga_display0/flocation0/state_reg[1]_i_1253/O
+                         net (fo=1, routed)           0.000    20.128    vga_display0/flocation0/state_reg[1]_i_1253_n_0
+    SLICE_X7Y67          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    20.395 r  vga_display0/flocation0/state_reg[1]_i_1213/CO[3]
+                         net (fo=1, routed)           0.000    20.395    vga_display0/flocation0/state_reg[1]_i_1213_n_0
+    SLICE_X7Y68          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    20.448 r  vga_display0/flocation0/state_reg[1]_i_1208/CO[3]
+                         net (fo=1, routed)           0.000    20.448    vga_display0/flocation0/state_reg[1]_i_1208_n_0
+    SLICE_X7Y69          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    20.501 r  vga_display0/flocation0/state_reg[1]_i_1207/CO[3]
+                         net (fo=1, routed)           0.000    20.501    vga_display0/flocation0/state_reg[1]_i_1207_n_0
+    SLICE_X7Y70          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    20.640 r  vga_display0/flocation0/state_reg[1]_i_1175/CO[0]
+                         net (fo=15, routed)          0.756    21.396    vga_display0/m0/state_reg[1]_i_1154[0]
+    SLICE_X6Y65          LUT6 (Prop_lut6_I4_O)        0.131    21.527 r  vga_display0/m0/state_reg[1]_i_1214/O
+                         net (fo=1, routed)           0.000    21.527    vga_display0/flocation0/state_reg[1]_i_1162[2]
+    SLICE_X6Y65          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.180    21.707 r  vga_display0/flocation0/state_reg[1]_i_1154/CO[3]
+                         net (fo=1, routed)           0.000    21.707    vga_display0/flocation0/state_reg[1]_i_1154_n_0
+    SLICE_X6Y66          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    21.761 r  vga_display0/flocation0/state_reg[1]_i_1153/CO[3]
+                         net (fo=1, routed)           0.000    21.761    vga_display0/flocation0/state_reg[1]_i_1153_n_0
+    SLICE_X6Y67          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    21.894 r  vga_display0/flocation0/state_reg[1]_i_1127/CO[0]
+                         net (fo=15, routed)          0.743    22.638    vga_display0/flocation0/state_reg[1]_i_1176_0[0]
+    SLICE_X5Y63          LUT3 (Prop_lut3_I0_O)        0.128    22.766 r  vga_display0/flocation0/state_reg[1]_i_1166/O
+                         net (fo=1, routed)           0.000    22.766    vga_display0/flocation0/state_reg[1]_i_1166_n_0
+    SLICE_X5Y63          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    23.033 r  vga_display0/flocation0/state_reg[1]_i_1118/CO[3]
+                         net (fo=1, routed)           0.000    23.033    vga_display0/flocation0/state_reg[1]_i_1118_n_0
+    SLICE_X5Y64          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    23.086 r  vga_display0/flocation0/state_reg[1]_i_1113/CO[3]
+                         net (fo=1, routed)           0.000    23.086    vga_display0/flocation0/state_reg[1]_i_1113_n_0
+    SLICE_X5Y65          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    23.139 r  vga_display0/flocation0/state_reg[1]_i_1112/CO[3]
+                         net (fo=1, routed)           0.000    23.139    vga_display0/flocation0/state_reg[1]_i_1112_n_0
+    SLICE_X5Y66          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    23.278 r  vga_display0/flocation0/state_reg[1]_i_1071/CO[0]
+                         net (fo=15, routed)          0.747    24.025    vga_display0/flocation0/state_reg[1]_i_1128_0[0]
+    SLICE_X3Y63          LUT3 (Prop_lut3_I0_O)        0.131    24.156 r  vga_display0/flocation0/state_reg[1]_i_1126/O
+                         net (fo=1, routed)           0.000    24.156    vga_display0/flocation0/state_reg[1]_i_1126_n_0
+    SLICE_X3Y63          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    24.423 r  vga_display0/flocation0/state_reg[1]_i_1063/CO[3]
+                         net (fo=1, routed)           0.000    24.423    vga_display0/flocation0/state_reg[1]_i_1063_n_0
+    SLICE_X3Y64          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    24.476 r  vga_display0/flocation0/state_reg[1]_i_1058/CO[3]
+                         net (fo=1, routed)           0.000    24.476    vga_display0/flocation0/state_reg[1]_i_1058_n_0
+    SLICE_X3Y65          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    24.529 r  vga_display0/flocation0/state_reg[1]_i_1057/CO[3]
+                         net (fo=1, routed)           0.000    24.529    vga_display0/flocation0/state_reg[1]_i_1057_n_0
+    SLICE_X3Y66          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    24.668 r  vga_display0/flocation0/state_reg[1]_i_1001/CO[0]
+                         net (fo=15, routed)          0.877    25.545    vga_display0/flocation0/state_reg[1]_i_1072_0[0]
+    SLICE_X4Y63          LUT3 (Prop_lut3_I0_O)        0.131    25.676 r  vga_display0/flocation0/state_reg[1]_i_1069/O
+                         net (fo=1, routed)           0.000    25.676    vga_display0/flocation0/state_reg[1]_i_1069_n_0
+    SLICE_X4Y63          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.195    25.871 r  vga_display0/flocation0/state_reg[1]_i_989/CO[3]
+                         net (fo=1, routed)           0.000    25.871    vga_display0/flocation0/state_reg[1]_i_989_n_0
+    SLICE_X4Y64          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    25.924 r  vga_display0/flocation0/state_reg[1]_i_984/CO[3]
+                         net (fo=1, routed)           0.000    25.924    vga_display0/flocation0/state_reg[1]_i_984_n_0
+    SLICE_X4Y65          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    25.977 r  vga_display0/flocation0/state_reg[1]_i_983/CO[3]
+                         net (fo=1, routed)           0.000    25.977    vga_display0/flocation0/state_reg[1]_i_983_n_0
+    SLICE_X4Y66          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    26.116 r  vga_display0/flocation0/state_reg[1]_i_925/CO[0]
+                         net (fo=15, routed)          0.779    26.895    vga_display0/flocation0/state_reg[1]_i_1002_0[0]
+    SLICE_X0Y63          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.375    27.270 r  vga_display0/flocation0/state_reg[1]_i_912/CO[3]
+                         net (fo=1, routed)           0.000    27.270    vga_display0/flocation0/state_reg[1]_i_912_n_0
+    SLICE_X0Y64          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    27.323 r  vga_display0/flocation0/state_reg[1]_i_907/CO[3]
+                         net (fo=1, routed)           0.000    27.323    vga_display0/flocation0/state_reg[1]_i_907_n_0
+    SLICE_X0Y65          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    27.376 r  vga_display0/flocation0/state_reg[1]_i_906/CO[3]
+                         net (fo=1, routed)           0.000    27.376    vga_display0/flocation0/state_reg[1]_i_906_n_0
+    SLICE_X0Y66          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    27.515 r  vga_display0/flocation0/state_reg[1]_i_831/CO[0]
+                         net (fo=15, routed)          0.726    28.241    vga_display0/flocation0/state_reg[1]_i_926_0[0]
+    SLICE_X1Y60          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.375    28.616 r  vga_display0/flocation0/state_reg[1]_i_822/CO[3]
+                         net (fo=1, routed)           0.000    28.616    vga_display0/flocation0/state_reg[1]_i_822_n_0
+    SLICE_X1Y61          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    28.669 r  vga_display0/flocation0/state_reg[1]_i_817/CO[3]
+                         net (fo=1, routed)           0.000    28.669    vga_display0/flocation0/state_reg[1]_i_817_n_0
+    SLICE_X1Y62          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    28.722 r  vga_display0/flocation0/state_reg[1]_i_816/CO[3]
+                         net (fo=1, routed)           0.000    28.722    vga_display0/flocation0/state_reg[1]_i_816_n_0
+    SLICE_X1Y63          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    28.861 r  vga_display0/flocation0/state_reg[1]_i_714/CO[0]
+                         net (fo=15, routed)          0.763    29.623    vga_display0/flocation0/state_reg[1]_i_832_0[0]
+    SLICE_X2Y59          LUT3 (Prop_lut3_I0_O)        0.131    29.754 r  vga_display0/flocation0/state_reg[1]_i_830/O
+                         net (fo=1, routed)           0.000    29.754    vga_display0/flocation0/state_reg[1]_i_830_n_0
+    SLICE_X2Y59          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    30.010 r  vga_display0/flocation0/state_reg[1]_i_706/CO[3]
+                         net (fo=1, routed)           0.000    30.010    vga_display0/flocation0/state_reg[1]_i_706_n_0
+    SLICE_X2Y60          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    30.064 r  vga_display0/flocation0/state_reg[1]_i_701/CO[3]
+                         net (fo=1, routed)           0.000    30.064    vga_display0/flocation0/state_reg[1]_i_701_n_0
+    SLICE_X2Y61          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    30.118 r  vga_display0/flocation0/state_reg[1]_i_700/CO[3]
+                         net (fo=1, routed)           0.000    30.118    vga_display0/flocation0/state_reg[1]_i_700_n_0
+    SLICE_X2Y62          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    30.251 r  vga_display0/flocation0/state_reg[1]_i_580/CO[0]
+                         net (fo=15, routed)          0.815    31.066    vga_display0/m0/state_reg[1]_i_560[0]
+    SLICE_X0Y59          LUT4 (Prop_lut4_I2_O)        0.128    31.194 r  vga_display0/m0/state_reg[1]_i_709/O
+                         net (fo=1, routed)           0.000    31.194    vga_display0/flocation0/state_reg[1]_i_568[0]
+    SLICE_X0Y59          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    31.461 r  vga_display0/flocation0/state_reg[1]_i_560/CO[3]
+                         net (fo=1, routed)           0.000    31.461    vga_display0/flocation0/state_reg[1]_i_560_n_0
+    SLICE_X0Y60          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    31.514 r  vga_display0/flocation0/state_reg[1]_i_559/CO[3]
+                         net (fo=1, routed)           0.000    31.514    vga_display0/flocation0/state_reg[1]_i_559_n_0
+    SLICE_X0Y61          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    31.653 r  vga_display0/flocation0/state_reg[1]_i_471/CO[0]
+                         net (fo=15, routed)          0.812    32.465    vga_display0/flocation0/state_reg[1]_i_581_0[0]
+    SLICE_X3Y57          LUT3 (Prop_lut3_I0_O)        0.131    32.596 r  vga_display0/flocation0/state_reg[1]_i_572/O
+                         net (fo=1, routed)           0.000    32.596    vga_display0/flocation0/state_reg[1]_i_572_n_0
+    SLICE_X3Y57          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    32.863 r  vga_display0/flocation0/state_reg[1]_i_457/CO[3]
+                         net (fo=1, routed)           0.000    32.863    vga_display0/flocation0/state_reg[1]_i_457_n_0
+    SLICE_X3Y58          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    32.916 r  vga_display0/flocation0/state_reg[1]_i_452/CO[3]
+                         net (fo=1, routed)           0.000    32.916    vga_display0/flocation0/state_reg[1]_i_452_n_0
+    SLICE_X3Y59          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    32.969 r  vga_display0/flocation0/state_reg[1]_i_451/CO[3]
+                         net (fo=1, routed)           0.000    32.969    vga_display0/flocation0/state_reg[1]_i_451_n_0
+    SLICE_X3Y60          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    33.108 r  vga_display0/flocation0/state_reg[1]_i_345/CO[0]
+                         net (fo=15, routed)          0.683    33.791    vga_display0/flocation0/state_reg[1]_i_472_0[0]
+    SLICE_X4Y58          LUT3 (Prop_lut3_I0_O)        0.131    33.922 r  vga_display0/flocation0/state_reg[1]_i_464/O
+                         net (fo=1, routed)           0.000    33.922    vga_display0/flocation0/state_reg[1]_i_464_n_0
+    SLICE_X4Y58          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    34.189 r  vga_display0/flocation0/state_reg[1]_i_336/CO[3]
+                         net (fo=1, routed)           0.000    34.189    vga_display0/flocation0/state_reg[1]_i_336_n_0
+    SLICE_X4Y59          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    34.242 r  vga_display0/flocation0/state_reg[1]_i_331/CO[3]
+                         net (fo=1, routed)           0.000    34.242    vga_display0/flocation0/state_reg[1]_i_331_n_0
+    SLICE_X4Y60          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    34.295 r  vga_display0/flocation0/state_reg[1]_i_330/CO[3]
+                         net (fo=1, routed)           0.000    34.295    vga_display0/flocation0/state_reg[1]_i_330_n_0
+    SLICE_X4Y61          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    34.434 r  vga_display0/flocation0/state_reg[1]_i_244/CO[0]
+                         net (fo=15, routed)          0.660    35.094    vga_display0/flocation0/state_reg[1]_i_346_0[0]
+    SLICE_X5Y58          LUT3 (Prop_lut3_I0_O)        0.131    35.225 r  vga_display0/flocation0/state_reg[1]_i_342/O
+                         net (fo=1, routed)           0.000    35.225    vga_display0/flocation0/state_reg[1]_i_342_n_0
+    SLICE_X5Y58          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193    35.418 r  vga_display0/flocation0/state_reg[1]_i_234/CO[3]
+                         net (fo=1, routed)           0.000    35.418    vga_display0/flocation0/state_reg[1]_i_234_n_0
+    SLICE_X5Y59          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    35.471 r  vga_display0/flocation0/state_reg[1]_i_229/CO[3]
+                         net (fo=1, routed)           0.000    35.471    vga_display0/flocation0/state_reg[1]_i_229_n_0
+    SLICE_X5Y60          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    35.524 r  vga_display0/flocation0/state_reg[1]_i_228/CO[3]
+                         net (fo=1, routed)           0.000    35.524    vga_display0/flocation0/state_reg[1]_i_228_n_0
+    SLICE_X5Y61          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    35.663 r  vga_display0/flocation0/state_reg[1]_i_144/CO[0]
+                         net (fo=15, routed)          0.434    36.097    vga_display0/flocation0/state_reg[1]_i_245_0[0]
+    SLICE_X6Y59          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.385    36.482 r  vga_display0/flocation0/state_reg[1]_i_136/CO[3]
+                         net (fo=1, routed)           0.000    36.482    vga_display0/flocation0/state_reg[1]_i_136_n_0
+    SLICE_X6Y60          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    36.536 r  vga_display0/flocation0/state_reg[1]_i_131/CO[3]
+                         net (fo=1, routed)           0.000    36.536    vga_display0/flocation0/state_reg[1]_i_131_n_0
+    SLICE_X6Y61          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    36.590 r  vga_display0/flocation0/state_reg[1]_i_130/CO[3]
+                         net (fo=1, routed)           0.000    36.590    vga_display0/flocation0/state_reg[1]_i_130_n_0
+    SLICE_X6Y62          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    36.723 r  vga_display0/flocation0/state_reg[1]_i_76/CO[0]
+                         net (fo=15, routed)          0.659    37.382    vga_display0/flocation0/state_reg[1]_i_145_0[0]
+    SLICE_X8Y60          LUT3 (Prop_lut3_I0_O)        0.128    37.510 r  vga_display0/flocation0/state_reg[1]_i_140/O
+                         net (fo=1, routed)           0.000    37.510    vga_display0/flocation0/state_reg[1]_i_140_n_0
+    SLICE_X8Y60          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.246    37.756 r  vga_display0/flocation0/state_reg[1]_i_71/CO[3]
+                         net (fo=1, routed)           0.000    37.756    vga_display0/flocation0/state_reg[1]_i_71_n_0
+    SLICE_X8Y61          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    37.810 r  vga_display0/flocation0/state_reg[1]_i_70/CO[3]
+                         net (fo=1, routed)           0.000    37.810    vga_display0/flocation0/state_reg[1]_i_70_n_0
+    SLICE_X8Y62          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    37.943 r  vga_display0/flocation0/state_reg[1]_i_33/CO[0]
+                         net (fo=15, routed)          0.557    38.500    vga_display0/flocation0/state_reg[1]_i_77_0[0]
+    SLICE_X9Y59          LUT3 (Prop_lut3_I0_O)        0.128    38.628 r  vga_display0/flocation0/state_reg[1]_i_220/O
+                         net (fo=1, routed)           0.000    38.628    vga_display0/flocation0/state_reg[1]_i_220_n_0
+    SLICE_X9Y59          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    38.895 r  vga_display0/flocation0/state_reg[1]_i_124/CO[3]
+                         net (fo=1, routed)           0.000    38.895    vga_display0/flocation0/state_reg[1]_i_124_n_0
+    SLICE_X9Y60          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    38.948 r  vga_display0/flocation0/state_reg[1]_i_69/CO[3]
+                         net (fo=1, routed)           0.000    38.948    vga_display0/flocation0/state_reg[1]_i_69_n_0
+    SLICE_X9Y61          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    39.001 r  vga_display0/flocation0/state_reg[1]_i_32/CO[3]
+                         net (fo=1, routed)           0.000    39.001    vga_display0/flocation0/state_reg[1]_i_32_n_0
+    SLICE_X9Y62          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    39.140 r  vga_display0/flocation0/state_reg[1]_i_10/CO[0]
+                         net (fo=21, routed)          0.617    39.757    vga_display0/flocation0/x[7]
+    SLICE_X11Y61         LUT3 (Prop_lut3_I0_O)        0.131    39.888 r  vga_display0/flocation0/state_reg[1]_i_315/O
+                         net (fo=1, routed)           0.000    39.888    vga_display0/flocation0/state_reg[1]_i_315_n_0
+    SLICE_X11Y61         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    40.155 r  vga_display0/flocation0/state_reg[1]_i_207/CO[3]
+                         net (fo=1, routed)           0.000    40.155    vga_display0/flocation0/state_reg[1]_i_207_n_0
+    SLICE_X11Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    40.208 r  vga_display0/flocation0/state_reg[1]_i_114/CO[3]
+                         net (fo=1, routed)           0.000    40.208    vga_display0/flocation0/state_reg[1]_i_114_n_0
+    SLICE_X11Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    40.261 r  vga_display0/flocation0/state_reg[1]_i_58/CO[3]
+                         net (fo=1, routed)           0.000    40.261    vga_display0/flocation0/state_reg[1]_i_58_n_0
+    SLICE_X11Y64         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    40.400 r  vga_display0/flocation0/state_reg[1]_i_24/CO[0]
+                         net (fo=21, routed)          0.791    41.190    vga_display0/m0/x[6]
+    SLICE_X12Y60         LUT4 (Prop_lut4_I2_O)        0.131    41.321 r  vga_display0/m0/state_reg[1]_i_215/O
+                         net (fo=1, routed)           0.000    41.321    vga_display0/flocation0/state_reg[1]_i_296[0]
+    SLICE_X12Y60         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    41.577 r  vga_display0/flocation0/state_reg[1]_i_119/CO[3]
+                         net (fo=1, routed)           0.000    41.577    vga_display0/flocation0/state_reg[1]_i_119_n_0
+    SLICE_X12Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    41.631 r  vga_display0/flocation0/state_reg[1]_i_60/CO[3]
+                         net (fo=1, routed)           0.000    41.631    vga_display0/flocation0/state_reg[1]_i_60_n_0
+    SLICE_X12Y62         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    41.764 r  vga_display0/flocation0/state_reg[1]_i_25/CO[0]
+                         net (fo=21, routed)          0.845    42.609    vga_display0/flocation0/x[5]
+    SLICE_X11Y57         LUT3 (Prop_lut3_I0_O)        0.128    42.737 r  vga_display0/flocation0/state_reg[1]_i_425/O
+                         net (fo=1, routed)           0.000    42.737    vga_display0/flocation0/state_reg[1]_i_425_n_0
+    SLICE_X11Y57         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    43.004 r  vga_display0/flocation0/state_reg[1]_i_293/CO[3]
+                         net (fo=1, routed)           0.000    43.004    vga_display0/flocation0/state_reg[1]_i_293_n_0
+    SLICE_X11Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    43.057 r  vga_display0/flocation0/state_reg[1]_i_187/CO[3]
+                         net (fo=1, routed)           0.000    43.057    vga_display0/flocation0/state_reg[1]_i_187_n_0
+    SLICE_X11Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    43.110 r  vga_display0/flocation0/state_reg[1]_i_106/CO[3]
+                         net (fo=1, routed)           0.000    43.110    vga_display0/flocation0/state_reg[1]_i_106_n_0
+    SLICE_X11Y60         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    43.249 r  vga_display0/flocation0/state_reg[1]_i_50/CO[0]
+                         net (fo=20, routed)          0.867    44.116    vga_display0/flocation0/x[4]
+    SLICE_X12Y55         LUT3 (Prop_lut3_I0_O)        0.131    44.247 r  vga_display0/flocation0/state_reg[1]_i_429/O
+                         net (fo=1, routed)           0.000    44.247    vga_display0/flocation0/state_reg[1]_i_429_n_0
+    SLICE_X12Y55         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    44.503 r  vga_display0/flocation0/state_reg[1]_i_298/CO[3]
+                         net (fo=1, routed)           0.000    44.503    vga_display0/flocation0/state_reg[1]_i_298_n_0
+    SLICE_X12Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    44.557 r  vga_display0/flocation0/state_reg[1]_i_192/CO[3]
+                         net (fo=1, routed)           0.000    44.557    vga_display0/flocation0/state_reg[1]_i_192_n_0
+    SLICE_X12Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    44.611 r  vga_display0/flocation0/state_reg[1]_i_108/CO[3]
+                         net (fo=1, routed)           0.000    44.611    vga_display0/flocation0/state_reg[1]_i_108_n_0
+    SLICE_X12Y58         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    44.744 r  vga_display0/flocation0/state_reg[1]_i_51/CO[0]
+                         net (fo=22, routed)          0.811    45.555    vga_display0/flocation0/x[3]
+    SLICE_X11Y53         LUT2 (Prop_lut2_I1_O)        0.128    45.683 r  vga_display0/flocation0/state_reg[1]_i_433/O
+                         net (fo=1, routed)           0.000    45.683    vga_display0/flocation0/state_reg[1]_i_433_n_0
+    SLICE_X11Y53         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    45.950 r  vga_display0/flocation0/state_reg[1]_i_303/CO[3]
+                         net (fo=1, routed)           0.000    45.950    vga_display0/flocation0/state_reg[1]_i_303_n_0
+    SLICE_X11Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    46.003 r  vga_display0/flocation0/state_reg[1]_i_197/CO[3]
+                         net (fo=1, routed)           0.000    46.003    vga_display0/flocation0/state_reg[1]_i_197_n_0
+    SLICE_X11Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    46.056 r  vga_display0/flocation0/state_reg[1]_i_110/CO[3]
+                         net (fo=1, routed)           0.000    46.056    vga_display0/flocation0/state_reg[1]_i_110_n_0
+    SLICE_X11Y56         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    46.195 r  vga_display0/flocation0/state_reg[1]_i_52/CO[0]
+                         net (fo=19, routed)          0.504    46.698    vga_display0/flocation0/x[2]
+    SLICE_X10Y55         LUT2 (Prop_lut2_I1_O)        0.131    46.829 r  vga_display0/flocation0/state_reg[1]_i_437/O
+                         net (fo=1, routed)           0.000    46.829    vga_display0/flocation0/state_reg[1]_i_437_n_0
+    SLICE_X10Y55         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    47.085 r  vga_display0/flocation0/state_reg[1]_i_308/CO[3]
+                         net (fo=1, routed)           0.000    47.085    vga_display0/flocation0/state_reg[1]_i_308_n_0
+    SLICE_X10Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    47.139 r  vga_display0/flocation0/state_reg[1]_i_202/CO[3]
+                         net (fo=1, routed)           0.000    47.139    vga_display0/flocation0/state_reg[1]_i_202_n_0
+    SLICE_X10Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    47.193 r  vga_display0/flocation0/state_reg[1]_i_112/CO[3]
+                         net (fo=1, routed)           0.000    47.193    vga_display0/flocation0/state_reg[1]_i_112_n_0
+    SLICE_X10Y58         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    47.326 r  vga_display0/flocation0/state_reg[1]_i_53/CO[0]
+                         net (fo=19, routed)          0.648    47.975    vga_display0/flocation0/x[1]
+    SLICE_X10Y61         LUT3 (Prop_lut3_I0_O)        0.128    48.103 r  vga_display0/flocation0/state_reg[1]_i_286/O
+                         net (fo=1, routed)           0.000    48.103    vga_display0/flocation0/state_reg[1]_i_286_n_0
+    SLICE_X10Y61         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    48.359 r  vga_display0/flocation0/state_reg[1]_i_180/CO[3]
+                         net (fo=1, routed)           0.000    48.359    vga_display0/flocation0/state_reg[1]_i_180_n_0
+    SLICE_X10Y62         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    48.492 r  vga_display0/flocation0/state_reg[1]_i_101/CO[0]
+                         net (fo=19, routed)          0.878    49.370    vga_display0/flocation0/x[0]
+    SLICE_X16Y59         LUT3 (Prop_lut3_I0_O)        0.128    49.498 r  vga_display0/flocation0/state_reg[1]_i_421/O
+                         net (fo=1, routed)           0.000    49.498    vga_display0/flocation0/state_reg[1]_i_421_n_0
+    SLICE_X16Y59         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    49.754 r  vga_display0/flocation0/state_reg[1]_i_288/CO[3]
+                         net (fo=1, routed)           0.000    49.754    vga_display0/flocation0/state_reg[1]_i_288_n_0
+    SLICE_X16Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    49.808 r  vga_display0/flocation0/state_reg[1]_i_182/CO[3]
+                         net (fo=1, routed)           0.000    49.808    vga_display0/flocation0/state_reg[1]_i_182_n_0
+    SLICE_X16Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    49.862 r  vga_display0/flocation0/state_reg[1]_i_102/CO[3]
+                         net (fo=3, routed)           0.581    50.443    vga_display0/flocation0/x_0[0]
+    SLICE_X17Y59         LUT2 (Prop_lut2_I0_O)        0.043    50.486 r  vga_display0/flocation0/state_reg[1]_i_104/O
+                         net (fo=1, routed)           0.000    50.486    vga_display0/flocation0/state_reg[1]_i_104_n_0
+    SLICE_X17Y59         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.195    50.681 r  vga_display0/flocation0/state_reg[1]_i_49/CO[3]
+                         net (fo=1, routed)           0.000    50.681    vga_display0/flocation0/state_reg[1]_i_49_n_0
+    SLICE_X17Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    50.734 r  vga_display0/flocation0/state_reg[1]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    50.734    vga_display0/flocation0/state_reg[1]_i_23_n_0
+    SLICE_X17Y61         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    50.900 r  vga_display0/flocation0/state_reg[1]_i_8/O[1]
+                         net (fo=9, routed)           0.526    51.426    vga_display0/flocation0/state_reg[1]_i_8_n_6
+    SLICE_X15Y58         LUT2 (Prop_lut2_I0_O)        0.123    51.549 r  vga_display0/flocation0/state_reg[1]_i_63/O
+                         net (fo=2, routed)           0.459    52.008    vga_display0/flocation0/state_reg[1]_i_63_n_0
+    SLICE_X14Y58         LUT4 (Prop_lut4_I0_O)        0.043    52.051 r  vga_display0/flocation0/state_reg[1]_i_66/O
+                         net (fo=1, routed)           0.000    52.051    vga_display0/flocation0/state_reg[1]_i_66_n_0
+    SLICE_X14Y58         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.183    52.234 r  vga_display0/flocation0/state_reg[1]_i_29/CO[3]
+                         net (fo=1, routed)           0.000    52.234    vga_display0/flocation0/state_reg[1]_i_29_n_0
+    SLICE_X14Y59         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    52.367 r  vga_display0/flocation0/state_reg[1]_i_9/CO[0]
+                         net (fo=4, routed)           0.453    52.820    vga_display0/flocation0/state_reg[1]_i_9_n_3
+    SLICE_X13Y59         LUT6 (Prop_lut6_I1_O)        0.128    52.948 r  vga_display0/flocation0/state_reg[1]_i_18/O
+                         net (fo=4, routed)           0.305    53.253    vga_display0/flocation0/index_x[1]
+    SLICE_X14Y56         MUXF7 (Prop_muxf7_S_O)       0.154    53.407 r  vga_display0/flocation0/state_reg[0]_i_4/O
+                         net (fo=1, routed)           0.439    53.846    vga_display0/flocation0/state_reg[0]_i_4_n_0
+    SLICE_X13Y57         LUT5 (Prop_lut5_I4_O)        0.123    53.969 r  vga_display0/flocation0/state_reg[0]_i_1/O
+                         net (fo=1, routed)           0.680    54.648    vga_display0/map0/D[0]
+    SLICE_X8Y60          LDCE                                         r  vga_display0/map0/state_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 vga_display0/m0/row_addr_reg[5]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            vga_display0/map0/state_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        54.531ns  (logic 22.639ns (41.516%)  route 31.892ns (58.484%))
+  Logic Levels:           172  (CARRY4=129 FDRE=1 LUT2=8 LUT3=21 LUT4=4 LUT5=2 LUT6=6 MUXF7=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y51          FDRE                         0.000     0.000 r  vga_display0/m0/row_addr_reg[5]/C
+    SLICE_X4Y51          FDRE (Prop_fdre_C_Q)         0.223     0.223 r  vga_display0/m0/row_addr_reg[5]/Q
+                         net (fo=18, routed)          0.940     1.163    vga_display0/m0/row_0[5]
+    SLICE_X10Y54         LUT6 (Prop_lut6_I2_O)        0.043     1.206 f  vga_display0/m0/state_reg[1]_i_224/O
+                         net (fo=76, routed)          0.553     1.759    vga_display0/m0/state_reg[1]_i_224_n_0
+    SLICE_X13Y55         LUT5 (Prop_lut5_I4_O)        0.043     1.802 f  vga_display0/m0/state_reg[1]_i_225/O
+                         net (fo=110, routed)         0.361     2.163    vga_display0/m0/state_reg[1]_i_225_n_0
+    SLICE_X13Y55         LUT6 (Prop_lut6_I5_O)        0.043     2.206 f  vga_display0/m0/state_reg[1]_i_226/O
+                         net (fo=140, routed)         1.041     3.247    vga_display0/m0/row_addr_reg[3]_1
+    SLICE_X13Y62         LUT6 (Prop_lut6_I5_O)        0.043     3.290 r  vga_display0/m0/state_reg[1]_i_325/O
+                         net (fo=36, routed)          0.361     3.652    vga_display0/m0/row_addr_reg[2]_1
+    SLICE_X13Y62         LUT6 (Prop_lut6_I5_O)        0.043     3.695 r  vga_display0/m0/state_reg[1]_i_326/O
+                         net (fo=34, routed)          1.132     4.827    vga_display0/m0/row_addr_reg[2]_2
+    SLICE_X6Y55          LUT2 (Prop_lut2_I1_O)        0.043     4.870 r  vga_display0/m0/state_reg[1]_i_441/O
+                         net (fo=1, routed)           0.000     4.870    vga_display0/m0/state_reg[1]_i_441_n_0
+    SLICE_X6Y55          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.246     5.116 r  vga_display0/m0/state_reg[1]_i_316/CO[3]
+                         net (fo=1, routed)           0.000     5.116    vga_display0/m0/state_reg[1]_i_316_n_0
+    SLICE_X6Y56          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.165     5.281 r  vga_display0/m0/state_reg[1]_i_320/O[1]
+                         net (fo=5, routed)           0.606     5.887    vga_display0/m0/flocation0/x1__0[5]
+    SLICE_X8Y56          LUT2 (Prop_lut2_I1_O)        0.125     6.012 r  vga_display0/m0/state_reg[1]_i_575/O
+                         net (fo=1, routed)           0.000     6.012    vga_display0/m0/state_reg[1]_i_575_n_0
+    SLICE_X8Y56          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     6.268 r  vga_display0/m0/state_reg[1]_i_465/CO[3]
+                         net (fo=1, routed)           0.000     6.268    vga_display0/m0/state_reg[1]_i_465_n_0
+    SLICE_X8Y57          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     6.322 r  vga_display0/m0/state_reg[1]_i_920/CO[3]
+                         net (fo=1, routed)           0.000     6.322    vga_display0/m0/state_reg[1]_i_920_n_0
+    SLICE_X8Y58          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133     6.455 r  vga_display0/m0/state_reg[1]_i_1221/CO[0]
+                         net (fo=13, routed)          0.888     7.343    vga_display0/m0/state_reg[1]_i_1221_n_3
+    SLICE_X7Y61          LUT2 (Prop_lut2_I1_O)        0.128     7.471 r  vga_display0/m0/state_reg[1]_i_1369/O
+                         net (fo=1, routed)           0.000     7.471    vga_display0/m0/state_reg[1]_i_1369_n_0
+    SLICE_X7Y61          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     7.738 r  vga_display0/m0/state_reg[1]_i_1343/CO[3]
+                         net (fo=1, routed)           0.000     7.738    vga_display0/m0/state_reg[1]_i_1343_n_0
+    SLICE_X7Y62          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.111     7.849 r  vga_display0/m0/state_reg[1]_i_1415/O[0]
+                         net (fo=2, routed)           0.490     8.339    vga_display0/m0/x00_in[27]
+    SLICE_X13Y62         LUT2 (Prop_lut2_I1_O)        0.124     8.463 r  vga_display0/m0/state_reg[1]_i_1419/O
+                         net (fo=1, routed)           0.000     8.463    vga_display0/flocation0/S[0]
+    SLICE_X13Y62         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.259     8.722 r  vga_display0/flocation0/state_reg[1]_i_1393/CO[3]
+                         net (fo=1, routed)           0.000     8.722    vga_display0/flocation0/state_reg[1]_i_1393_n_0
+    SLICE_X13Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     8.775 r  vga_display0/flocation0/state_reg[1]_i_1388/CO[3]
+                         net (fo=1, routed)           0.000     8.775    vga_display0/flocation0/state_reg[1]_i_1388_n_0
+    SLICE_X13Y64         CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.110     8.885 r  vga_display0/flocation0/state_reg[1]_i_1387/CO[2]
+                         net (fo=13, routed)          0.559     9.444    vga_display0/flocation0/CO[0]
+    SLICE_X14Y62         LUT3 (Prop_lut3_I0_O)        0.129     9.573 r  vga_display0/flocation0/state_reg[1]_i_1400/O
+                         net (fo=1, routed)           0.000     9.573    vga_display0/flocation0/state_reg[1]_i_1400_n_0
+    SLICE_X14Y62         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     9.829 r  vga_display0/flocation0/state_reg[1]_i_1379/CO[3]
+                         net (fo=1, routed)           0.000     9.829    vga_display0/flocation0/state_reg[1]_i_1379_n_0
+    SLICE_X14Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     9.883 r  vga_display0/flocation0/state_reg[1]_i_1374/CO[3]
+                         net (fo=1, routed)           0.000     9.883    vga_display0/flocation0/state_reg[1]_i_1374_n_0
+    SLICE_X14Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     9.937 r  vga_display0/flocation0/state_reg[1]_i_1373/CO[3]
+                         net (fo=1, routed)           0.000     9.937    vga_display0/flocation0/state_reg[1]_i_1373_n_0
+    SLICE_X14Y65         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    10.070 r  vga_display0/flocation0/state_reg[1]_i_1371/CO[0]
+                         net (fo=15, routed)          0.631    10.702    vga_display0/m0/state_reg[1]_i_1350[0]
+    SLICE_X15Y64         LUT4 (Prop_lut4_I2_O)        0.128    10.830 r  vga_display0/m0/state_reg[1]_i_1382/O
+                         net (fo=1, routed)           0.000    10.830    vga_display0/flocation0/state_reg[1]_i_1358[0]
+    SLICE_X15Y64         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    11.097 r  vga_display0/flocation0/state_reg[1]_i_1350/CO[3]
+                         net (fo=1, routed)           0.000    11.097    vga_display0/flocation0/state_reg[1]_i_1350_n_0
+    SLICE_X15Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.150 r  vga_display0/flocation0/state_reg[1]_i_1349/CO[3]
+                         net (fo=1, routed)           0.000    11.150    vga_display0/flocation0/state_reg[1]_i_1349_n_0
+    SLICE_X15Y66         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    11.289 r  vga_display0/flocation0/state_reg[1]_i_1347/CO[0]
+                         net (fo=15, routed)          0.739    12.028    vga_display0/flocation0/state_reg[1]_i_1372_0[0]
+    SLICE_X12Y63         LUT3 (Prop_lut3_I0_O)        0.131    12.159 r  vga_display0/flocation0/state_reg[1]_i_1362/O
+                         net (fo=1, routed)           0.000    12.159    vga_display0/flocation0/state_reg[1]_i_1362_n_0
+    SLICE_X12Y63         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    12.415 r  vga_display0/flocation0/state_reg[1]_i_1338/CO[3]
+                         net (fo=1, routed)           0.000    12.415    vga_display0/flocation0/state_reg[1]_i_1338_n_0
+    SLICE_X12Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    12.469 r  vga_display0/flocation0/state_reg[1]_i_1333/CO[3]
+                         net (fo=1, routed)           0.000    12.469    vga_display0/flocation0/state_reg[1]_i_1333_n_0
+    SLICE_X12Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    12.523 r  vga_display0/flocation0/state_reg[1]_i_1332/CO[3]
+                         net (fo=1, routed)           0.000    12.523    vga_display0/flocation0/state_reg[1]_i_1332_n_0
+    SLICE_X12Y66         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    12.656 r  vga_display0/flocation0/state_reg[1]_i_1330/CO[0]
+                         net (fo=15, routed)          0.684    13.340    vga_display0/flocation0/state_reg[1]_i_1348_0[0]
+    SLICE_X10Y64         LUT3 (Prop_lut3_I0_O)        0.128    13.468 r  vga_display0/flocation0/state_reg[1]_i_1346/O
+                         net (fo=1, routed)           0.000    13.468    vga_display0/flocation0/state_reg[1]_i_1346_n_0
+    SLICE_X10Y64         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    13.724 r  vga_display0/flocation0/state_reg[1]_i_1322/CO[3]
+                         net (fo=1, routed)           0.000    13.724    vga_display0/flocation0/state_reg[1]_i_1322_n_0
+    SLICE_X10Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    13.778 r  vga_display0/flocation0/state_reg[1]_i_1317/CO[3]
+                         net (fo=1, routed)           0.000    13.778    vga_display0/flocation0/state_reg[1]_i_1317_n_0
+    SLICE_X10Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    13.832 r  vga_display0/flocation0/state_reg[1]_i_1316/CO[3]
+                         net (fo=1, routed)           0.000    13.832    vga_display0/flocation0/state_reg[1]_i_1316_n_0
+    SLICE_X10Y67         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    13.965 r  vga_display0/flocation0/state_reg[1]_i_1314/CO[0]
+                         net (fo=15, routed)          0.727    14.692    vga_display0/flocation0/state_reg[1]_i_1331_0[0]
+    SLICE_X9Y64          LUT3 (Prop_lut3_I0_O)        0.128    14.820 r  vga_display0/flocation0/state_reg[1]_i_1329/O
+                         net (fo=1, routed)           0.000    14.820    vga_display0/flocation0/state_reg[1]_i_1329_n_0
+    SLICE_X9Y64          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    15.087 r  vga_display0/flocation0/state_reg[1]_i_1306/CO[3]
+                         net (fo=1, routed)           0.000    15.087    vga_display0/flocation0/state_reg[1]_i_1306_n_0
+    SLICE_X9Y65          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.140 r  vga_display0/flocation0/state_reg[1]_i_1301/CO[3]
+                         net (fo=1, routed)           0.000    15.140    vga_display0/flocation0/state_reg[1]_i_1301_n_0
+    SLICE_X9Y66          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    15.193 r  vga_display0/flocation0/state_reg[1]_i_1300/CO[3]
+                         net (fo=1, routed)           0.000    15.193    vga_display0/flocation0/state_reg[1]_i_1300_n_0
+    SLICE_X9Y67          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    15.332 r  vga_display0/flocation0/state_reg[1]_i_1298/CO[0]
+                         net (fo=15, routed)          0.777    16.109    vga_display0/flocation0/state_reg[1]_i_1315_0[0]
+    SLICE_X7Y63          LUT3 (Prop_lut3_I0_O)        0.131    16.240 r  vga_display0/flocation0/state_reg[1]_i_1313/O
+                         net (fo=1, routed)           0.000    16.240    vga_display0/flocation0/state_reg[1]_i_1313_n_0
+    SLICE_X7Y63          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    16.507 r  vga_display0/flocation0/state_reg[1]_i_1282/CO[3]
+                         net (fo=1, routed)           0.000    16.507    vga_display0/flocation0/state_reg[1]_i_1282_n_0
+    SLICE_X7Y64          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    16.560 r  vga_display0/flocation0/state_reg[1]_i_1277/CO[3]
+                         net (fo=1, routed)           0.000    16.560    vga_display0/flocation0/state_reg[1]_i_1277_n_0
+    SLICE_X7Y65          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    16.613 r  vga_display0/flocation0/state_reg[1]_i_1276/CO[3]
+                         net (fo=1, routed)           0.000    16.613    vga_display0/flocation0/state_reg[1]_i_1276_n_0
+    SLICE_X7Y66          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    16.752 r  vga_display0/flocation0/state_reg[1]_i_1274/CO[0]
+                         net (fo=15, routed)          0.673    17.425    vga_display0/flocation0/state_reg[1]_i_1299_0[0]
+    SLICE_X8Y63          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.385    17.810 r  vga_display0/flocation0/state_reg[1]_i_1265/CO[3]
+                         net (fo=1, routed)           0.000    17.810    vga_display0/flocation0/state_reg[1]_i_1265_n_0
+    SLICE_X8Y64          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    17.864 r  vga_display0/flocation0/state_reg[1]_i_1260/CO[3]
+                         net (fo=1, routed)           0.000    17.864    vga_display0/flocation0/state_reg[1]_i_1260_n_0
+    SLICE_X8Y65          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    17.918 r  vga_display0/flocation0/state_reg[1]_i_1259/CO[3]
+                         net (fo=1, routed)           0.000    17.918    vga_display0/flocation0/state_reg[1]_i_1259_n_0
+    SLICE_X8Y66          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    18.051 r  vga_display0/flocation0/state_reg[1]_i_1254/CO[0]
+                         net (fo=15, routed)          0.637    18.688    vga_display0/flocation0/state_reg[1]_i_1275_0[0]
+    SLICE_X8Y69          LUT3 (Prop_lut3_I0_O)        0.128    18.816 r  vga_display0/flocation0/state_reg[1]_i_1263/O
+                         net (fo=1, routed)           0.000    18.816    vga_display0/flocation0/state_reg[1]_i_1263_n_0
+    SLICE_X8Y69          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    19.072 r  vga_display0/flocation0/state_reg[1]_i_1240/CO[3]
+                         net (fo=1, routed)           0.000    19.072    vga_display0/flocation0/state_reg[1]_i_1240_n_0
+    SLICE_X8Y70          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    19.205 r  vga_display0/flocation0/state_reg[1]_i_1222/CO[0]
+                         net (fo=15, routed)          0.795    20.000    vga_display0/flocation0/state_reg[1]_i_1255_0[0]
+    SLICE_X7Y67          LUT3 (Prop_lut3_I0_O)        0.128    20.128 r  vga_display0/flocation0/state_reg[1]_i_1253/O
+                         net (fo=1, routed)           0.000    20.128    vga_display0/flocation0/state_reg[1]_i_1253_n_0
+    SLICE_X7Y67          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    20.395 r  vga_display0/flocation0/state_reg[1]_i_1213/CO[3]
+                         net (fo=1, routed)           0.000    20.395    vga_display0/flocation0/state_reg[1]_i_1213_n_0
+    SLICE_X7Y68          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    20.448 r  vga_display0/flocation0/state_reg[1]_i_1208/CO[3]
+                         net (fo=1, routed)           0.000    20.448    vga_display0/flocation0/state_reg[1]_i_1208_n_0
+    SLICE_X7Y69          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    20.501 r  vga_display0/flocation0/state_reg[1]_i_1207/CO[3]
+                         net (fo=1, routed)           0.000    20.501    vga_display0/flocation0/state_reg[1]_i_1207_n_0
+    SLICE_X7Y70          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    20.640 r  vga_display0/flocation0/state_reg[1]_i_1175/CO[0]
+                         net (fo=15, routed)          0.756    21.396    vga_display0/m0/state_reg[1]_i_1154[0]
+    SLICE_X6Y65          LUT6 (Prop_lut6_I4_O)        0.131    21.527 r  vga_display0/m0/state_reg[1]_i_1214/O
+                         net (fo=1, routed)           0.000    21.527    vga_display0/flocation0/state_reg[1]_i_1162[2]
+    SLICE_X6Y65          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.180    21.707 r  vga_display0/flocation0/state_reg[1]_i_1154/CO[3]
+                         net (fo=1, routed)           0.000    21.707    vga_display0/flocation0/state_reg[1]_i_1154_n_0
+    SLICE_X6Y66          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    21.761 r  vga_display0/flocation0/state_reg[1]_i_1153/CO[3]
+                         net (fo=1, routed)           0.000    21.761    vga_display0/flocation0/state_reg[1]_i_1153_n_0
+    SLICE_X6Y67          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    21.894 r  vga_display0/flocation0/state_reg[1]_i_1127/CO[0]
+                         net (fo=15, routed)          0.743    22.638    vga_display0/flocation0/state_reg[1]_i_1176_0[0]
+    SLICE_X5Y63          LUT3 (Prop_lut3_I0_O)        0.128    22.766 r  vga_display0/flocation0/state_reg[1]_i_1166/O
+                         net (fo=1, routed)           0.000    22.766    vga_display0/flocation0/state_reg[1]_i_1166_n_0
+    SLICE_X5Y63          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    23.033 r  vga_display0/flocation0/state_reg[1]_i_1118/CO[3]
+                         net (fo=1, routed)           0.000    23.033    vga_display0/flocation0/state_reg[1]_i_1118_n_0
+    SLICE_X5Y64          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    23.086 r  vga_display0/flocation0/state_reg[1]_i_1113/CO[3]
+                         net (fo=1, routed)           0.000    23.086    vga_display0/flocation0/state_reg[1]_i_1113_n_0
+    SLICE_X5Y65          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    23.139 r  vga_display0/flocation0/state_reg[1]_i_1112/CO[3]
+                         net (fo=1, routed)           0.000    23.139    vga_display0/flocation0/state_reg[1]_i_1112_n_0
+    SLICE_X5Y66          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    23.278 r  vga_display0/flocation0/state_reg[1]_i_1071/CO[0]
+                         net (fo=15, routed)          0.747    24.025    vga_display0/flocation0/state_reg[1]_i_1128_0[0]
+    SLICE_X3Y63          LUT3 (Prop_lut3_I0_O)        0.131    24.156 r  vga_display0/flocation0/state_reg[1]_i_1126/O
+                         net (fo=1, routed)           0.000    24.156    vga_display0/flocation0/state_reg[1]_i_1126_n_0
+    SLICE_X3Y63          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    24.423 r  vga_display0/flocation0/state_reg[1]_i_1063/CO[3]
+                         net (fo=1, routed)           0.000    24.423    vga_display0/flocation0/state_reg[1]_i_1063_n_0
+    SLICE_X3Y64          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    24.476 r  vga_display0/flocation0/state_reg[1]_i_1058/CO[3]
+                         net (fo=1, routed)           0.000    24.476    vga_display0/flocation0/state_reg[1]_i_1058_n_0
+    SLICE_X3Y65          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    24.529 r  vga_display0/flocation0/state_reg[1]_i_1057/CO[3]
+                         net (fo=1, routed)           0.000    24.529    vga_display0/flocation0/state_reg[1]_i_1057_n_0
+    SLICE_X3Y66          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    24.668 r  vga_display0/flocation0/state_reg[1]_i_1001/CO[0]
+                         net (fo=15, routed)          0.877    25.545    vga_display0/flocation0/state_reg[1]_i_1072_0[0]
+    SLICE_X4Y63          LUT3 (Prop_lut3_I0_O)        0.131    25.676 r  vga_display0/flocation0/state_reg[1]_i_1069/O
+                         net (fo=1, routed)           0.000    25.676    vga_display0/flocation0/state_reg[1]_i_1069_n_0
+    SLICE_X4Y63          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.195    25.871 r  vga_display0/flocation0/state_reg[1]_i_989/CO[3]
+                         net (fo=1, routed)           0.000    25.871    vga_display0/flocation0/state_reg[1]_i_989_n_0
+    SLICE_X4Y64          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    25.924 r  vga_display0/flocation0/state_reg[1]_i_984/CO[3]
+                         net (fo=1, routed)           0.000    25.924    vga_display0/flocation0/state_reg[1]_i_984_n_0
+    SLICE_X4Y65          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    25.977 r  vga_display0/flocation0/state_reg[1]_i_983/CO[3]
+                         net (fo=1, routed)           0.000    25.977    vga_display0/flocation0/state_reg[1]_i_983_n_0
+    SLICE_X4Y66          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    26.116 r  vga_display0/flocation0/state_reg[1]_i_925/CO[0]
+                         net (fo=15, routed)          0.779    26.895    vga_display0/flocation0/state_reg[1]_i_1002_0[0]
+    SLICE_X0Y63          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.375    27.270 r  vga_display0/flocation0/state_reg[1]_i_912/CO[3]
+                         net (fo=1, routed)           0.000    27.270    vga_display0/flocation0/state_reg[1]_i_912_n_0
+    SLICE_X0Y64          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    27.323 r  vga_display0/flocation0/state_reg[1]_i_907/CO[3]
+                         net (fo=1, routed)           0.000    27.323    vga_display0/flocation0/state_reg[1]_i_907_n_0
+    SLICE_X0Y65          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    27.376 r  vga_display0/flocation0/state_reg[1]_i_906/CO[3]
+                         net (fo=1, routed)           0.000    27.376    vga_display0/flocation0/state_reg[1]_i_906_n_0
+    SLICE_X0Y66          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    27.515 r  vga_display0/flocation0/state_reg[1]_i_831/CO[0]
+                         net (fo=15, routed)          0.726    28.241    vga_display0/flocation0/state_reg[1]_i_926_0[0]
+    SLICE_X1Y60          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.375    28.616 r  vga_display0/flocation0/state_reg[1]_i_822/CO[3]
+                         net (fo=1, routed)           0.000    28.616    vga_display0/flocation0/state_reg[1]_i_822_n_0
+    SLICE_X1Y61          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    28.669 r  vga_display0/flocation0/state_reg[1]_i_817/CO[3]
+                         net (fo=1, routed)           0.000    28.669    vga_display0/flocation0/state_reg[1]_i_817_n_0
+    SLICE_X1Y62          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    28.722 r  vga_display0/flocation0/state_reg[1]_i_816/CO[3]
+                         net (fo=1, routed)           0.000    28.722    vga_display0/flocation0/state_reg[1]_i_816_n_0
+    SLICE_X1Y63          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    28.861 r  vga_display0/flocation0/state_reg[1]_i_714/CO[0]
+                         net (fo=15, routed)          0.763    29.623    vga_display0/flocation0/state_reg[1]_i_832_0[0]
+    SLICE_X2Y59          LUT3 (Prop_lut3_I0_O)        0.131    29.754 r  vga_display0/flocation0/state_reg[1]_i_830/O
+                         net (fo=1, routed)           0.000    29.754    vga_display0/flocation0/state_reg[1]_i_830_n_0
+    SLICE_X2Y59          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    30.010 r  vga_display0/flocation0/state_reg[1]_i_706/CO[3]
+                         net (fo=1, routed)           0.000    30.010    vga_display0/flocation0/state_reg[1]_i_706_n_0
+    SLICE_X2Y60          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    30.064 r  vga_display0/flocation0/state_reg[1]_i_701/CO[3]
+                         net (fo=1, routed)           0.000    30.064    vga_display0/flocation0/state_reg[1]_i_701_n_0
+    SLICE_X2Y61          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    30.118 r  vga_display0/flocation0/state_reg[1]_i_700/CO[3]
+                         net (fo=1, routed)           0.000    30.118    vga_display0/flocation0/state_reg[1]_i_700_n_0
+    SLICE_X2Y62          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    30.251 r  vga_display0/flocation0/state_reg[1]_i_580/CO[0]
+                         net (fo=15, routed)          0.815    31.066    vga_display0/m0/state_reg[1]_i_560[0]
+    SLICE_X0Y59          LUT4 (Prop_lut4_I2_O)        0.128    31.194 r  vga_display0/m0/state_reg[1]_i_709/O
+                         net (fo=1, routed)           0.000    31.194    vga_display0/flocation0/state_reg[1]_i_568[0]
+    SLICE_X0Y59          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    31.461 r  vga_display0/flocation0/state_reg[1]_i_560/CO[3]
+                         net (fo=1, routed)           0.000    31.461    vga_display0/flocation0/state_reg[1]_i_560_n_0
+    SLICE_X0Y60          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    31.514 r  vga_display0/flocation0/state_reg[1]_i_559/CO[3]
+                         net (fo=1, routed)           0.000    31.514    vga_display0/flocation0/state_reg[1]_i_559_n_0
+    SLICE_X0Y61          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    31.653 r  vga_display0/flocation0/state_reg[1]_i_471/CO[0]
+                         net (fo=15, routed)          0.812    32.465    vga_display0/flocation0/state_reg[1]_i_581_0[0]
+    SLICE_X3Y57          LUT3 (Prop_lut3_I0_O)        0.131    32.596 r  vga_display0/flocation0/state_reg[1]_i_572/O
+                         net (fo=1, routed)           0.000    32.596    vga_display0/flocation0/state_reg[1]_i_572_n_0
+    SLICE_X3Y57          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    32.863 r  vga_display0/flocation0/state_reg[1]_i_457/CO[3]
+                         net (fo=1, routed)           0.000    32.863    vga_display0/flocation0/state_reg[1]_i_457_n_0
+    SLICE_X3Y58          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    32.916 r  vga_display0/flocation0/state_reg[1]_i_452/CO[3]
+                         net (fo=1, routed)           0.000    32.916    vga_display0/flocation0/state_reg[1]_i_452_n_0
+    SLICE_X3Y59          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    32.969 r  vga_display0/flocation0/state_reg[1]_i_451/CO[3]
+                         net (fo=1, routed)           0.000    32.969    vga_display0/flocation0/state_reg[1]_i_451_n_0
+    SLICE_X3Y60          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    33.108 r  vga_display0/flocation0/state_reg[1]_i_345/CO[0]
+                         net (fo=15, routed)          0.683    33.791    vga_display0/flocation0/state_reg[1]_i_472_0[0]
+    SLICE_X4Y58          LUT3 (Prop_lut3_I0_O)        0.131    33.922 r  vga_display0/flocation0/state_reg[1]_i_464/O
+                         net (fo=1, routed)           0.000    33.922    vga_display0/flocation0/state_reg[1]_i_464_n_0
+    SLICE_X4Y58          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    34.189 r  vga_display0/flocation0/state_reg[1]_i_336/CO[3]
+                         net (fo=1, routed)           0.000    34.189    vga_display0/flocation0/state_reg[1]_i_336_n_0
+    SLICE_X4Y59          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    34.242 r  vga_display0/flocation0/state_reg[1]_i_331/CO[3]
+                         net (fo=1, routed)           0.000    34.242    vga_display0/flocation0/state_reg[1]_i_331_n_0
+    SLICE_X4Y60          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    34.295 r  vga_display0/flocation0/state_reg[1]_i_330/CO[3]
+                         net (fo=1, routed)           0.000    34.295    vga_display0/flocation0/state_reg[1]_i_330_n_0
+    SLICE_X4Y61          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    34.434 r  vga_display0/flocation0/state_reg[1]_i_244/CO[0]
+                         net (fo=15, routed)          0.660    35.094    vga_display0/flocation0/state_reg[1]_i_346_0[0]
+    SLICE_X5Y58          LUT3 (Prop_lut3_I0_O)        0.131    35.225 r  vga_display0/flocation0/state_reg[1]_i_342/O
+                         net (fo=1, routed)           0.000    35.225    vga_display0/flocation0/state_reg[1]_i_342_n_0
+    SLICE_X5Y58          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193    35.418 r  vga_display0/flocation0/state_reg[1]_i_234/CO[3]
+                         net (fo=1, routed)           0.000    35.418    vga_display0/flocation0/state_reg[1]_i_234_n_0
+    SLICE_X5Y59          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    35.471 r  vga_display0/flocation0/state_reg[1]_i_229/CO[3]
+                         net (fo=1, routed)           0.000    35.471    vga_display0/flocation0/state_reg[1]_i_229_n_0
+    SLICE_X5Y60          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    35.524 r  vga_display0/flocation0/state_reg[1]_i_228/CO[3]
+                         net (fo=1, routed)           0.000    35.524    vga_display0/flocation0/state_reg[1]_i_228_n_0
+    SLICE_X5Y61          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    35.663 r  vga_display0/flocation0/state_reg[1]_i_144/CO[0]
+                         net (fo=15, routed)          0.434    36.097    vga_display0/flocation0/state_reg[1]_i_245_0[0]
+    SLICE_X6Y59          CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.385    36.482 r  vga_display0/flocation0/state_reg[1]_i_136/CO[3]
+                         net (fo=1, routed)           0.000    36.482    vga_display0/flocation0/state_reg[1]_i_136_n_0
+    SLICE_X6Y60          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    36.536 r  vga_display0/flocation0/state_reg[1]_i_131/CO[3]
+                         net (fo=1, routed)           0.000    36.536    vga_display0/flocation0/state_reg[1]_i_131_n_0
+    SLICE_X6Y61          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    36.590 r  vga_display0/flocation0/state_reg[1]_i_130/CO[3]
+                         net (fo=1, routed)           0.000    36.590    vga_display0/flocation0/state_reg[1]_i_130_n_0
+    SLICE_X6Y62          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    36.723 r  vga_display0/flocation0/state_reg[1]_i_76/CO[0]
+                         net (fo=15, routed)          0.659    37.382    vga_display0/flocation0/state_reg[1]_i_145_0[0]
+    SLICE_X8Y60          LUT3 (Prop_lut3_I0_O)        0.128    37.510 r  vga_display0/flocation0/state_reg[1]_i_140/O
+                         net (fo=1, routed)           0.000    37.510    vga_display0/flocation0/state_reg[1]_i_140_n_0
+    SLICE_X8Y60          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.246    37.756 r  vga_display0/flocation0/state_reg[1]_i_71/CO[3]
+                         net (fo=1, routed)           0.000    37.756    vga_display0/flocation0/state_reg[1]_i_71_n_0
+    SLICE_X8Y61          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    37.810 r  vga_display0/flocation0/state_reg[1]_i_70/CO[3]
+                         net (fo=1, routed)           0.000    37.810    vga_display0/flocation0/state_reg[1]_i_70_n_0
+    SLICE_X8Y62          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    37.943 r  vga_display0/flocation0/state_reg[1]_i_33/CO[0]
+                         net (fo=15, routed)          0.557    38.500    vga_display0/flocation0/state_reg[1]_i_77_0[0]
+    SLICE_X9Y59          LUT3 (Prop_lut3_I0_O)        0.128    38.628 r  vga_display0/flocation0/state_reg[1]_i_220/O
+                         net (fo=1, routed)           0.000    38.628    vga_display0/flocation0/state_reg[1]_i_220_n_0
+    SLICE_X9Y59          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    38.895 r  vga_display0/flocation0/state_reg[1]_i_124/CO[3]
+                         net (fo=1, routed)           0.000    38.895    vga_display0/flocation0/state_reg[1]_i_124_n_0
+    SLICE_X9Y60          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    38.948 r  vga_display0/flocation0/state_reg[1]_i_69/CO[3]
+                         net (fo=1, routed)           0.000    38.948    vga_display0/flocation0/state_reg[1]_i_69_n_0
+    SLICE_X9Y61          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    39.001 r  vga_display0/flocation0/state_reg[1]_i_32/CO[3]
+                         net (fo=1, routed)           0.000    39.001    vga_display0/flocation0/state_reg[1]_i_32_n_0
+    SLICE_X9Y62          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    39.140 r  vga_display0/flocation0/state_reg[1]_i_10/CO[0]
+                         net (fo=21, routed)          0.617    39.757    vga_display0/flocation0/x[7]
+    SLICE_X11Y61         LUT3 (Prop_lut3_I0_O)        0.131    39.888 r  vga_display0/flocation0/state_reg[1]_i_315/O
+                         net (fo=1, routed)           0.000    39.888    vga_display0/flocation0/state_reg[1]_i_315_n_0
+    SLICE_X11Y61         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    40.155 r  vga_display0/flocation0/state_reg[1]_i_207/CO[3]
+                         net (fo=1, routed)           0.000    40.155    vga_display0/flocation0/state_reg[1]_i_207_n_0
+    SLICE_X11Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    40.208 r  vga_display0/flocation0/state_reg[1]_i_114/CO[3]
+                         net (fo=1, routed)           0.000    40.208    vga_display0/flocation0/state_reg[1]_i_114_n_0
+    SLICE_X11Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    40.261 r  vga_display0/flocation0/state_reg[1]_i_58/CO[3]
+                         net (fo=1, routed)           0.000    40.261    vga_display0/flocation0/state_reg[1]_i_58_n_0
+    SLICE_X11Y64         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    40.400 r  vga_display0/flocation0/state_reg[1]_i_24/CO[0]
+                         net (fo=21, routed)          0.791    41.190    vga_display0/m0/x[6]
+    SLICE_X12Y60         LUT4 (Prop_lut4_I2_O)        0.131    41.321 r  vga_display0/m0/state_reg[1]_i_215/O
+                         net (fo=1, routed)           0.000    41.321    vga_display0/flocation0/state_reg[1]_i_296[0]
+    SLICE_X12Y60         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    41.577 r  vga_display0/flocation0/state_reg[1]_i_119/CO[3]
+                         net (fo=1, routed)           0.000    41.577    vga_display0/flocation0/state_reg[1]_i_119_n_0
+    SLICE_X12Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    41.631 r  vga_display0/flocation0/state_reg[1]_i_60/CO[3]
+                         net (fo=1, routed)           0.000    41.631    vga_display0/flocation0/state_reg[1]_i_60_n_0
+    SLICE_X12Y62         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    41.764 r  vga_display0/flocation0/state_reg[1]_i_25/CO[0]
+                         net (fo=21, routed)          0.845    42.609    vga_display0/flocation0/x[5]
+    SLICE_X11Y57         LUT3 (Prop_lut3_I0_O)        0.128    42.737 r  vga_display0/flocation0/state_reg[1]_i_425/O
+                         net (fo=1, routed)           0.000    42.737    vga_display0/flocation0/state_reg[1]_i_425_n_0
+    SLICE_X11Y57         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    43.004 r  vga_display0/flocation0/state_reg[1]_i_293/CO[3]
+                         net (fo=1, routed)           0.000    43.004    vga_display0/flocation0/state_reg[1]_i_293_n_0
+    SLICE_X11Y58         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    43.057 r  vga_display0/flocation0/state_reg[1]_i_187/CO[3]
+                         net (fo=1, routed)           0.000    43.057    vga_display0/flocation0/state_reg[1]_i_187_n_0
+    SLICE_X11Y59         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    43.110 r  vga_display0/flocation0/state_reg[1]_i_106/CO[3]
+                         net (fo=1, routed)           0.000    43.110    vga_display0/flocation0/state_reg[1]_i_106_n_0
+    SLICE_X11Y60         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    43.249 r  vga_display0/flocation0/state_reg[1]_i_50/CO[0]
+                         net (fo=20, routed)          0.867    44.116    vga_display0/flocation0/x[4]
+    SLICE_X12Y55         LUT3 (Prop_lut3_I0_O)        0.131    44.247 r  vga_display0/flocation0/state_reg[1]_i_429/O
+                         net (fo=1, routed)           0.000    44.247    vga_display0/flocation0/state_reg[1]_i_429_n_0
+    SLICE_X12Y55         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    44.503 r  vga_display0/flocation0/state_reg[1]_i_298/CO[3]
+                         net (fo=1, routed)           0.000    44.503    vga_display0/flocation0/state_reg[1]_i_298_n_0
+    SLICE_X12Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    44.557 r  vga_display0/flocation0/state_reg[1]_i_192/CO[3]
+                         net (fo=1, routed)           0.000    44.557    vga_display0/flocation0/state_reg[1]_i_192_n_0
+    SLICE_X12Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    44.611 r  vga_display0/flocation0/state_reg[1]_i_108/CO[3]
+                         net (fo=1, routed)           0.000    44.611    vga_display0/flocation0/state_reg[1]_i_108_n_0
+    SLICE_X12Y58         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    44.744 r  vga_display0/flocation0/state_reg[1]_i_51/CO[0]
+                         net (fo=22, routed)          0.811    45.555    vga_display0/flocation0/x[3]
+    SLICE_X11Y53         LUT2 (Prop_lut2_I1_O)        0.128    45.683 r  vga_display0/flocation0/state_reg[1]_i_433/O
+                         net (fo=1, routed)           0.000    45.683    vga_display0/flocation0/state_reg[1]_i_433_n_0
+    SLICE_X11Y53         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267    45.950 r  vga_display0/flocation0/state_reg[1]_i_303/CO[3]
+                         net (fo=1, routed)           0.000    45.950    vga_display0/flocation0/state_reg[1]_i_303_n_0
+    SLICE_X11Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    46.003 r  vga_display0/flocation0/state_reg[1]_i_197/CO[3]
+                         net (fo=1, routed)           0.000    46.003    vga_display0/flocation0/state_reg[1]_i_197_n_0
+    SLICE_X11Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    46.056 r  vga_display0/flocation0/state_reg[1]_i_110/CO[3]
+                         net (fo=1, routed)           0.000    46.056    vga_display0/flocation0/state_reg[1]_i_110_n_0
+    SLICE_X11Y56         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.139    46.195 r  vga_display0/flocation0/state_reg[1]_i_52/CO[0]
+                         net (fo=19, routed)          0.504    46.698    vga_display0/flocation0/x[2]
+    SLICE_X10Y55         LUT2 (Prop_lut2_I1_O)        0.131    46.829 r  vga_display0/flocation0/state_reg[1]_i_437/O
+                         net (fo=1, routed)           0.000    46.829    vga_display0/flocation0/state_reg[1]_i_437_n_0
+    SLICE_X10Y55         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    47.085 r  vga_display0/flocation0/state_reg[1]_i_308/CO[3]
+                         net (fo=1, routed)           0.000    47.085    vga_display0/flocation0/state_reg[1]_i_308_n_0
+    SLICE_X10Y56         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    47.139 r  vga_display0/flocation0/state_reg[1]_i_202/CO[3]
+                         net (fo=1, routed)           0.000    47.139    vga_display0/flocation0/state_reg[1]_i_202_n_0
+    SLICE_X10Y57         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    47.193 r  vga_display0/flocation0/state_reg[1]_i_112/CO[3]
+                         net (fo=1, routed)           0.000    47.193    vga_display0/flocation0/state_reg[1]_i_112_n_0
+    SLICE_X10Y58         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    47.326 r  vga_display0/flocation0/state_reg[1]_i_53/CO[0]
+                         net (fo=19, routed)          0.648    47.975    vga_display0/flocation0/x[1]
+    SLICE_X10Y61         LUT3 (Prop_lut3_I0_O)        0.128    48.103 r  vga_display0/flocation0/state_reg[1]_i_286/O
+                         net (fo=1, routed)           0.000    48.103    vga_display0/flocation0/state_reg[1]_i_286_n_0
+    SLICE_X10Y61         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    48.359 r  vga_display0/flocation0/state_reg[1]_i_180/CO[3]
+                         net (fo=1, routed)           0.000    48.359    vga_display0/flocation0/state_reg[1]_i_180_n_0
+    SLICE_X10Y62         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    48.492 r  vga_display0/flocation0/state_reg[1]_i_101/CO[0]
+                         net (fo=19, routed)          0.878    49.370    vga_display0/flocation0/x[0]
+    SLICE_X16Y59         LUT3 (Prop_lut3_I0_O)        0.128    49.498 r  vga_display0/flocation0/state_reg[1]_i_421/O
+                         net (fo=1, routed)           0.000    49.498    vga_display0/flocation0/state_reg[1]_i_421_n_0
+    SLICE_X16Y59         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    49.754 r  vga_display0/flocation0/state_reg[1]_i_288/CO[3]
+                         net (fo=1, routed)           0.000    49.754    vga_display0/flocation0/state_reg[1]_i_288_n_0
+    SLICE_X16Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    49.808 r  vga_display0/flocation0/state_reg[1]_i_182/CO[3]
+                         net (fo=1, routed)           0.000    49.808    vga_display0/flocation0/state_reg[1]_i_182_n_0
+    SLICE_X16Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054    49.862 r  vga_display0/flocation0/state_reg[1]_i_102/CO[3]
+                         net (fo=3, routed)           0.581    50.443    vga_display0/flocation0/x_0[0]
+    SLICE_X17Y59         LUT2 (Prop_lut2_I0_O)        0.043    50.486 r  vga_display0/flocation0/state_reg[1]_i_104/O
+                         net (fo=1, routed)           0.000    50.486    vga_display0/flocation0/state_reg[1]_i_104_n_0
+    SLICE_X17Y59         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.195    50.681 r  vga_display0/flocation0/state_reg[1]_i_49/CO[3]
+                         net (fo=1, routed)           0.000    50.681    vga_display0/flocation0/state_reg[1]_i_49_n_0
+    SLICE_X17Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    50.734 r  vga_display0/flocation0/state_reg[1]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    50.734    vga_display0/flocation0/state_reg[1]_i_23_n_0
+    SLICE_X17Y61         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    50.900 r  vga_display0/flocation0/state_reg[1]_i_8/O[1]
+                         net (fo=9, routed)           0.526    51.426    vga_display0/flocation0/state_reg[1]_i_8_n_6
+    SLICE_X15Y58         LUT2 (Prop_lut2_I0_O)        0.123    51.549 r  vga_display0/flocation0/state_reg[1]_i_63/O
+                         net (fo=2, routed)           0.459    52.008    vga_display0/flocation0/state_reg[1]_i_63_n_0
+    SLICE_X14Y58         LUT4 (Prop_lut4_I0_O)        0.043    52.051 r  vga_display0/flocation0/state_reg[1]_i_66/O
+                         net (fo=1, routed)           0.000    52.051    vga_display0/flocation0/state_reg[1]_i_66_n_0
+    SLICE_X14Y58         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.183    52.234 r  vga_display0/flocation0/state_reg[1]_i_29/CO[3]
+                         net (fo=1, routed)           0.000    52.234    vga_display0/flocation0/state_reg[1]_i_29_n_0
+    SLICE_X14Y59         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    52.367 r  vga_display0/flocation0/state_reg[1]_i_9/CO[0]
+                         net (fo=4, routed)           0.453    52.820    vga_display0/flocation0/state_reg[1]_i_9_n_3
+    SLICE_X13Y59         LUT6 (Prop_lut6_I1_O)        0.128    52.948 r  vga_display0/flocation0/state_reg[1]_i_18/O
+                         net (fo=4, routed)           0.400    53.347    vga_display0/flocation0/index_x[1]
+    SLICE_X14Y57         MUXF7 (Prop_muxf7_S_O)       0.154    53.501 r  vga_display0/flocation0/state_reg[1]_i_7/O
+                         net (fo=1, routed)           0.462    53.963    vga_display0/flocation0/state_reg[1]_i_7_n_0
+    SLICE_X13Y57         LUT5 (Prop_lut5_I4_O)        0.123    54.086 r  vga_display0/flocation0/state_reg[1]_i_1/O
+                         net (fo=1, routed)           0.445    54.531    vga_display0/map0/D[1]
+    SLICE_X8Y60          LDCE                                         r  vga_display0/map0/state_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/ballbounce0/y_pixel_offset_reg_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ENARDEN
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.693ns  (logic 4.885ns (56.197%)  route 3.808ns (43.803%))
+  Logic Levels:           10  (CARRY4=3 DSP48E1=2 FDRE=1 LUT2=3 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y58         FDRE                         0.000     0.000 r  m0/ballbounce0/y_pixel_offset_reg_reg/C
+    SLICE_X13Y58         FDRE (Prop_fdre_C_Q)         0.223     0.223 r  m0/ballbounce0/y_pixel_offset_reg_reg/Q
+                         net (fo=15, routed)          0.783     1.006    vga_display0/m0/y_pixel_offset_reg
+    SLICE_X9Y52          LUT6 (Prop_lut6_I3_O)        0.043     1.049 r  vga_display0/m0/addr_ball2_i_11/O
+                         net (fo=5, routed)           0.575     1.624    vga_display0/m0/addr_ball2_i_11_n_0
+    SLICE_X11Y52         LUT2 (Prop_lut2_I1_O)        0.043     1.667 r  vga_display0/m0/addr_ball2_i_5/O
+                         net (fo=1, routed)           0.337     2.004    vga_display0/m0_n_31
+    DSP48_X0Y20          DSP48E1 (Prop_dsp48e1_A[5]_PCOUT[47])
+                                                      2.879     4.883 r  vga_display0/addr_ball2/PCOUT[47]
+                         net (fo=1, routed)           0.000     4.883    vga_display0/addr_ball2_n_106
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.077     5.960 r  vga_display0/addr_ball/P[0]
+                         net (fo=1, routed)           0.643     6.602    m0/update_xy0/P[0]
+    SLICE_X8Y51          LUT2 (Prop_lut2_I1_O)        0.043     6.645 r  m0/update_xy0/addr_ball__7_carry_i_4/O
+                         net (fo=1, routed)           0.000     6.645    vga_display0/rom0_0[0]
+    SLICE_X8Y51          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.246     6.891 r  vga_display0/addr_ball__7_carry/CO[3]
+                         net (fo=1, routed)           0.000     6.891    vga_display0/addr_ball__7_carry_n_0
+    SLICE_X8Y52          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     6.945 r  vga_display0/addr_ball__7_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     6.945    vga_display0/addr_ball__7_carry__0_n_0
+    SLICE_X8Y53          CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.157     7.102 f  vga_display0/addr_ball__7_carry__1/O[3]
+                         net (fo=4, routed)           0.934     8.036    vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/addra[11]
+    SLICE_X9Y63          LUT2 (Prop_lut2_I1_O)        0.120     8.156 r  vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram_i_1/O
+                         net (fo=1, routed)           0.537     8.693    vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram_i_1_n_0
+    RAMB18_X0Y26         RAMB18E1                                     r  vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ENARDEN
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/ballbounce0/y_pixel_offset_reg_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[11]
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.091ns  (logic 4.716ns (58.287%)  route 3.375ns (41.713%))
+  Logic Levels:           9  (CARRY4=3 DSP48E1=2 FDRE=1 LUT2=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y58         FDRE                         0.000     0.000 r  m0/ballbounce0/y_pixel_offset_reg_reg/C
+    SLICE_X13Y58         FDRE (Prop_fdre_C_Q)         0.223     0.223 r  m0/ballbounce0/y_pixel_offset_reg_reg/Q
+                         net (fo=15, routed)          0.783     1.006    vga_display0/m0/y_pixel_offset_reg
+    SLICE_X9Y52          LUT6 (Prop_lut6_I3_O)        0.043     1.049 r  vga_display0/m0/addr_ball2_i_11/O
+                         net (fo=5, routed)           0.575     1.624    vga_display0/m0/addr_ball2_i_11_n_0
+    SLICE_X11Y52         LUT2 (Prop_lut2_I1_O)        0.043     1.667 r  vga_display0/m0/addr_ball2_i_5/O
+                         net (fo=1, routed)           0.337     2.004    vga_display0/m0_n_31
+    DSP48_X0Y20          DSP48E1 (Prop_dsp48e1_A[5]_PCOUT[47])
+                                                      2.879     4.883 r  vga_display0/addr_ball2/PCOUT[47]
+                         net (fo=1, routed)           0.000     4.883    vga_display0/addr_ball2_n_106
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.077     5.960 r  vga_display0/addr_ball/P[0]
+                         net (fo=1, routed)           0.643     6.602    m0/update_xy0/P[0]
+    SLICE_X8Y51          LUT2 (Prop_lut2_I1_O)        0.043     6.645 r  m0/update_xy0/addr_ball__7_carry_i_4/O
+                         net (fo=1, routed)           0.000     6.645    vga_display0/rom0_0[0]
+    SLICE_X8Y51          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.246     6.891 r  vga_display0/addr_ball__7_carry/CO[3]
+                         net (fo=1, routed)           0.000     6.891    vga_display0/addr_ball__7_carry_n_0
+    SLICE_X8Y52          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     6.945 r  vga_display0/addr_ball__7_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     6.945    vga_display0/addr_ball__7_carry__0_n_0
+    SLICE_X8Y53          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     7.053 r  vga_display0/addr_ball__7_carry__1/O[0]
+                         net (fo=3, routed)           1.037     8.091    vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/addra[8]
+    RAMB18_X0Y26         RAMB18E1                                     r  vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[11]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/ballbounce0/y_pixel_offset_reg_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13]
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.086ns  (logic 4.720ns (58.370%)  route 3.366ns (41.630%))
+  Logic Levels:           9  (CARRY4=3 DSP48E1=2 FDRE=1 LUT2=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y58         FDRE                         0.000     0.000 r  m0/ballbounce0/y_pixel_offset_reg_reg/C
+    SLICE_X13Y58         FDRE (Prop_fdre_C_Q)         0.223     0.223 r  m0/ballbounce0/y_pixel_offset_reg_reg/Q
+                         net (fo=15, routed)          0.783     1.006    vga_display0/m0/y_pixel_offset_reg
+    SLICE_X9Y52          LUT6 (Prop_lut6_I3_O)        0.043     1.049 r  vga_display0/m0/addr_ball2_i_11/O
+                         net (fo=5, routed)           0.575     1.624    vga_display0/m0/addr_ball2_i_11_n_0
+    SLICE_X11Y52         LUT2 (Prop_lut2_I1_O)        0.043     1.667 r  vga_display0/m0/addr_ball2_i_5/O
+                         net (fo=1, routed)           0.337     2.004    vga_display0/m0_n_31
+    DSP48_X0Y20          DSP48E1 (Prop_dsp48e1_A[5]_PCOUT[47])
+                                                      2.879     4.883 r  vga_display0/addr_ball2/PCOUT[47]
+                         net (fo=1, routed)           0.000     4.883    vga_display0/addr_ball2_n_106
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.077     5.960 r  vga_display0/addr_ball/P[0]
+                         net (fo=1, routed)           0.643     6.602    m0/update_xy0/P[0]
+    SLICE_X8Y51          LUT2 (Prop_lut2_I1_O)        0.043     6.645 r  m0/update_xy0/addr_ball__7_carry_i_4/O
+                         net (fo=1, routed)           0.000     6.645    vga_display0/rom0_0[0]
+    SLICE_X8Y51          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.246     6.891 r  vga_display0/addr_ball__7_carry/CO[3]
+                         net (fo=1, routed)           0.000     6.891    vga_display0/addr_ball__7_carry_n_0
+    SLICE_X8Y52          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     6.945 r  vga_display0/addr_ball__7_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     6.945    vga_display0/addr_ball__7_carry__0_n_0
+    SLICE_X8Y53          CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.112     7.057 r  vga_display0/addr_ball__7_carry__1/O[2]
+                         net (fo=3, routed)           1.029     8.086    vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/addra[10]
+    RAMB18_X0Y26         RAMB18E1                                     r  vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/ballbounce0/y_pixel_offset_reg_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[8]
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.084ns  (logic 4.719ns (58.378%)  route 3.365ns (41.622%))
+  Logic Levels:           8  (CARRY4=2 DSP48E1=2 FDRE=1 LUT2=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y58         FDRE                         0.000     0.000 r  m0/ballbounce0/y_pixel_offset_reg_reg/C
+    SLICE_X13Y58         FDRE (Prop_fdre_C_Q)         0.223     0.223 r  m0/ballbounce0/y_pixel_offset_reg_reg/Q
+                         net (fo=15, routed)          0.783     1.006    vga_display0/m0/y_pixel_offset_reg
+    SLICE_X9Y52          LUT6 (Prop_lut6_I3_O)        0.043     1.049 r  vga_display0/m0/addr_ball2_i_11/O
+                         net (fo=5, routed)           0.575     1.624    vga_display0/m0/addr_ball2_i_11_n_0
+    SLICE_X11Y52         LUT2 (Prop_lut2_I1_O)        0.043     1.667 r  vga_display0/m0/addr_ball2_i_5/O
+                         net (fo=1, routed)           0.337     2.004    vga_display0/m0_n_31
+    DSP48_X0Y20          DSP48E1 (Prop_dsp48e1_A[5]_PCOUT[47])
+                                                      2.879     4.883 r  vga_display0/addr_ball2/PCOUT[47]
+                         net (fo=1, routed)           0.000     4.883    vga_display0/addr_ball2_n_106
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.077     5.960 r  vga_display0/addr_ball/P[0]
+                         net (fo=1, routed)           0.643     6.602    m0/update_xy0/P[0]
+    SLICE_X8Y51          LUT2 (Prop_lut2_I1_O)        0.043     6.645 r  m0/update_xy0/addr_ball__7_carry_i_4/O
+                         net (fo=1, routed)           0.000     6.645    vga_display0/rom0_0[0]
+    SLICE_X8Y51          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.246     6.891 r  vga_display0/addr_ball__7_carry/CO[3]
+                         net (fo=1, routed)           0.000     6.891    vga_display0/addr_ball__7_carry_n_0
+    SLICE_X8Y52          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.165     7.056 r  vga_display0/addr_ball__7_carry__0/O[1]
+                         net (fo=3, routed)           1.027     8.084    vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/addra[5]
+    RAMB18_X0Y26         RAMB18E1                                     r  vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[8]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/ballbounce0/y_pixel_offset_reg_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[10]
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.077ns  (logic 4.705ns (58.255%)  route 3.372ns (41.745%))
+  Logic Levels:           8  (CARRY4=2 DSP48E1=2 FDRE=1 LUT2=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y58         FDRE                         0.000     0.000 r  m0/ballbounce0/y_pixel_offset_reg_reg/C
+    SLICE_X13Y58         FDRE (Prop_fdre_C_Q)         0.223     0.223 r  m0/ballbounce0/y_pixel_offset_reg_reg/Q
+                         net (fo=15, routed)          0.783     1.006    vga_display0/m0/y_pixel_offset_reg
+    SLICE_X9Y52          LUT6 (Prop_lut6_I3_O)        0.043     1.049 r  vga_display0/m0/addr_ball2_i_11/O
+                         net (fo=5, routed)           0.575     1.624    vga_display0/m0/addr_ball2_i_11_n_0
+    SLICE_X11Y52         LUT2 (Prop_lut2_I1_O)        0.043     1.667 r  vga_display0/m0/addr_ball2_i_5/O
+                         net (fo=1, routed)           0.337     2.004    vga_display0/m0_n_31
+    DSP48_X0Y20          DSP48E1 (Prop_dsp48e1_A[5]_PCOUT[47])
+                                                      2.879     4.883 r  vga_display0/addr_ball2/PCOUT[47]
+                         net (fo=1, routed)           0.000     4.883    vga_display0/addr_ball2_n_106
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.077     5.960 r  vga_display0/addr_ball/P[0]
+                         net (fo=1, routed)           0.643     6.602    m0/update_xy0/P[0]
+    SLICE_X8Y51          LUT2 (Prop_lut2_I1_O)        0.043     6.645 r  m0/update_xy0/addr_ball__7_carry_i_4/O
+                         net (fo=1, routed)           0.000     6.645    vga_display0/rom0_0[0]
+    SLICE_X8Y51          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.246     6.891 r  vga_display0/addr_ball__7_carry/CO[3]
+                         net (fo=1, routed)           0.000     6.891    vga_display0/addr_ball__7_carry_n_0
+    SLICE_X8Y52          CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.151     7.042 r  vga_display0/addr_ball__7_carry__0/O[3]
+                         net (fo=3, routed)           1.034     8.077    vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/addra[7]
+    RAMB18_X0Y26         RAMB18E1                                     r  vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[10]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/ballbounce0/y_pixel_offset_reg_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[12]
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.028ns  (logic 4.773ns (59.456%)  route 3.255ns (40.544%))
+  Logic Levels:           9  (CARRY4=3 DSP48E1=2 FDRE=1 LUT2=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y58         FDRE                         0.000     0.000 r  m0/ballbounce0/y_pixel_offset_reg_reg/C
+    SLICE_X13Y58         FDRE (Prop_fdre_C_Q)         0.223     0.223 r  m0/ballbounce0/y_pixel_offset_reg_reg/Q
+                         net (fo=15, routed)          0.783     1.006    vga_display0/m0/y_pixel_offset_reg
+    SLICE_X9Y52          LUT6 (Prop_lut6_I3_O)        0.043     1.049 r  vga_display0/m0/addr_ball2_i_11/O
+                         net (fo=5, routed)           0.575     1.624    vga_display0/m0/addr_ball2_i_11_n_0
+    SLICE_X11Y52         LUT2 (Prop_lut2_I1_O)        0.043     1.667 r  vga_display0/m0/addr_ball2_i_5/O
+                         net (fo=1, routed)           0.337     2.004    vga_display0/m0_n_31
+    DSP48_X0Y20          DSP48E1 (Prop_dsp48e1_A[5]_PCOUT[47])
+                                                      2.879     4.883 r  vga_display0/addr_ball2/PCOUT[47]
+                         net (fo=1, routed)           0.000     4.883    vga_display0/addr_ball2_n_106
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.077     5.960 r  vga_display0/addr_ball/P[0]
+                         net (fo=1, routed)           0.643     6.602    m0/update_xy0/P[0]
+    SLICE_X8Y51          LUT2 (Prop_lut2_I1_O)        0.043     6.645 r  m0/update_xy0/addr_ball__7_carry_i_4/O
+                         net (fo=1, routed)           0.000     6.645    vga_display0/rom0_0[0]
+    SLICE_X8Y51          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.246     6.891 r  vga_display0/addr_ball__7_carry/CO[3]
+                         net (fo=1, routed)           0.000     6.891    vga_display0/addr_ball__7_carry_n_0
+    SLICE_X8Y52          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     6.945 r  vga_display0/addr_ball__7_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     6.945    vga_display0/addr_ball__7_carry__0_n_0
+    SLICE_X8Y53          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.165     7.110 r  vga_display0/addr_ball__7_carry__1/O[1]
+                         net (fo=3, routed)           0.917     8.028    vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/addra[9]
+    RAMB18_X0Y26         RAMB18E1                                     r  vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[12]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/ballbounce0/y_pixel_offset_reg_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[9]
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.985ns  (logic 4.666ns (58.433%)  route 3.319ns (41.567%))
+  Logic Levels:           8  (CARRY4=2 DSP48E1=2 FDRE=1 LUT2=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y58         FDRE                         0.000     0.000 r  m0/ballbounce0/y_pixel_offset_reg_reg/C
+    SLICE_X13Y58         FDRE (Prop_fdre_C_Q)         0.223     0.223 r  m0/ballbounce0/y_pixel_offset_reg_reg/Q
+                         net (fo=15, routed)          0.783     1.006    vga_display0/m0/y_pixel_offset_reg
+    SLICE_X9Y52          LUT6 (Prop_lut6_I3_O)        0.043     1.049 r  vga_display0/m0/addr_ball2_i_11/O
+                         net (fo=5, routed)           0.575     1.624    vga_display0/m0/addr_ball2_i_11_n_0
+    SLICE_X11Y52         LUT2 (Prop_lut2_I1_O)        0.043     1.667 r  vga_display0/m0/addr_ball2_i_5/O
+                         net (fo=1, routed)           0.337     2.004    vga_display0/m0_n_31
+    DSP48_X0Y20          DSP48E1 (Prop_dsp48e1_A[5]_PCOUT[47])
+                                                      2.879     4.883 r  vga_display0/addr_ball2/PCOUT[47]
+                         net (fo=1, routed)           0.000     4.883    vga_display0/addr_ball2_n_106
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.077     5.960 r  vga_display0/addr_ball/P[0]
+                         net (fo=1, routed)           0.643     6.602    m0/update_xy0/P[0]
+    SLICE_X8Y51          LUT2 (Prop_lut2_I1_O)        0.043     6.645 r  m0/update_xy0/addr_ball__7_carry_i_4/O
+                         net (fo=1, routed)           0.000     6.645    vga_display0/rom0_0[0]
+    SLICE_X8Y51          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.246     6.891 r  vga_display0/addr_ball__7_carry/CO[3]
+                         net (fo=1, routed)           0.000     6.891    vga_display0/addr_ball__7_carry_n_0
+    SLICE_X8Y52          CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.112     7.003 r  vga_display0/addr_ball__7_carry__0/O[2]
+                         net (fo=3, routed)           0.982     7.985    vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/addra[6]
+    RAMB18_X0Y26         RAMB18E1                                     r  vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[9]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/ballbounce0/y_pixel_offset_reg_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[11]
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.957ns  (logic 4.716ns (59.272%)  route 3.241ns (40.728%))
+  Logic Levels:           9  (CARRY4=3 DSP48E1=2 FDRE=1 LUT2=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y58         FDRE                         0.000     0.000 r  m0/ballbounce0/y_pixel_offset_reg_reg/C
+    SLICE_X13Y58         FDRE (Prop_fdre_C_Q)         0.223     0.223 r  m0/ballbounce0/y_pixel_offset_reg_reg/Q
+                         net (fo=15, routed)          0.783     1.006    vga_display0/m0/y_pixel_offset_reg
+    SLICE_X9Y52          LUT6 (Prop_lut6_I3_O)        0.043     1.049 r  vga_display0/m0/addr_ball2_i_11/O
+                         net (fo=5, routed)           0.575     1.624    vga_display0/m0/addr_ball2_i_11_n_0
+    SLICE_X11Y52         LUT2 (Prop_lut2_I1_O)        0.043     1.667 r  vga_display0/m0/addr_ball2_i_5/O
+                         net (fo=1, routed)           0.337     2.004    vga_display0/m0_n_31
+    DSP48_X0Y20          DSP48E1 (Prop_dsp48e1_A[5]_PCOUT[47])
+                                                      2.879     4.883 r  vga_display0/addr_ball2/PCOUT[47]
+                         net (fo=1, routed)           0.000     4.883    vga_display0/addr_ball2_n_106
+    DSP48_X0Y21          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.077     5.960 r  vga_display0/addr_ball/P[0]
+                         net (fo=1, routed)           0.643     6.602    m0/update_xy0/P[0]
+    SLICE_X8Y51          LUT2 (Prop_lut2_I1_O)        0.043     6.645 r  m0/update_xy0/addr_ball__7_carry_i_4/O
+                         net (fo=1, routed)           0.000     6.645    vga_display0/rom0_0[0]
+    SLICE_X8Y51          CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.246     6.891 r  vga_display0/addr_ball__7_carry/CO[3]
+                         net (fo=1, routed)           0.000     6.891    vga_display0/addr_ball__7_carry_n_0
+    SLICE_X8Y52          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     6.945 r  vga_display0/addr_ball__7_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     6.945    vga_display0/addr_ball__7_carry__0_n_0
+    SLICE_X8Y53          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     7.053 r  vga_display0/addr_ball__7_carry__1/O[0]
+                         net (fo=3, routed)           0.903     7.957    vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]
+    RAMB36_X0Y12         RAMB36E1                                     r  vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[11]
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 in0/F0_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            in0/left_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.233ns  (logic 0.128ns (54.840%)  route 0.105ns (45.160%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y50          FDRE                         0.000     0.000 r  in0/F0_reg/C
+    SLICE_X4Y50          FDRE (Prop_fdre_C_Q)         0.100     0.100 f  in0/F0_reg/Q
+                         net (fo=4, routed)           0.105     0.205    in0/F0_reg_n_0
+    SLICE_X5Y50          LUT6 (Prop_lut6_I0_O)        0.028     0.233 r  in0/left_i_1/O
+                         net (fo=1, routed)           0.000     0.233    in0/left_i_1_n_0
+    SLICE_X5Y50          FDRE                                         r  in0/left_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 in0/F0_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            in0/right_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.234ns  (logic 0.128ns (54.607%)  route 0.106ns (45.394%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y50          FDRE                         0.000     0.000 r  in0/F0_reg/C
+    SLICE_X4Y50          FDRE (Prop_fdre_C_Q)         0.100     0.100 f  in0/F0_reg/Q
+                         net (fo=4, routed)           0.106     0.206    in0/F0_reg_n_0
+    SLICE_X5Y50          LUT6 (Prop_lut6_I1_O)        0.028     0.234 r  in0/right_i_1/O
+                         net (fo=1, routed)           0.000     0.234    in0/right_i_1_n_0
+    SLICE_X5Y50          FDRE                                         r  in0/right_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 vga_display0/m0/v_count_reg[7]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            vga_display0/m0/row_addr_reg[8]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.235ns  (logic 0.146ns (62.201%)  route 0.089ns (37.799%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y53          FDCE                         0.000     0.000 r  vga_display0/m0/v_count_reg[7]/C
+    SLICE_X2Y53          FDCE (Prop_fdce_C_Q)         0.118     0.118 r  vga_display0/m0/v_count_reg[7]/Q
+                         net (fo=10, routed)          0.089     0.207    vga_display0/m0/v_count_reg_n_0_[7]
+    SLICE_X3Y53          LUT6 (Prop_lut6_I5_O)        0.028     0.235 r  vga_display0/m0/row_addr[8]_i_1/O
+                         net (fo=1, routed)           0.000     0.235    vga_display0/m0/row[8]
+    SLICE_X3Y53          FDRE                                         r  vga_display0/m0/row_addr_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 in0/ps2_clk_sync_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            in0/ps2_clk_sync_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.250ns  (logic 0.100ns (39.930%)  route 0.150ns (60.070%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y51          FDRE                         0.000     0.000 r  in0/ps2_clk_sync_reg[0]/C
+    SLICE_X0Y51          FDRE (Prop_fdre_C_Q)         0.100     0.100 r  in0/ps2_clk_sync_reg[0]/Q
+                         net (fo=1, routed)           0.150     0.250    in0/ps2_clk_sync[0]
+    SLICE_X0Y51          FDRE                                         r  in0/ps2_clk_sync_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 vga_display0/m0/v_count_reg[6]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            vga_display0/m0/row_addr_reg[7]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.254ns  (logic 0.128ns (50.295%)  route 0.126ns (49.705%))
+  Logic Levels:           2  (FDCE=1 LUT5=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y51          FDCE                         0.000     0.000 r  vga_display0/m0/v_count_reg[6]/C
+    SLICE_X3Y51          FDCE (Prop_fdce_C_Q)         0.100     0.100 r  vga_display0/m0/v_count_reg[6]/Q
+                         net (fo=12, routed)          0.126     0.226    vga_display0/m0/v_count_reg_n_0_[6]
+    SLICE_X3Y52          LUT5 (Prop_lut5_I4_O)        0.028     0.254 r  vga_display0/m0/row_addr[7]_i_1/O
+                         net (fo=1, routed)           0.000     0.254    vga_display0/m0/row_addr[7]_i_1_n_0
+    SLICE_X3Y52          FDRE                                         r  vga_display0/m0/row_addr_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 vga_display0/m0/v_count_reg[2]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            vga_display0/m0/v_count_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.257ns  (logic 0.128ns (49.886%)  route 0.129ns (50.114%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y51          FDCE                         0.000     0.000 r  vga_display0/m0/v_count_reg[2]/C
+    SLICE_X3Y51          FDCE (Prop_fdce_C_Q)         0.100     0.100 r  vga_display0/m0/v_count_reg[2]/Q
+                         net (fo=17, routed)          0.129     0.229    vga_display0/m0/v_count_reg_n_0_[2]
+    SLICE_X3Y51          LUT6 (Prop_lut6_I1_O)        0.028     0.257 r  vga_display0/m0/v_count[2]_i_1/O
+                         net (fo=1, routed)           0.000     0.257    vga_display0/m0/v_count[2]_i_1_n_0
+    SLICE_X3Y51          FDCE                                         r  vga_display0/m0/v_count_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 in0/count_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            in0/count_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.263ns  (logic 0.155ns (58.951%)  route 0.108ns (41.049%))
+  Logic Levels:           2  (FDRE=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y50          FDRE                         0.000     0.000 r  in0/count_reg[3]/C
+    SLICE_X3Y50          FDRE (Prop_fdre_C_Q)         0.091     0.091 f  in0/count_reg[3]/Q
+                         net (fo=15, routed)          0.108     0.199    in0/count[3]
+    SLICE_X3Y50          LUT4 (Prop_lut4_I1_O)        0.064     0.263 r  in0/count[1]_i_1/O
+                         net (fo=1, routed)           0.000     0.263    in0/count[1]_i_1_n_0
+    SLICE_X3Y50          FDRE                                         r  in0/count_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 in0/count_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            in0/count_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.264ns  (logic 0.157ns (59.485%)  route 0.107ns (40.515%))
+  Logic Levels:           2  (FDRE=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y50          FDRE                         0.000     0.000 r  in0/count_reg[3]/C
+    SLICE_X3Y50          FDRE (Prop_fdre_C_Q)         0.091     0.091 f  in0/count_reg[3]/Q
+                         net (fo=15, routed)          0.107     0.198    in0/count[3]
+    SLICE_X3Y50          LUT4 (Prop_lut4_I1_O)        0.066     0.264 r  in0/count[0]_i_1/O
+                         net (fo=1, routed)           0.000     0.264    in0/count[0]_i_1_n_0
+    SLICE_X3Y50          FDRE                                         r  in0/count_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/ballbounce0/y_pixel_offset_reg_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            m0/ballbounce0/y_pixel_offset_reg_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.265ns  (logic 0.128ns (48.358%)  route 0.137ns (51.642%))
+  Logic Levels:           2  (FDRE=1 LUT2=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y58         FDRE                         0.000     0.000 r  m0/ballbounce0/y_pixel_offset_reg_reg/C
+    SLICE_X13Y58         FDRE (Prop_fdre_C_Q)         0.100     0.100 r  m0/ballbounce0/y_pixel_offset_reg_reg/Q
+                         net (fo=15, routed)          0.137     0.237    m0/ballbounce0/y_pixel_offset_reg_reg_0
+    SLICE_X13Y58         LUT2 (Prop_lut2_I1_O)        0.028     0.265 r  m0/ballbounce0/y_pixel_offset_reg_i_1/O
+                         net (fo=1, routed)           0.000     0.265    m0/ballbounce0/y_pixel_offset_reg_i_1_n_0
+    SLICE_X13Y58         FDRE                                         r  m0/ballbounce0/y_pixel_offset_reg_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 vga_display0/m0/h_count_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            vga_display0/m0/h_count_reg[7]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.267ns  (logic 0.128ns (47.930%)  route 0.139ns (52.070%))
+  Logic Levels:           2  (FDRE=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y52          FDRE                         0.000     0.000 r  vga_display0/m0/h_count_reg[6]/C
+    SLICE_X5Y52          FDRE (Prop_fdre_C_Q)         0.100     0.100 r  vga_display0/m0/h_count_reg[6]/Q
+                         net (fo=10, routed)          0.139     0.239    vga_display0/m0/h_count_reg[6]
+    SLICE_X4Y52          LUT4 (Prop_lut4_I2_O)        0.028     0.267 r  vga_display0/m0/h_count[7]_i_1/O
+                         net (fo=1, routed)           0.000     0.267    vga_display0/m0/h_count[7]_i_1_n_0
+    SLICE_X4Y52          FDRE                                         r  vga_display0/m0/h_count_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
