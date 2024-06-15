@@ -140,7 +140,14 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/top.dcp
   read_ip -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball/ball.xci
-  read_ip -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_new_gameover/output_new_gameover.xci
+  read_ip -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball62/ball62.xci
+  read_ip -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball80/ball80.xci
+  read_ip -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball86/ball86.xci
+  read_ip -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball90/ball90.xci
+  read_ip -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball92/ball92.xci
+  read_ip -quiet c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_vic_1/output_vic.xci
+  read_ip -quiet c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_new_gameover_1/output_new_gameover.xci
+  read_edif C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/P2S.edf
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc
 OPTRACE "read constraints: implementation" END { }

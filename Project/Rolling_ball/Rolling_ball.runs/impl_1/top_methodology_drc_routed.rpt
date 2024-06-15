@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Thu Jun 13 20:58:12 2024
+| Date         : Sat Jun 15 15:32:05 2024
 | Host         : beastern running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 127
+             Violations found: 346
 +-----------+------------------+--------------------------------+------------+
 | Rule      | Severity         | Description                    | Violations |
 +-----------+------------------+--------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 119        |
-| LUTAR-1   | Warning          | LUT drives async reset alert   | 2          |
-| TIMING-20 | Warning          | Non-clocked latch              | 5          |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 340        |
+| LUTAR-1   | Warning          | LUT drives async reset alert   | 1          |
+| TIMING-20 | Warning          | Non-clocked latch              | 4          |
 | LATCH-1   | Advisory         | Existing latches in the design | 1          |
 +-----------+------------------+--------------------------------+------------+
 
@@ -142,532 +142,1629 @@ Related violations: <none>
 
 TIMING-17#22 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/ballbounce0/y_pixel_offset_reg_reg/C is not reached by a timing clock
+The clock pin m0/ballbounce0/ball_state_reg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#23 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/Counter/count_reg[0]/C is not reached by a timing clock
+The clock pin m0/ballbounce0/ball_state_reg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#24 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/Counter/count_reg[1]/C is not reached by a timing clock
+The clock pin m0/ballbounce0/ball_state_reg_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#25 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/Counter/count_reg[2]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#26 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/Counter/count_reg[3]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#27 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/Counter/count_reg[4]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#28 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/Counter/count_reg[5]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#29 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/Counter/count_reg[6]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#30 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/Counter/count_reg[7]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#31 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/Counter/count_reg[8]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#32 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/x_calculated_reg[0]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#33 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/x_calculated_reg[1]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#34 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/x_calculated_reg[2]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#35 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/x_calculated_reg[3]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#36 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/x_calculated_reg[4]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#37 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/x_calculated_reg[5]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#38 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/x_calculated_reg[6]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#39 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/x_calculated_reg[7]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#40 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/x_calculated_reg[8]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#41 Critical Warning
 Non-clocked sequential cell  
-The clock pin m0/update_xy0/x_calculated_reg[9]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#42 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/addr_ball/CLK is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#43 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[0]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#44 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[10]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#45 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[11]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#46 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[12]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#47 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[13]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#48 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[14]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#49 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[15]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#50 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[1]/C is not reached by a timing clock
+The clock pin m0/update_xy0/Counter/count_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#51 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[2]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#52 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[3]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#53 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[4]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#54 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[5]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#55 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[6]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#56 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[7]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#57 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[8]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#58 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/c0/clkdiv_reg[9]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#59 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/b_reg[0]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#60 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/b_reg[1]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#61 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/b_reg[2]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#62 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/b_reg[3]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#63 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/col_addr_reg[0]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#64 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/col_addr_reg[1]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#65 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/col_addr_reg[2]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#66 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/col_addr_reg[3]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#67 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/col_addr_reg[4]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#68 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/col_addr_reg[5]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#69 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/col_addr_reg[6]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#70 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/col_addr_reg[7]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#71 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/col_addr_reg[8]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#72 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/col_addr_reg[9]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#73 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/g_reg[0]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#74 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/g_reg[1]/C is not reached by a timing clock
+The clock pin m0/update_xy0/m1/clkdiv_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#75 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/g_reg[2]/C is not reached by a timing clock
+The clock pin m0/update_xy0/x_calculated_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#76 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/g_reg[3]/C is not reached by a timing clock
+The clock pin m0/update_xy0/x_calculated_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#77 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/h_count_reg[0]/C is not reached by a timing clock
+The clock pin m0/update_xy0/x_calculated_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#78 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/h_count_reg[1]/C is not reached by a timing clock
+The clock pin m0/update_xy0/x_calculated_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#79 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/h_count_reg[2]/C is not reached by a timing clock
+The clock pin m0/update_xy0/x_calculated_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#80 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/h_count_reg[3]/C is not reached by a timing clock
+The clock pin m0/update_xy0/x_calculated_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#81 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/h_count_reg[4]/C is not reached by a timing clock
+The clock pin m0/update_xy0/x_calculated_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#82 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/h_count_reg[5]/C is not reached by a timing clock
+The clock pin m0/update_xy0/x_calculated_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#83 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/h_count_reg[6]/C is not reached by a timing clock
+The clock pin m0/update_xy0/x_calculated_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#84 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/h_count_reg[7]/C is not reached by a timing clock
+The clock pin m0/update_xy0/x_calculated_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#85 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/h_count_reg[8]/C is not reached by a timing clock
+The clock pin out1/M2/EN_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#86 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/h_count_reg[9]/C is not reached by a timing clock
+The clock pin out1/M2/FSM_sequential_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#87 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/hs_reg/C is not reached by a timing clock
+The clock pin out1/M2/FSM_sequential_state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#88 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/r_reg[0]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#89 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/r_reg[1]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#90 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/r_reg[2]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#91 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/r_reg[3]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#92 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/rdn_reg/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#93 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/row_addr_reg[0]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#94 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/row_addr_reg[1]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#95 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/row_addr_reg[2]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#96 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/row_addr_reg[3]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#97 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/row_addr_reg[4]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#98 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/row_addr_reg[5]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#99 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/row_addr_reg[6]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#100 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/row_addr_reg[7]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#101 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/row_addr_reg[8]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#102 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/v_count_reg[0]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#103 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/v_count_reg[1]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#104 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/v_count_reg[2]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#105 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/v_count_reg[3]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#106 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/v_count_reg[4]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#107 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/v_count_reg[5]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#108 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/v_count_reg[6]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#109 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/v_count_reg[7]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#110 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/v_count_reg[8]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#111 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/v_count_reg[9]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#112 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/m0/vs_reg/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#113 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[32]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#114 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[1]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[33]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#115 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[34]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#116 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[1]/C is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[35]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#117 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[36]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#118 Critical Warning
 Non-clocked sequential cell  
-The clock pin vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK is not reached by a timing clock
+The clock pin out1/M2/buffer_reg[37]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#119 Critical Warning
 Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[38]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#120 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[39]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#121 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#122 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[40]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#123 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[41]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#124 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[42]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#125 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[43]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#126 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[44]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#127 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[45]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#128 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[46]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#129 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[47]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#130 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[48]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#131 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[49]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#132 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#133 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[50]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#134 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[51]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#135 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[52]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#136 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[53]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#137 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[54]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#138 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[55]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#139 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[56]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#140 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[57]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#141 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[58]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#142 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[59]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#143 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#144 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[60]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#145 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[61]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#146 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[62]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#147 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[63]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#148 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#149 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#150 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#151 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/buffer_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#152 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/s_clk_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#153 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/shift_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#154 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/shift_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#155 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/shift_count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#156 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/shift_count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#157 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/shift_count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#158 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/shift_count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#159 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/start_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#160 Critical Warning
+Non-clocked sequential cell  
+The clock pin out1/M2/start_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#161 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/addr_ball62/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#162 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/addr_ball623/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#163 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/addr_ball72/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#164 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/addr_ball723/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#165 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/addr_ball80/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#166 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/addr_ball803/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#167 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/addr_ball86/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#168 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/addr_ball863/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#169 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/addr_ball90/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#170 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/addr_ball903/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#171 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/addr_ball92/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#172 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/addr_ball923/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#173 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/addr_gameover/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#174 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/addr_gameover1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#175 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/c0/clkdiv_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#176 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/c0/clkdiv_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#177 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/gameover_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#178 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/b_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#179 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/b_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#180 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/b_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#181 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/b_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#182 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/col_addr_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#183 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/col_addr_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#184 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/col_addr_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#185 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/col_addr_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#186 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/col_addr_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#187 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/col_addr_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#188 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/col_addr_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#189 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/col_addr_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#190 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/col_addr_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#191 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/col_addr_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#192 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/g_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#193 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/g_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#194 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/g_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#195 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/g_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#196 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/h_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#197 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/h_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#198 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/h_count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#199 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/h_count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#200 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/h_count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#201 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/h_count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#202 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/h_count_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#203 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/h_count_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#204 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/h_count_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#205 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/h_count_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#206 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/hs_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#207 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/r_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#208 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/r_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#209 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/r_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#210 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/r_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#211 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/rdn_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#212 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/row_addr_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#213 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/row_addr_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#214 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/row_addr_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#215 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/row_addr_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#216 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/row_addr_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#217 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/row_addr_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#218 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/row_addr_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#219 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/row_addr_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#220 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/row_addr_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#221 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/v_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#222 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/v_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#223 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/v_count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#224 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/v_count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#225 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/v_count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#226 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/v_count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#227 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/v_count_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#228 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/v_count_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#229 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/v_count_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#230 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/v_count_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#231 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/m0/vs_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#232 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#233 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#234 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#235 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#236 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#237 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#238 Critical Warning
+Non-clocked sequential cell  
 The clock pin vga_display0/rom0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#239 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#240 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#241 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#242 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#243 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#244 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#245 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#246 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#247 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#248 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#249 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#250 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#251 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#252 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#253 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#254 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#255 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#256 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#257 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#258 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#259 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#260 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#261 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#262 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#263 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#264 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball62/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#265 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball62/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#266 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball80/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#267 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball80/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#268 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball80/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#269 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball80/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#270 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball80/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#271 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball86/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#272 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball86/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#273 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball86/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#274 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball86/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#275 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball86/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#276 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball90/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#277 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball90/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#278 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball90/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#279 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball90/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#280 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball90/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#281 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball92/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#282 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball92/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#283 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball92/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#284 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball92/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#285 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball92/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#286 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball92/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#287 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball92/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#288 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball92/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#289 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball92/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#290 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball92/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#291 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball92/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#292 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball92/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#293 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_ball92/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#294 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#295 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#296 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#297 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#298 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#299 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#300 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#301 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#302 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#303 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#304 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#305 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#306 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#307 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#308 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#309 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#310 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#311 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#312 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#313 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#314 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[22].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#315 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[23].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#316 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#317 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#318 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#319 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#320 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#321 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#322 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[46].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#323 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[47].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#324 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[48].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#325 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[49].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#326 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[50].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#327 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[51].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#328 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[52].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#329 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[53].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#330 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#331 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[55].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#332 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[56].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#333 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[57].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#334 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[58].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#335 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[59].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#336 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#337 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#338 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[60].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#339 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[61].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#340 Critical Warning
+Non-clocked sequential cell  
+The clock pin vga_display0/victory_reg/C is not reached by a timing clock
 Related violations: <none>
 
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell vga_display0/map0/data_map_reg_reg[11]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) vga_display0/map0/data_map_reg_reg[11]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#2 Warning
-LUT drives async reset alert  
-LUT cell vga_display0/map0/data_map_reg_reg[11]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) vga_display0/map0/data_map_reg_reg[11]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell m0/ballbounce0/ball_state_reg[1]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) m0/ballbounce0/ball_state_reg_reg[0]/PRE,
+m0/ballbounce0/ball_state_reg_reg[1]/CLR
+m0/ballbounce0/ball_state_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch m0/jump_reg cannot be properly analyzed as its control pin m0/jump_reg/G is not reached by a timing clock
+The latch m0/map0/state_reg[0] cannot be properly analyzed as its control pin m0/map0/state_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch vga_display0/map0/data_map_reg_reg[11]/L7 (in vga_display0/map0/data_map_reg_reg[11] macro) cannot be properly analyzed as its control pin vga_display0/map0/data_map_reg_reg[11]/L7/G is not reached by a timing clock
+The latch m0/map0/state_reg[1] cannot be properly analyzed as its control pin m0/map0/state_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#3 Warning
 Non-clocked latch  
-The latch vga_display0/map0/data_map_reg_reg[7] cannot be properly analyzed as its control pin vga_display0/map0/data_map_reg_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#4 Warning
-Non-clocked latch  
 The latch vga_display0/map0/state_reg[0] cannot be properly analyzed as its control pin vga_display0/map0/state_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#5 Warning
+TIMING-20#4 Warning
 Non-clocked latch  
 The latch vga_display0/map0/state_reg[1] cannot be properly analyzed as its control pin vga_display0/map0/state_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 LATCH-1#1 Advisory
 Existing latches in the design  
-There are 5 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+There are 4 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
 Related violations: <none>
 
 

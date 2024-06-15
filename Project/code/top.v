@@ -26,9 +26,9 @@ module top(
     wire [31:0] clkdiv ;
 
     wire [8:0] x_ball;
-    wire [8:0] y_ball;
+    wire [25:0] y_ball;
 
-    wire [8:0] y_pixel_offset;
+    wire [2:0] ball_state;
 
     wire fail;
 
@@ -39,8 +39,8 @@ module top(
         .clrn(rstn),
         .x_ball(x_ball),
         .y_ball(y_ball),
-        .y_pixel_offset(y_pixel_offset),
         .fail(fail),
+        .ball_state(ball_state),
 
         .rd(rd),
         .hs(hs),
@@ -70,14 +70,14 @@ module top(
     
     ball_control m0(
         .clk(clk),
-        .rst(rstn),
+        .rst(!rstn),
         .move_left(left),
         .move_right(right),
 
         .x_ball(x_ball),
         .y_ball(y_ball),
-        .y_pixel_offset(y_pixel_offset),
-        .fail(fail)
+        .fail(fail),
+        .ball_state(ball_state)
     );//jump is not assigned
     
     clkdiv m1(
@@ -85,20 +85,29 @@ module top(
         .rst(1'b0),
         .clkdiv(clkdiv)
     );
-    
-    // Sseg_Dev out1(
-    //     .clk(clk), 
-    //     .flash(clkdiv[25]), 
-    //     .Hexs({5'b0,health_blue,5'b0,health_red,gametime}), 
-    //     .LES(8'b0),        
-    //     .point(8'b00000010), 
-    //     .rst(1'b0), 
-    //     .Start(clkdiv[20]), 
-    //     .seg_clk(seg_clk),
-    //     .seg_clrn(seg_clrn), 
-    //     .SEG_PEN(seg_en), 
-    //     .seg_sout(seg_out)
-    // );
+
+    //以一共200格为计
+    wire [99:0] y_index;
+    wire bai;
+    wire [3:0] shi;
+    wire [3:0] ge;
+    assign y_index=y_ball/80;
+    assign bai=(y_index>=200);
+    assign shi=bai?0:((y_index/20)%10);
+    assign ge=bai?0:((y_index/2)%10);
+    Sseg_Dev out1(
+        .clk(clk), 
+        .flash(clkdiv[25]), 
+        .Hexs({23'b0, bai, shi, ge}), 
+        .LES(8'b0),        
+        .point(8'b00000000), 
+        .rst(1'b0), 
+        .Start(clkdiv[20]), 
+        .seg_clk(seg_clk),
+        .seg_clrn(seg_clrn), 
+        .SEG_PEN(seg_en), 
+        .seg_sout(seg_out)
+    );
     
     // buzzer out2(
     //     .clk(clk),

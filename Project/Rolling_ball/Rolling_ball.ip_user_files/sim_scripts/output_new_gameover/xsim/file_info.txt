@@ -1,2 +1,0 @@
-output_new_gameover.v,verilog,xil_defaultlib,../../../../Rolling_ball.gen/sources_1/ip/output_new_gameover/sim/output_new_gameover.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v

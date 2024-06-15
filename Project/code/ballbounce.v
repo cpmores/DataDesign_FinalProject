@@ -1,19 +1,27 @@
 module ballbounce(
 	input clk,
 	input jump,
-	output[8:0] y_pixel_offset
+	output [2:0] ball_state
 );
-reg count_reg = 3'b000;
-reg y_pixel_offset_reg = 9'h0; 
-assign y_pixel_offset = y_pixel_offset_reg;
-always @(posedge clk) begin
-	if(count_reg <= 3'b011 && jump == 1'b1) begin
-		y_pixel_offset_reg <= y_pixel_offset_reg + 1;
-		count_reg <= count_reg + 1;
+
+wire [31:0]clkdiv;
+
+reg [2:0] ball_state_reg = 0;
+assign ball_state=ball_state_reg;
+
+always @(posedge clkdiv[23] or posedge jump) begin
+	if(jump==1&&ball_state_reg==0)begin
+		ball_state_reg=5;
 	end
-	else if(jump == 1'b1) begin
-		y_pixel_offset_reg <= y_pixel_offset_reg - 1;
-		count_reg <= count_reg + 1;
+	else if(ball_state_reg>0)begin
+		ball_state_reg=ball_state_reg-1;
 	end
 end
+
+clkdiv clkdiv0(
+	.clk(clk),
+	.rst(0),
+	.clkdiv(clkdiv)
+);
+
 endmodule
