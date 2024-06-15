@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="output_new_gameover_synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1718433543">
+<GenRun Id="output_new_gameover_synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1718462436">
   <File Type="PA-TCL" Name="output_new_gameover.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="output_new_gameover_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="output_new_gameover_reports.tcl"/>
@@ -10,7 +10,7 @@
   <File Type="VDS-TIMINGSUMMARY" Name="output_new_gameover_timing_summary_synth.rpt"/>
   <File Type="VDS-TIMING-PB" Name="output_new_gameover_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/output_new_gameover" RelGenDir="$PGENDIR/output_new_gameover">
-    <File Path="$PSRCDIR/sources_1/ip/output_new_gameover_1/output_new_gameover.xci">
+    <File Path="$PSRCDIR/sources_1/ip/output_new_gameover_5/output_new_gameover.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -23,7 +23,7 @@
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/output_new_gameover" RelGenDir="$PGENDIR/output_new_gameover">
-    <File Path="$PSRCDIR/sources_1/ip/output_new_gameover_1/output_new_gameover.xci">
+    <File Path="$PSRCDIR/sources_1/ip/output_new_gameover_5/output_new_gameover.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

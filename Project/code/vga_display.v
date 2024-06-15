@@ -77,9 +77,9 @@ module vga_display(
         if(clrn==0) begin
             victory <= 0;
         end
-        else if(victory==1)begin
+        else if(~gameover&&victory==1)begin
             victory<=victory;
-        end else if(win==1)begin
+        end else if(~gameover&&win==1)begin
             victory<=1;
         end
     end
@@ -102,8 +102,8 @@ module vga_display(
     assign addr_ball86 = (row-321)*86 + col-x_ball-120+43;
     assign addr_ball90 = (row-319)*90 + col-x_ball-120+45;
     assign addr_ball92 = (row-318)*92 + col-x_ball-120+46;
-    assign addr_gameover = (row-40)*400 + col-120;
-    assign addr_victory = row*502 + col-69;
+    assign addr_gameover = (row-40)*474 + col-120;
+    assign addr_victory = row*400 + col-69;
 
     assign vga_input =  within_victory ? data_victory:
                         within_gameover ? data_gameover:

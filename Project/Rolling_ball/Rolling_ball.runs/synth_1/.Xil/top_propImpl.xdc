@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc rfile:../../../../constraints/top.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc rfile:../../../../constraints/top.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN AC18 [get_ports clk]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]

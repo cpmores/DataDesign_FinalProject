@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/impl_1/top.tcl"
+  variable script "D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/impl_1/top.tcl"
   variable category "vivado_impl"
 }
 
@@ -123,7 +123,6 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 8
-  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 16  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7k160tffg676-2L
@@ -131,25 +130,25 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.cache/wt [current_project]
-  set_property parent.project_path C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.xpr [current_project]
-  set_property ip_output_repo C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.cache/wt [current_project]
+  set_property parent.project_path D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.xpr [current_project]
+  set_property ip_output_repo D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/top.dcp
-  read_ip -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball/ball.xci
-  read_ip -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball62/ball62.xci
-  read_ip -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball80/ball80.xci
-  read_ip -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball86/ball86.xci
-  read_ip -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball90/ball90.xci
-  read_ip -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball92/ball92.xci
-  read_ip -quiet c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_vic_1/output_vic.xci
-  read_ip -quiet c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_new_gameover_1/output_new_gameover.xci
-  read_edif C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/P2S.edf
+  add_files -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/top.dcp
+  read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball92/ball92.xci
+  read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball/ball.xci
+  read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball86/ball86.xci
+  read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball62/ball62.xci
+  read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball90/ball90.xci
+  read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball80/ball80.xci
+  read_ip -quiet d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_vic_3/output_vic.xci
+  read_ip -quiet d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_new_gameover_5/output_new_gameover.xci
+  read_edif D:/git_repo/DataDesign_FinalProject/Project/code/P2S.edf
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc
+  read_xdc D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

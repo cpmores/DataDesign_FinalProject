@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Fri Jun 14 18:38:54 2024
-// Host        : beastern running 64-bit major release  (build 9200)
+// Date        : Sat Jun 15 19:23:07 2024
+// Host        : LAPTOP-IJHTN70K running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball90_2/ball90_stub.v
+//               d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball90_2/ball90_stub.v
 // Design      : ball90
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7k160tffg676-2L

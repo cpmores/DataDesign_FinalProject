@@ -3,8 +3,8 @@
     with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 
 
-ECHO 处于关闭状态。
-ECHO 处于关闭状态。
+ECHO is off.
+ECHO is off.
 
 ****** Vivado v2023.2 (64-bit)
   **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
@@ -14,8 +14,9 @@ ECHO 处于关闭状态。
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source top.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/utils_1/imports/synth_1/top.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 503.918 ; gain = 182.336
+Command: read_checkpoint -auto_incremental -incremental D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top top -part xc7k160tffg676-2L
 Starting synth_design
@@ -26,111 +27,111 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 11592
+INFO: [Synth 8-7075] Helper process launched with PID 9172
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1354.805 ; gain = 440.418
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1378.508 ; gain = 440.637
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-11241] undeclared symbol 'a', assumed default net type 'wire' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
-INFO: [Synth 8-11241] undeclared symbol 'b', assumed default net type 'wire' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
-INFO: [Synth 8-11241] undeclared symbol 'c', assumed default net type 'wire' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
-INFO: [Synth 8-11241] undeclared symbol 'd', assumed default net type 'wire' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
-INFO: [Synth 8-11241] undeclared symbol 'e', assumed default net type 'wire' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
-INFO: [Synth 8-11241] undeclared symbol 'f', assumed default net type 'wire' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
-INFO: [Synth 8-11241] undeclared symbol 'g', assumed default net type 'wire' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
-INFO: [Synth 8-11241] undeclared symbol 'p', assumed default net type 'wire' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
-INFO: [Synth 8-11241] undeclared symbol 'jump', assumed default net type 'wire' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/ball_control.v:22]
-INFO: [Synth 8-11241] undeclared symbol 'clkdiv', assumed default net type 'wire' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/update_xy.v:17]
-WARNING: [Synth 8-8895] 'clkdiv' is already implicitly declared on line 17 [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/update_xy.v:19]
-INFO: [Synth 8-11241] undeclared symbol 'within_map', assumed default net type 'wire' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:93]
-INFO: [Synth 8-11241] undeclared symbol 'within_gameover', assumed default net type 'wire' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:94]
-INFO: [Synth 8-11241] undeclared symbol 'within_victory', assumed default net type 'wire' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:95]
-INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/top.v:3]
-INFO: [Synth 8-6157] synthesizing module 'vga_display' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:3]
-INFO: [Synth 8-6157] synthesizing module 'ball62' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/ball62_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ball62' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/ball62_stub.v:6]
-WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (12) of module 'ball62' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:122]
-INFO: [Synth 8-6157] synthesizing module 'ball' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/ball_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ball' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/ball_stub.v:6]
-WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:128]
-INFO: [Synth 8-6157] synthesizing module 'ball80' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/ball80_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ball80' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/ball80_stub.v:6]
-WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball80' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:134]
-INFO: [Synth 8-6157] synthesizing module 'ball86' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/ball86_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ball86' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/ball86_stub.v:6]
-WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball86' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:140]
-INFO: [Synth 8-6157] synthesizing module 'ball90' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/ball90_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ball90' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/ball90_stub.v:6]
-WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball90' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:146]
-INFO: [Synth 8-6157] synthesizing module 'ball92' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/ball92_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ball92' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/ball92_stub.v:6]
-WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (14) of module 'ball92' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:152]
-WARNING: [Synth 8-689] width (12) of port connection 'douta' does not match port width (16) of module 'ball92' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:153]
-INFO: [Synth 8-6157] synthesizing module 'output_vic' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/output_vic_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'output_vic' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/output_vic_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'output_new_gameover' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/output_new_gameover_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'output_new_gameover' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-39312-beastern/realtime/output_new_gameover_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'flocation' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/flocation.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'flocation' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/flocation.v:1]
-WARNING: [Synth 8-689] width (32) of port connection 'px' does not match port width (9) of module 'flocation' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:169]
-INFO: [Synth 8-6157] synthesizing module 'map' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/map.v:3]
-WARNING: [Synth 8-567] referenced signal 'index_x' should be on the sensitivity list [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/map.v:460]
-WARNING: [Synth 8-567] referenced signal 'index_y' should be on the sensitivity list [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/map.v:460]
-INFO: [Synth 8-6155] done synthesizing module 'map' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/map.v:3]
-WARNING: [Synth 8-7071] port 'data_state' of module 'map' is unconnected for instance 'map0' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:176]
-WARNING: [Synth 8-7071] port 'len' of module 'map' is unconnected for instance 'map0' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:176]
-WARNING: [Synth 8-7023] instance 'map0' of module 'map' has 6 connections declared, but only 4 given [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:176]
-INFO: [Synth 8-6157] synthesizing module 'clkdiv' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/clkdiv.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/clkdiv.v:3]
-INFO: [Synth 8-6157] synthesizing module 'vgac' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vgac.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'vgac' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vgac.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'vga_display' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v:3]
-INFO: [Synth 8-6157] synthesizing module 'ps2_keyboard' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/ps2_keyboard.v:3]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/ps2_keyboard.v:37]
-INFO: [Synth 8-6155] done synthesizing module 'ps2_keyboard' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/ps2_keyboard.v:3]
-WARNING: [Synth 8-7071] port 's' of module 'ps2_keyboard' is unconnected for instance 'in0' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/top.v:53]
-WARNING: [Synth 8-7071] port 'up' of module 'ps2_keyboard' is unconnected for instance 'in0' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/top.v:53]
-WARNING: [Synth 8-7071] port 'down' of module 'ps2_keyboard' is unconnected for instance 'in0' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/top.v:53]
-WARNING: [Synth 8-7023] instance 'in0' of module 'ps2_keyboard' has 18 connections declared, but only 15 given [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/top.v:53]
-INFO: [Synth 8-6157] synthesizing module 'ball_control' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/ball_control.v:3]
-INFO: [Synth 8-6157] synthesizing module 'update_xy' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/update_xy.v:1]
-INFO: [Synth 8-6157] synthesizing module 'counter_64' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/counter_64.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'counter_64' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/counter_64.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'update_xy' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/update_xy.v:1]
-INFO: [Synth 8-6157] synthesizing module 'ballbounce' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/ballbounce.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'ballbounce' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/ballbounce.v:1]
-WARNING: [Synth 8-689] width (10) of port connection 'px' does not match port width (9) of module 'flocation' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/ball_control.v:46]
-WARNING: [Synth 8-7071] port 'data_map' of module 'map' is unconnected for instance 'map0' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/ball_control.v:53]
-WARNING: [Synth 8-7071] port 'len' of module 'map' is unconnected for instance 'map0' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/ball_control.v:53]
-WARNING: [Synth 8-7023] instance 'map0' of module 'map' has 6 connections declared, but only 4 given [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/ball_control.v:53]
-INFO: [Synth 8-6155] done synthesizing module 'ball_control' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/ball_control.v:3]
-WARNING: [Synth 8-689] width (9) of port connection 'x_ball' does not match port width (10) of module 'ball_control' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/top.v:77]
-INFO: [Synth 8-6157] synthesizing module 'Sseg_Dev' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/Sseg_Dev.v:1]
-INFO: [Synth 8-6157] synthesizing module 'P2S' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/P2S_IO.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'P2S' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/P2S_IO.v:1]
-INFO: [Synth 8-6157] synthesizing module 'HexTo8SEG' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/HexTo8SEG.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Hex2Seg' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/Hex2Seg.v:3]
-INFO: [Synth 8-6157] synthesizing module 'MyMC14495' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/MyMC14495.vf:23]
-INFO: [Synth 8-6157] synthesizing module 'AND4' [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1001]
-INFO: [Synth 8-6155] done synthesizing module 'AND4' (0#1) [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1001]
-INFO: [Synth 8-6157] synthesizing module 'OR4' [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:97028]
-INFO: [Synth 8-6155] done synthesizing module 'OR4' (0#1) [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:97028]
-INFO: [Synth 8-6157] synthesizing module 'OR3' [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96980]
-INFO: [Synth 8-6155] done synthesizing module 'OR3' (0#1) [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96980]
-INFO: [Synth 8-6157] synthesizing module 'INV' [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78119]
-INFO: [Synth 8-6155] done synthesizing module 'INV' (0#1) [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78119]
-INFO: [Synth 8-6157] synthesizing module 'AND3' [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:953]
-INFO: [Synth 8-6155] done synthesizing module 'AND3' (0#1) [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:953]
-INFO: [Synth 8-6157] synthesizing module 'AND2' [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:905]
-INFO: [Synth 8-6155] done synthesizing module 'AND2' (0#1) [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:905]
-INFO: [Synth 8-6157] synthesizing module 'OR2' [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96934]
-INFO: [Synth 8-6155] done synthesizing module 'OR2' (0#1) [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96934]
-INFO: [Synth 8-6155] done synthesizing module 'MyMC14495' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/MyMC14495.vf:23]
-INFO: [Synth 8-6155] done synthesizing module 'Hex2Seg' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/Hex2Seg.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'HexTo8SEG' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/HexTo8SEG.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'Sseg_Dev' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/Sseg_Dev.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/top.v:3]
-WARNING: [Synth 8-3848] Net len in module/entity map does not have driver. [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/map.v:9]
-WARNING: [Synth 8-3848] Net beep in module/entity top does not have driver. [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/top.v:12]
+INFO: [Synth 8-11241] undeclared symbol 'a', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'b', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'c', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'd', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'e', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'f', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'g', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'p', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'jump', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/ball_control.v:22]
+INFO: [Synth 8-11241] undeclared symbol 'clkdiv', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/update_xy.v:17]
+WARNING: [Synth 8-8895] 'clkdiv' is already implicitly declared on line 17 [D:/git_repo/DataDesign_FinalProject/Project/code/update_xy.v:19]
+INFO: [Synth 8-11241] undeclared symbol 'within_map', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:93]
+INFO: [Synth 8-11241] undeclared symbol 'within_gameover', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:94]
+INFO: [Synth 8-11241] undeclared symbol 'within_victory', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:95]
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ball62' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball62_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball62' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball62_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (12) of module 'ball62' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:122]
+INFO: [Synth 8-6157] synthesizing module 'ball' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:128]
+INFO: [Synth 8-6157] synthesizing module 'ball80' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball80_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball80' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball80_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball80' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:134]
+INFO: [Synth 8-6157] synthesizing module 'ball86' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball86_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball86' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball86_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball86' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:140]
+INFO: [Synth 8-6157] synthesizing module 'ball90' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball90_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball90' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball90_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball90' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:146]
+INFO: [Synth 8-6157] synthesizing module 'ball92' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball92_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball92' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball92_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (14) of module 'ball92' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:152]
+WARNING: [Synth 8-689] width (12) of port connection 'douta' does not match port width (16) of module 'ball92' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:153]
+INFO: [Synth 8-6157] synthesizing module 'output_vic' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/output_vic_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'output_vic' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/output_vic_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'output_new_gameover' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/output_new_gameover_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'output_new_gameover' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/output_new_gameover_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'flocation' [D:/git_repo/DataDesign_FinalProject/Project/code/flocation.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'flocation' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/flocation.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'px' does not match port width (9) of module 'flocation' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:169]
+INFO: [Synth 8-6157] synthesizing module 'map' [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:3]
+WARNING: [Synth 8-567] referenced signal 'index_x' should be on the sensitivity list [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:460]
+WARNING: [Synth 8-567] referenced signal 'index_y' should be on the sensitivity list [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:460]
+INFO: [Synth 8-6155] done synthesizing module 'map' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:3]
+WARNING: [Synth 8-7071] port 'data_state' of module 'map' is unconnected for instance 'map0' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:176]
+WARNING: [Synth 8-7071] port 'len' of module 'map' is unconnected for instance 'map0' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:176]
+WARNING: [Synth 8-7023] instance 'map0' of module 'map' has 6 connections declared, but only 4 given [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:176]
+INFO: [Synth 8-6157] synthesizing module 'clkdiv' [D:/git_repo/DataDesign_FinalProject/Project/code/clkdiv.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/clkdiv.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vgac' [D:/git_repo/DataDesign_FinalProject/Project/code/vgac.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vgac' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/vgac.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ps2_keyboard' [D:/git_repo/DataDesign_FinalProject/Project/code/ps2_keyboard.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/git_repo/DataDesign_FinalProject/Project/code/ps2_keyboard.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_keyboard' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/ps2_keyboard.v:3]
+WARNING: [Synth 8-7071] port 's' of module 'ps2_keyboard' is unconnected for instance 'in0' [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:53]
+WARNING: [Synth 8-7071] port 'up' of module 'ps2_keyboard' is unconnected for instance 'in0' [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:53]
+WARNING: [Synth 8-7071] port 'down' of module 'ps2_keyboard' is unconnected for instance 'in0' [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:53]
+WARNING: [Synth 8-7023] instance 'in0' of module 'ps2_keyboard' has 18 connections declared, but only 15 given [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:53]
+INFO: [Synth 8-6157] synthesizing module 'ball_control' [D:/git_repo/DataDesign_FinalProject/Project/code/ball_control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'update_xy' [D:/git_repo/DataDesign_FinalProject/Project/code/update_xy.v:1]
+INFO: [Synth 8-6157] synthesizing module 'counter_64' [D:/git_repo/DataDesign_FinalProject/Project/code/counter_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'counter_64' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/counter_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'update_xy' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/update_xy.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ballbounce' [D:/git_repo/DataDesign_FinalProject/Project/code/ballbounce.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ballbounce' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/ballbounce.v:1]
+WARNING: [Synth 8-689] width (10) of port connection 'px' does not match port width (9) of module 'flocation' [D:/git_repo/DataDesign_FinalProject/Project/code/ball_control.v:46]
+WARNING: [Synth 8-7071] port 'data_map' of module 'map' is unconnected for instance 'map0' [D:/git_repo/DataDesign_FinalProject/Project/code/ball_control.v:53]
+WARNING: [Synth 8-7071] port 'len' of module 'map' is unconnected for instance 'map0' [D:/git_repo/DataDesign_FinalProject/Project/code/ball_control.v:53]
+WARNING: [Synth 8-7023] instance 'map0' of module 'map' has 6 connections declared, but only 4 given [D:/git_repo/DataDesign_FinalProject/Project/code/ball_control.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'ball_control' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/ball_control.v:3]
+WARNING: [Synth 8-689] width (9) of port connection 'x_ball' does not match port width (10) of module 'ball_control' [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:77]
+INFO: [Synth 8-6157] synthesizing module 'Sseg_Dev' [D:/git_repo/DataDesign_FinalProject/Project/code/Sseg_Dev.v:1]
+INFO: [Synth 8-6157] synthesizing module 'P2S' [D:/git_repo/DataDesign_FinalProject/Project/code/P2S_IO.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'P2S' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/P2S_IO.v:1]
+INFO: [Synth 8-6157] synthesizing module 'HexTo8SEG' [D:/git_repo/DataDesign_FinalProject/Project/code/HexTo8SEG.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Hex2Seg' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MyMC14495' [D:/git_repo/DataDesign_FinalProject/Project/code/MyMC14495.vf:23]
+INFO: [Synth 8-6157] synthesizing module 'AND4' [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1001]
+INFO: [Synth 8-6155] done synthesizing module 'AND4' (0#1) [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1001]
+INFO: [Synth 8-6157] synthesizing module 'OR4' [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:97028]
+INFO: [Synth 8-6155] done synthesizing module 'OR4' (0#1) [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:97028]
+INFO: [Synth 8-6157] synthesizing module 'OR3' [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96980]
+INFO: [Synth 8-6155] done synthesizing module 'OR3' (0#1) [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96980]
+INFO: [Synth 8-6157] synthesizing module 'INV' [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78119]
+INFO: [Synth 8-6155] done synthesizing module 'INV' (0#1) [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78119]
+INFO: [Synth 8-6157] synthesizing module 'AND3' [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:953]
+INFO: [Synth 8-6155] done synthesizing module 'AND3' (0#1) [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:953]
+INFO: [Synth 8-6157] synthesizing module 'AND2' [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:905]
+INFO: [Synth 8-6155] done synthesizing module 'AND2' (0#1) [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:905]
+INFO: [Synth 8-6157] synthesizing module 'OR2' [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96934]
+INFO: [Synth 8-6155] done synthesizing module 'OR2' (0#1) [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96934]
+INFO: [Synth 8-6155] done synthesizing module 'MyMC14495' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/MyMC14495.vf:23]
+INFO: [Synth 8-6155] done synthesizing module 'Hex2Seg' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'HexTo8SEG' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/HexTo8SEG.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Sseg_Dev' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/Sseg_Dev.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:3]
+WARNING: [Synth 8-3848] Net len in module/entity map does not have driver. [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:9]
+WARNING: [Synth 8-3848] Net beep in module/entity top does not have driver. [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:12]
 WARNING: [Synth 8-7129] Port len[10] in module map is either unconnected or has no load
 WARNING: [Synth 8-7129] Port len[9] in module map is either unconnected or has no load
 WARNING: [Synth 8-7129] Port len[8] in module map is either unconnected or has no load
@@ -146,70 +147,72 @@ WARNING: [Synth 8-7129] Port clk in module map is either unconnected or has no l
 WARNING: [Synth 8-7129] Port beep in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port playmusic in module top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1474.215 ; gain = 559.828
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1497.738 ; gain = 559.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1474.215 ; gain = 559.828
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1497.738 ; gain = 559.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1474.215 ; gain = 559.828
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1497.738 ; gain = 559.867
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1474.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1497.738 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 320 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball/ball/ball_in_context.xdc] for cell 'vga_display0/rom0'
-Finished Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball/ball/ball_in_context.xdc] for cell 'vga_display0/rom0'
-Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball62/ball62/ball62_in_context.xdc] for cell 'vga_display0/rom_ball62'
-Finished Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball62/ball62/ball62_in_context.xdc] for cell 'vga_display0/rom_ball62'
-Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/ball80/ball80_in_context.xdc] for cell 'vga_display0/rom_ball80'
-Finished Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/ball80/ball80_in_context.xdc] for cell 'vga_display0/rom_ball80'
-Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball86_3/ball86/ball86_in_context.xdc] for cell 'vga_display0/rom_ball86'
-Finished Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball86_3/ball86/ball86_in_context.xdc] for cell 'vga_display0/rom_ball86'
-Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball90_2/ball90/ball90_in_context.xdc] for cell 'vga_display0/rom_ball90'
-Finished Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball90_2/ball90/ball90_in_context.xdc] for cell 'vga_display0/rom_ball90'
-Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball92_3/ball92/ball92_in_context.xdc] for cell 'vga_display0/rom_ball92'
-Finished Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball92_3/ball92/ball92_in_context.xdc] for cell 'vga_display0/rom_ball92'
-Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_vic_1/output_vic/output_vic_in_context.xdc] for cell 'vga_display0/rom_output_vic'
-Finished Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_vic_1/output_vic/output_vic_in_context.xdc] for cell 'vga_display0/rom_output_vic'
-Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_new_gameover_3/output_new_gameover/output_new_gameover_in_context.xdc] for cell 'vga_display0/rom1'
-Finished Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_new_gameover_3/output_new_gameover/output_new_gameover_in_context.xdc] for cell 'vga_display0/rom1'
-Parsing XDC File [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'b[3]' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:25]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'b[2]' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:29]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'b[1]' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:33]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'b[0]' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:37]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'g[3]' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:41]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'g[2]' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:45]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'g[1]' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:49]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'g[0]' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:53]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'r[3]' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:57]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'r[2]' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:61]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'r[1]' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:65]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'r[0]' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:69]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'clk' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:73]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'hs' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:75]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'ps2_clk' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:79]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'ps2_data' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:81]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'rd' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:83]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'rstn' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:87]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'seg_clk' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:89]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'seg_clrn' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:93]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'seg_en' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:97]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'seg_out' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:101]
-CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'vs' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc:105]
-Finished Parsing XDC File [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball92_3/ball92/ball92_in_context.xdc] for cell 'vga_display0/rom_ball92'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball92_3/ball92/ball92_in_context.xdc] for cell 'vga_display0/rom_ball92'
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball/ball/ball_in_context.xdc] for cell 'vga_display0/rom0'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball/ball/ball_in_context.xdc] for cell 'vga_display0/rom0'
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball86_3/ball86/ball86_in_context.xdc] for cell 'vga_display0/rom_ball86'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball86_3/ball86/ball86_in_context.xdc] for cell 'vga_display0/rom_ball86'
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball62/ball62/ball62_in_context.xdc] for cell 'vga_display0/rom_ball62'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball62/ball62/ball62_in_context.xdc] for cell 'vga_display0/rom_ball62'
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball90_2/ball90/ball90_in_context.xdc] for cell 'vga_display0/rom_ball90'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball90_2/ball90/ball90_in_context.xdc] for cell 'vga_display0/rom_ball90'
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/ball80/ball80_in_context.xdc] for cell 'vga_display0/rom_ball80'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/ball80/ball80_in_context.xdc] for cell 'vga_display0/rom_ball80'
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_vic_3/output_vic/output_vic_in_context.xdc] for cell 'vga_display0/rom_output_vic'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_vic_3/output_vic/output_vic_in_context.xdc] for cell 'vga_display0/rom_output_vic'
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_new_gameover_7/output_new_gameover/output_new_gameover_in_context.xdc] for cell 'vga_display0/rom1'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_new_gameover_7/output_new_gameover/output_new_gameover_in_context.xdc] for cell 'vga_display0/rom1'
+Parsing XDC File [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'b[3]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:25]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'b[2]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:29]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'b[1]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:33]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'b[0]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:37]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'g[3]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:41]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'g[2]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:45]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'g[1]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:49]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'g[0]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:53]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'r[3]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:57]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'r[2]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:61]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'r[1]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:65]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'r[0]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:69]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'clk' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:73]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'hs' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:75]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'ps2_clk' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:79]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'ps2_data' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:81]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'rd' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:83]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'rstn' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:87]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'seg_clk' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:89]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'seg_clrn' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:93]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'seg_en' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:97]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'seg_out' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:101]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'vs' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:105]
+Finished Parsing XDC File [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1576.055 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1599.672 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 320 instances were transformed.
   AND2 => LUT2: 8 instances
@@ -220,37 +223,37 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OR3 => LUT3: 24 instances
   OR4 => LUT4: 32 instances
 
-系统找不到指定的路径。
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1576.055 ; gain = 0.000
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1599.672 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1576.055 ; gain = 661.668
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1599.672 ; gain = 661.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k160tffg676-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1576.055 ; gain = 661.668
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1599.672 ; gain = 661.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball62. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball80. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball86. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball90. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball92. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball86. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball62. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball90. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball80. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_output_vic. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom1. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1576.055 ; gain = 661.668
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1599.672 ; gain = 661.801
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'state_reg' [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/map.v:462]
+WARNING: [Synth 8-327] inferring latch for variable 'state_reg' [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:462]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1576.055 ; gain = 661.668
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1599.672 ; gain = 661.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -300,7 +303,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-DSP Report: Generating DSP addr_gameover1, operation Mode is: (D+(A:0x3fffffd8))*(B:0x190).
+DSP Report: Generating DSP addr_gameover1, operation Mode is: (D+(A:0x3fffffd8))*(B:0x1da).
 DSP Report: operator addr_gameover1 is absorbed into DSP addr_gameover1.
 DSP Report: operator addr_gameover2 is absorbed into DSP addr_gameover1.
 DSP Report: Generating DSP addr_gameover, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffff88).
@@ -425,8 +428,10 @@ INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instan
 WARNING: [Synth 8-3332] Sequential element (state_reg[2]) is unused and will be removed from module map.
 WARNING: [Synth 8-3332] Sequential element (m0/map0/state_reg[2]) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1576.055 ; gain = 661.668
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1599.672 ; gain = 661.801
 ---------------------------------------------------------------------------------
+ Sort Area is  addr_gameover1_0 : 0 0 : 456 525 : Used 1 time 0
+ Sort Area is  addr_gameover1_0 : 0 1 : 69 525 : Used 1 time 0
  Sort Area is  addr_ball923_3 : 0 0 : 290 359 : Used 1 time 0
  Sort Area is  addr_ball923_3 : 0 1 : 69 359 : Used 1 time 0
  Sort Area is  addr_ball723_9 : 0 0 : 276 345 : Used 1 time 0
@@ -437,8 +442,6 @@ Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elaps
  Sort Area is  addr_ball863_7 : 0 1 : 69 345 : Used 1 time 0
  Sort Area is  addr_ball903_5 : 0 0 : 276 345 : Used 1 time 0
  Sort Area is  addr_ball903_5 : 0 1 : 69 345 : Used 1 time 0
- Sort Area is  addr_gameover1_0 : 0 0 : 260 329 : Used 1 time 0
- Sort Area is  addr_gameover1_0 : 0 1 : 69 329 : Used 1 time 0
  Sort Area is  addr_ball623_a : 0 0 : 251 320 : Used 1 time 0
  Sort Area is  addr_ball623_a : 0 1 : 69 320 : Used 1 time 0
 ---------------------------------------------------------------------------------
@@ -449,7 +452,7 @@ DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding R
 +------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|vga_display | (D+(A:0x3fffffd8))*(B:0x190)      | 16     | 9      | -      | 9      | 25     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | (D+(A:0x3fffffd8))*(B:0x1da)      | 16     | 9      | -      | 9      | 25     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
 |vga_display | PCIN+(A:0x0):B+(C:0xffffffffff88) | 30     | 10     | 8      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 |vga_display | (D+(A:0x3ffffec2))*(B:0x5c)       | 14     | 7      | -      | 9      | 21     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
 |vga_display | PCIN+(A:0x0):B+(C:0xffffffffffb6) | 30     | 10     | 8      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
@@ -473,19 +476,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1576.055 ; gain = 661.668
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1599.672 ; gain = 661.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1576.055 ; gain = 661.668
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1599.672 ; gain = 661.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1576.055 ; gain = 661.668
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1599.672 ; gain = 661.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -503,37 +506,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.797 ; gain = 670.410
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.797 ; gain = 670.410
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.797 ; gain = 670.410
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.797 ; gain = 670.410
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.797 ; gain = 670.410
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.797 ; gain = 670.410
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -592,14 +595,14 @@ Report Cell Usage:
 |11    |AND3                |    88|
 |12    |AND4                |    72|
 |13    |BUFG                |     3|
-|14    |CARRY4              |   351|
+|14    |CARRY4              |   346|
 |15    |DSP48E1             |    14|
 |17    |INV                 |     9|
-|18    |LUT1                |    63|
-|19    |LUT2                |   373|
-|20    |LUT3                |   437|
-|21    |LUT4                |   374|
-|22    |LUT5                |   379|
+|18    |LUT1                |    57|
+|19    |LUT2                |   361|
+|20    |LUT3                |   426|
+|21    |LUT4                |   367|
+|22    |LUT5                |   376|
 |23    |LUT6                |   668|
 |24    |MUXF7               |     8|
 |25    |OR2                 |    56|
@@ -614,16 +617,16 @@ Report Cell Usage:
 |34    |OBUFT               |     1|
 +------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.797 ; gain = 670.410
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 111 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 1584.797 ; gain = 568.570
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1584.797 ; gain = 670.410
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1608.980 ; gain = 569.176
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
 INFO: [Project 1-571] Translating synthesized netlist
-Parsing EDIF File [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/P2S.edf]
-Finished Parsing EDIF File [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/P2S.edf]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1592.820 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 666 Unisim elements for replacement
+Parsing EDIF File [D:/git_repo/DataDesign_FinalProject/Project/code/P2S.edf]
+Finished Parsing EDIF File [D:/git_repo/DataDesign_FinalProject/Project/code/P2S.edf]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1617.008 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 661 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2022.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -770,7 +773,7 @@ Resolution: The tool has removed redundant OBUF. To resolve this warning, check 
 WARNING: [Opt 31-36] Removing redundant OBUF, seg_clk_OBUF_inst, from the path connected to top-level port: seg_clk 
 Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1613.145 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1640.344 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 293 instances were transformed.
   AND2 => LUT2: 8 instances
@@ -782,14 +785,14 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OR3 => LUT3: 24 instances
   OR4 => LUT4: 32 instances
 
-系统找不到指定的路径。
-Synth Design complete | Checksum: fbc5ef66
+The system cannot find the path specified.
+Synth Design complete | Checksum: 6ece9693
 INFO: [Common 17-83] Releasing license: Synthesis
 101 Infos, 200 Warnings, 23 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1613.145 ; gain = 1121.207
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1640.344 ; gain = 1123.750
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1613.145 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/top.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1640.344 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jun 15 15:31:08 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 15 22:43:14 2024...

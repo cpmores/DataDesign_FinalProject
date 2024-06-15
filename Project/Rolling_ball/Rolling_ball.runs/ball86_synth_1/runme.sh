@@ -12,9 +12,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/Xilinx/Vivado/2023.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2023.2/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2023.2/bin
+  PATH=G:/Xilinx/Vivado/2023.2/ids_lite/ISE/bin/nt64;G:/Xilinx/Vivado/2023.2/ids_lite/ISE/lib/nt64:G:/Xilinx/Vivado/2023.2/bin
 else
-  PATH=D:/Xilinx/Vivado/2023.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2023.2/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2023.2/bin:$PATH
+  PATH=G:/Xilinx/Vivado/2023.2/ids_lite/ISE/bin/nt64;G:/Xilinx/Vivado/2023.2/ids_lite/ISE/lib/nt64:G:/Xilinx/Vivado/2023.2/bin:$PATH
 fi
 export PATH
 
@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball86_synth_1'
+HD_PWD='D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball86_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -3,15 +3,16 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Jun 14 18:36:51 2024
-# Process ID: 30748
-# Current directory: C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1
+# Start of session at: Sat Jun 15 19:21:25 2024
+# Process ID: 20140
+# Current directory: D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1
 # Command line: vivado.exe -log ball80.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ball80.tcl
-# Log file: C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1/ball80.vds
-# Journal file: C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1\vivado.jou
-# Running On: beastern, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 16978 MB
+# Log file: D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1/ball80.vds
+# Journal file: D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1\vivado.jou
+# Running On: LAPTOP-IJHTN70K, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 16858 MB
 #-----------------------------------------------------------
 source ball80.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 503.465 ; gain = 182.680
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ball80
 Command: synth_design -top ball80 -part xc7k160tffg676-2L -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -20,11 +21,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160
 INFO: [Device 21-403] Loading part xc7k160tffg676-2L
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 18508
+INFO: [Synth 8-7075] Helper process launched with PID 11228
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1351.914 ; gain = 439.754
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1375.137 ; gain = 438.867
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'ball80' [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/synth/ball80.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'ball80' [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/synth/ball80.vhd:67]
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -100,8 +101,8 @@ INFO: [Synth 8-638] synthesizing module 'ball80' [c:/Users/13684/Desktop/1year2/
 	Parameter C_COUNT_36K_BRAM bound to: 3 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     4.62695 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_7' declared at 'c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195208' bound to instance 'U0' of component 'blk_mem_gen_v8_4_7' [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/synth/ball80.vhd:230]
-INFO: [Synth 8-256] done synthesizing module 'ball80' (0#1) [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/synth/ball80.vhd:67]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_7' declared at 'd:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195208' bound to instance 'U0' of component 'blk_mem_gen_v8_4_7' [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/synth/ball80.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'ball80' (0#1) [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/synth/ball80.vhd:67]
 WARNING: [Synth 8-7129] Port CLKB in module blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DOUTB_I[11] in module blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DOUTB_I[10] in module blk_mem_output_block is either unconnected or has no load
@@ -204,55 +205,55 @@ WARNING: [Synth 8-7129] Port ADDRB[2] in module blk_mem_gen_prim_wrapper_init__p
 WARNING: [Synth 8-7129] Port ADDRB[1] in module blk_mem_gen_prim_wrapper_init__parameterized0 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1708.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1730.809 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/ball80_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/ball80_ooc.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/ball80_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/ball80_ooc.xdc] for cell 'U0'
+Parsing XDC File [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1708.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1730.809 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1708.074 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.715 . Memory (MB): peak = 1730.809 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:28 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:45 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k160tffg676-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:28 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:45 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:28 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:46 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:29 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:47 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -281,25 +282,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:30 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:49 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:34 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:54 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:34 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:55 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:34 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:55 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -317,37 +318,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:37 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:58 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:37 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:58 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:37 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:58 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:37 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:58 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:37 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:58 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:37 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:58 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -369,18 +370,18 @@ Report Cell Usage:
 |6     |FDRE     |     2|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:37 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:58 . Memory (MB): peak = 1730.809 ; gain = 794.539
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 173 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:34 . Memory (MB): peak = 1708.074 ; gain = 795.914
-Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:37 . Memory (MB): peak = 1708.074 ; gain = 795.914
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:48 . Memory (MB): peak = 1730.809 ; gain = 794.539
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:59 . Memory (MB): peak = 1730.809 ; gain = 794.539
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1708.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1730.809 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1708.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1730.809 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -388,11 +389,11 @@ Synth Design complete | Checksum: db5d850c
 INFO: [Common 17-83] Releasing license: Synthesis
 22 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:42 . Memory (MB): peak = 1708.074 ; gain = 1215.598
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1708.074 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1/ball80.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:01:09 . Memory (MB): peak = 1730.809 ; gain = 1215.117
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.558 . Memory (MB): peak = 1730.809 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1/ball80.dcp' has been generated.
 INFO: [Coretcl 2-1174] Renamed 11 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1708.074 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1/ball80.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1730.809 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1/ball80.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ball80_utilization_synth.rpt -pb ball80_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 14 18:37:42 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 15 19:23:08 2024...
