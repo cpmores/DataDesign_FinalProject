@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Thu Jun 13 20:57:56 2024
-| Host         : beastern running 64-bit major release  (build 9200)
+| Date         : Fri Jun 14 10:07:56 2024
+| Host         : LAPTOP-IJHTN70K running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
 | Device       : xc7k160t
@@ -74,26 +74,26 @@ Table of Contents
 |                   Clock Signal                  |             Enable Signal             |                Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
 +-------------------------------------------------+---------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
 |  vga_display0/map0/data_map_reg_reg[11]/G0      |                                       |                                               |                1 |              1 |         1.00 |
+|  vga_display0/map0/data_map_reg_reg[11]_i_1_n_0 |                                       | vga_display0/map0/data_map_reg_reg[7]_i_1_n_0 |                1 |              1 |         1.00 |
+|  m0/ballbounce0/y_pixel_offset_reg_reg_1        |                                       |                                               |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG                                  | in0/buffer[0]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG                                  | in0/buffer[1]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG                                  | in0/buffer[2]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG                                  | in0/buffer[3]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG                                  | in0/buffer[9]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG                                  | in0/buffer[5]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG                                  | in0/buffer[7]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG                                  | in0/buffer[8]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG                                  | in0/buffer[6]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG                                  | in0/buffer[4]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
-|  vga_display0/map0/data_map_reg_reg[11]_i_1_n_0 |                                       | vga_display0/map0/data_map_reg_reg[7]_i_1_n_0 |                1 |              1 |         1.00 |
-|  m0/ballbounce0/y_pixel_offset_reg_reg_1        |                                       |                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                  | in0/buffer[3]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                  | in0/buffer[9]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                  | in0/buffer[5]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                  | in0/buffer[2]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                  | in0/buffer[7]_i_1_n_0                 |                                               |                1 |              1 |         1.00 |
 |  vga_display0/flocation0/E[0]                   |                                       |                                               |                1 |              2 |         2.00 |
+|  vga_display0/c0/clka                           |                                       |                                               |                3 |              4 |         1.33 |
 |  clk_IBUF_BUFG                                  |                                       | vga_display0/m0/rstn                          |                3 |              4 |         1.33 |
 |  clk_IBUF_BUFG                                  | in0/sampling                          | vga_display0/m0/rstn                          |                1 |              4 |         4.00 |
-|  vga_display0/c0/clka                           |                                       |                                               |                3 |              4 |         1.33 |
 |  vga_display0/c0/S[0]                           |                                       | rstn_IBUF                                     |                3 |              9 |         3.00 |
+|  vga_display0/c0/S[0]                           | m0/update_xy0/x_calculated[9]_i_1_n_0 |                                               |                3 |             10 |         3.33 |
 |  clkdiv[1]                                      |                                       | vga_display0/m0/h_count[9]_i_1_n_0            |                4 |             10 |         2.50 |
 |  clkdiv[1]                                      | vga_display0/m0/v_count               | vga_display0/m0/rstn                          |                3 |             10 |         3.33 |
-|  vga_display0/c0/S[0]                           | m0/update_xy0/x_calculated[9]_i_1_n_0 |                                               |                3 |             10 |         3.33 |
 |  clkdiv[1]                                      |                                       | vga_display0/m0/rdn                           |                3 |             12 |         4.00 |
 |  clk_IBUF_BUFG                                  |                                       |                                               |                7 |             20 |         2.86 |
 |  clkdiv[1]                                      |                                       |                                               |               11 |             22 |         2.00 |

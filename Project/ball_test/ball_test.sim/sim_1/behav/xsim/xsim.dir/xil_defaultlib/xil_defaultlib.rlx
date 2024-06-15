@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+D:/git_repo/DataDesign_FinalProject/Project/ball_test/ball_test.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+D:/git_repo/DataDesign_FinalProject/Project/ball_test/tb_ball_test.v,1718332511,verilog,,,,tv_ball_test,,,,,,,,
+D:/git_repo/DataDesign_FinalProject/Project/ball_test/update_xy.v,1718332283,verilog,,D:/git_repo/DataDesign_FinalProject/Project/ball_test/tb_ball_test.v,,update_xy,,,,,,,,
+D:/git_repo/DataDesign_FinalProject/Project/code/clkdiv.v,1718330176,verilog,,D:/git_repo/DataDesign_FinalProject/Project/code/counter_64.v,,clkdiv,,,,,,,,
+D:/git_repo/DataDesign_FinalProject/Project/code/counter_64.v,1718332739,verilog,,D:/git_repo/DataDesign_FinalProject/Project/ball_test/update_xy.v,,counter_64,,,,,,,,

@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../code/clkdiv.v" \
+"../../../../../code/counter_64.v" \
+"../../../../update_xy.v" \
+"../../../../tb_ball_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

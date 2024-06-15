@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/top.tcl"
+  variable script "D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 8
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k160tffg676-2L
 
@@ -79,35 +77,35 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.cache/wt [current_project]
-set_property parent.project_path C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.xpr [current_project]
+set_property webtalk.parent_dir D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.cache/wt [current_project]
+set_property parent.project_path D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.xpr [current_project]
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.cache/ip [current_project]
+set_property ip_output_repo d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/imgs/output_new.coe
-add_files C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/imgs/output_new_gameover.coe
+add_files D:/git_repo/DataDesign_FinalProject/Project/imgs/output_new.coe
+add_files D:/git_repo/DataDesign_FinalProject/Project/imgs/output_new_gameover.coe
 read_verilog -library xil_defaultlib {
-  C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/ball_control.v
-  C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/ballbounce.v
-  C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/clkdiv.v
-  C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/counter_64.v
-  C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/flocation.v
-  C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/map/map.v
-  C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/ps2_keyboard.v
-  C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/update_xy.v
-  C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vga_display.v
-  C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/vgac.v
-  C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/code/top.v
+  D:/git_repo/DataDesign_FinalProject/Project/code/ball_control.v
+  D:/git_repo/DataDesign_FinalProject/Project/code/ballbounce.v
+  D:/git_repo/DataDesign_FinalProject/Project/code/clkdiv.v
+  D:/git_repo/DataDesign_FinalProject/Project/code/counter_64.v
+  D:/git_repo/DataDesign_FinalProject/Project/code/flocation.v
+  D:/git_repo/DataDesign_FinalProject/Project/code/map/map.v
+  D:/git_repo/DataDesign_FinalProject/Project/code/ps2_keyboard.v
+  D:/git_repo/DataDesign_FinalProject/Project/code/update_xy.v
+  D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v
+  D:/git_repo/DataDesign_FinalProject/Project/code/vgac.v
+  D:/git_repo/DataDesign_FinalProject/Project/code/top.v
 }
-read_ip -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball/ball.xci
-set_property used_in_implementation false [get_files -all c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball/ball_ooc.xdc]
+read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball/ball.xci
+set_property used_in_implementation false [get_files -all d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball/ball_ooc.xdc]
 
-read_ip -quiet C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_new_gameover/output_new_gameover.xci
-set_property used_in_implementation false [get_files -all c:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_new_gameover/output_new_gameover_ooc.xdc]
+read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_new_gameover/output_new_gameover.xci
+set_property used_in_implementation false [get_files -all d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_new_gameover/output_new_gameover_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -118,12 +116,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc
-set_property used_in_implementation false [get_files C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/constraints/top.xdc]
+read_xdc D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc
+set_property used_in_implementation false [get_files D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/13684/Desktop/1year2/logicDesign/BigAssignment/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/utils_1/imports/synth_1/top.dcp
+read_checkpoint -auto_incremental -incremental D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/utils_1/imports/synth_1/top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
