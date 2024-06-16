@@ -1,0 +1,1595 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Sun Jun 16 13:00:40 2024
+| Host         : LAPTOP-IJHTN70K running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation
+| Design       : top
+| Device       : 7k160t-ffg676
+| Speed File   : -2L  PRODUCTION 1.12 2017-02-17
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                     Violations  
+---------  ----------------  ------------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell     333         
+LUTAR-1    Warning           LUT drives async reset alert    1           
+TIMING-20  Warning           Non-clocked latch               4           
+LATCH-1    Advisory          Existing latches in the design  1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (369)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (1239)
+5. checking no_input_delay (3)
+6. checking no_output_delay (18)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (369)
+--------------------------
+ There are 146 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+ There are 36 register/latch pins with no clock driven by root clock pin: m0/update_xy0/m1/clkdiv_reg[16]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: m0/update_xy0/m1/clkdiv_reg[23]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: m0/update_xy0/x_calculated_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: m0/update_xy0/x_calculated_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: m0/update_xy0/x_calculated_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: m0/update_xy0/x_calculated_reg[3]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: m0/update_xy0/x_calculated_reg[4]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: m0/update_xy0/x_calculated_reg[5]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: m0/update_xy0/x_calculated_reg[6]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: m0/update_xy0/x_calculated_reg[7]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: m0/update_xy0/x_calculated_reg[8]/Q (HIGH)
+
+ There are 78 register/latch pins with no clock driven by root clock pin: vga_display0/c0/clkdiv_reg[0]/Q (HIGH)
+
+ There are 70 register/latch pins with no clock driven by root clock pin: vga_display0/c0/clkdiv_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[3]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[4]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[5]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[6]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[7]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: vga_display0/m0/col_addr_reg[8]/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (1239)
+---------------------------------------------------
+ There are 1239 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (3)
+------------------------------
+ There are 3 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (18)
+--------------------------------
+ There are 18 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                 1257          inf        0.000                      0                 1257           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay          1257 Endpoints
+Min Delay          1257 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 m0/update_xy0/Counter/count_reg[15]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            out1/M2/buffer_reg[54]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        22.270ns  (logic 5.433ns (24.396%)  route 16.837ns (75.604%))
+  Logic Levels:           45  (CARRY4=21 FDCE=1 LUT2=2 LUT3=5 LUT4=3 LUT5=3 LUT6=10)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y60         FDCE                         0.000     0.000 r  m0/update_xy0/Counter/count_reg[15]/C
+    SLICE_X21Y60         FDCE (Prop_fdce_C_Q)         0.223     0.223 f  m0/update_xy0/Counter/count_reg[15]/Q
+                         net (fo=35, routed)          1.753     1.976    m0/update_xy0/Counter/out[15]
+    SLICE_X18Y63         LUT3 (Prop_lut3_I2_O)        0.043     2.019 r  m0/update_xy0/Counter/XLXI_7_i_106__0/O
+                         net (fo=2, routed)           0.469     2.488    m0/update_xy0/Counter/XLXI_7_i_106__0_n_0
+    SLICE_X12Y63         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283     2.771 r  m0/update_xy0/Counter/XLXI_7_i_98__0/CO[3]
+                         net (fo=1, routed)           0.000     2.771    m0/update_xy0/Counter/XLXI_7_i_98__0_n_0
+    SLICE_X12Y64         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     2.879 r  m0/update_xy0/Counter/XLXI_7_i_53/O[0]
+                         net (fo=4, routed)           0.536     3.416    m0/update_xy0/Counter/XLXI_7_i_53_n_7
+    SLICE_X17Y63         LUT3 (Prop_lut3_I2_O)        0.134     3.550 r  m0/update_xy0/Counter/XLXI_7_i_99/O
+                         net (fo=1, routed)           0.151     3.700    m0/update_xy0/Counter/XLXI_7_i_99_n_0
+    SLICE_X17Y63         LUT5 (Prop_lut5_I4_O)        0.137     3.837 r  m0/update_xy0/Counter/XLXI_7_i_43/O
+                         net (fo=2, routed)           0.741     4.578    m0/update_xy0/Counter/XLXI_7_i_43_n_0
+    SLICE_X15Y63         LUT6 (Prop_lut6_I0_O)        0.043     4.621 r  m0/update_xy0/Counter/XLXI_7_i_47__0/O
+                         net (fo=1, routed)           0.000     4.621    m0/update_xy0/Counter/XLXI_7_i_47__0_n_0
+    SLICE_X15Y63         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     4.814 r  m0/update_xy0/Counter/XLXI_7_i_12/CO[3]
+                         net (fo=1, routed)           0.000     4.814    m0/update_xy0/Counter/XLXI_7_i_12_n_0
+    SLICE_X15Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.867 r  m0/update_xy0/Counter/XLXI_7_i_5__0/CO[3]
+                         net (fo=1, routed)           0.000     4.867    m0/update_xy0/Counter/XLXI_7_i_5__0_n_0
+    SLICE_X15Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.920 r  m0/update_xy0/Counter/XLXI_7_i_6__1/CO[3]
+                         net (fo=1, routed)           0.000     4.920    m0/update_xy0/Counter/XLXI_7_i_6__1_n_0
+    SLICE_X15Y66         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.111     5.031 r  m0/update_xy0/Counter/XLXI_7_i_10/O[2]
+                         net (fo=13, routed)          1.168     6.199    m0/update_xy0/Counter/XLXI_7_i_10_n_5
+    SLICE_X19Y69         LUT2 (Prop_lut2_I1_O)        0.122     6.321 r  m0/update_xy0/Counter/XLXI_7_i_165/O
+                         net (fo=1, routed)           0.000     6.321    m0/update_xy0/Counter/XLXI_7_i_165_n_0
+    SLICE_X19Y69         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     6.588 r  m0/update_xy0/Counter/XLXI_7_i_82/CO[3]
+                         net (fo=1, routed)           0.000     6.588    m0/update_xy0/Counter/XLXI_7_i_82_n_0
+    SLICE_X19Y70         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166     6.754 r  m0/update_xy0/Counter/XLXI_7_i_38__0/O[1]
+                         net (fo=3, routed)           0.445     7.199    m0/update_xy0/Counter/XLXI_7_i_38__0_n_6
+    SLICE_X18Y70         LUT4 (Prop_lut4_I2_O)        0.123     7.322 r  m0/update_xy0/Counter/XLXI_7_i_80__0/O
+                         net (fo=1, routed)           0.000     7.322    m0/update_xy0/Counter/XLXI_7_i_80__0_n_0
+    SLICE_X18Y70         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     7.578 r  m0/update_xy0/Counter/XLXI_7_i_29__0/CO[3]
+                         net (fo=1, routed)           0.000     7.578    m0/update_xy0/Counter/XLXI_7_i_29__0_n_0
+    SLICE_X18Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     7.632 r  m0/update_xy0/Counter/XLXI_7_i_8__1/CO[3]
+                         net (fo=1, routed)           0.000     7.632    m0/update_xy0/Counter/XLXI_7_i_8__1_n_0
+    SLICE_X18Y72         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133     7.765 r  m0/update_xy0/Counter/XLXI_7_i_3__1/CO[0]
+                         net (fo=60, routed)          1.089     8.854    m0/update_xy0/Counter/XLXI_7_i_3__1_n_3
+    SLICE_X10Y77         LUT3 (Prop_lut3_I2_O)        0.128     8.982 r  m0/update_xy0/Counter/XLXI_7_i_14__1/O
+                         net (fo=49, routed)          1.466    10.448    m0/update_xy0/Counter/XLXI_7_i_14__1_n_0
+    SLICE_X16Y70         LUT6 (Prop_lut6_I4_O)        0.043    10.491 r  m0/update_xy0/Counter/XLXI_7_i_178/O
+                         net (fo=1, routed)           0.376    10.867    m0/update_xy0/Counter/XLXI_7_i_178_n_0
+    SLICE_X15Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.190    11.057 r  m0/update_xy0/Counter/XLXI_7_i_100__0/CO[3]
+                         net (fo=1, routed)           0.000    11.057    m0/update_xy0/Counter/XLXI_7_i_100__0_n_0
+    SLICE_X15Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.110 r  m0/update_xy0/Counter/XLXI_7_i_50/CO[3]
+                         net (fo=1, routed)           0.000    11.110    m0/update_xy0/Counter/XLXI_7_i_50_n_0
+    SLICE_X15Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.163 r  m0/update_xy0/Counter/XLXI_7_i_55__1/CO[3]
+                         net (fo=1, routed)           0.000    11.163    m0/update_xy0/Counter/XLXI_7_i_55__1_n_0
+    SLICE_X15Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.216 r  m0/update_xy0/Counter/XLXI_7_i_30__0/CO[3]
+                         net (fo=1, routed)           0.007    11.223    m0/update_xy0/Counter/XLXI_7_i_30__0_n_0
+    SLICE_X15Y75         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.389 r  m0/update_xy0/Counter/XLXI_7_i_77__0/O[1]
+                         net (fo=3, routed)           0.554    11.943    m0/update_xy0/Counter/XLXI_7_i_77__0_n_6
+    SLICE_X11Y76         LUT3 (Prop_lut3_I2_O)        0.129    12.072 r  m0/update_xy0/Counter/XLXI_7_i_95__0/O
+                         net (fo=1, routed)           0.437    12.509    m0/update_xy0/Counter/XLXI_7_i_95__0_n_0
+    SLICE_X17Y75         LUT5 (Prop_lut5_I4_O)        0.136    12.645 r  m0/update_xy0/Counter/XLXI_7_i_42__0/O
+                         net (fo=2, routed)           0.392    13.038    m0/update_xy0/Counter/XLXI_7_i_42__0_n_0
+    SLICE_X12Y75         LUT6 (Prop_lut6_I0_O)        0.043    13.081 r  m0/update_xy0/Counter/XLXI_7_i_46__1/O
+                         net (fo=1, routed)           0.000    13.081    m0/update_xy0/Counter/XLXI_7_i_46__1_n_0
+    SLICE_X12Y75         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    13.337 r  m0/update_xy0/Counter/XLXI_7_i_17__0/CO[3]
+                         net (fo=1, routed)           0.000    13.337    m0/update_xy0/Counter/XLXI_7_i_17__0_n_0
+    SLICE_X12Y76         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.112    13.449 r  m0/update_xy0/Counter/XLXI_8_i_26__0/O[2]
+                         net (fo=5, routed)           0.642    14.090    m0/update_xy0/Counter/XLXI_8_i_26__0_n_5
+    SLICE_X14Y78         LUT2 (Prop_lut2_I0_O)        0.127    14.217 r  m0/update_xy0/Counter/XLXI_7_i_149__0/O
+                         net (fo=1, routed)           0.000    14.217    m0/update_xy0/Counter/XLXI_7_i_149__0_n_0
+    SLICE_X14Y78         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.292    14.509 r  m0/update_xy0/Counter/XLXI_7_i_78/O[3]
+                         net (fo=3, routed)           0.703    15.212    m0/update_xy0/Counter/XLXI_7_i_78_n_4
+    SLICE_X17Y74         LUT6 (Prop_lut6_I0_O)        0.120    15.332 r  m0/update_xy0/Counter/XLXI_7_i_88__0/O
+                         net (fo=1, routed)           0.288    15.620    m0/update_xy0/Counter/XLXI_7_i_88__0_n_0
+    SLICE_X14Y74         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283    15.903 r  m0/update_xy0/Counter/XLXI_7_i_37__0/CO[3]
+                         net (fo=1, routed)           0.007    15.911    m0/update_xy0/Counter/XLXI_7_i_37__0_n_0
+    SLICE_X14Y75         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    16.044 r  m0/update_xy0/Counter/XLXI_7_i_16__1/CO[0]
+                         net (fo=20, routed)          1.211    17.255    m0/update_xy0/Counter/XLXI_7_i_16__1_n_3
+    SLICE_X7Y77          LUT5 (Prop_lut5_I3_O)        0.134    17.389 r  m0/update_xy0/Counter/XLXI_8_i_41/O
+                         net (fo=3, routed)           0.371    17.760    m0/update_xy0/Counter/XLXI_8_i_41_n_0
+    SLICE_X6Y77          LUT6 (Prop_lut6_I1_O)        0.136    17.896 r  m0/update_xy0/Counter/XLXI_8_i_28__0/O
+                         net (fo=3, routed)           0.499    18.396    m0/update_xy0/Counter/XLXI_8_i_28__0_n_0
+    SLICE_X7Y76          LUT6 (Prop_lut6_I1_O)        0.043    18.439 r  m0/update_xy0/Counter/XLXI_8_i_20__0/O
+                         net (fo=3, routed)           0.446    18.884    m0/update_xy0/Counter/XLXI_8_i_20__0_n_0
+    SLICE_X7Y75          LUT6 (Prop_lut6_I3_O)        0.043    18.927 r  m0/update_xy0/Counter/XLXI_8_i_17__0/O
+                         net (fo=3, routed)           0.454    19.381    m0/update_xy0/Counter/XLXI_8_i_17__0_n_0
+    SLICE_X7Y74          LUT6 (Prop_lut6_I4_O)        0.043    19.424 r  m0/update_xy0/Counter/XLXI_8_i_8__0/O
+                         net (fo=3, routed)           0.518    19.942    m0/update_xy0/Counter/XLXI_8_i_8__0_n_0
+    SLICE_X8Y74          LUT6 (Prop_lut6_I1_O)        0.043    19.985 r  m0/update_xy0/Counter/XLXI_8_i_2__0/O
+                         net (fo=3, routed)           0.454    20.439    m0/update_xy0/Counter/XLXI_8_i_2__0_n_0
+    SLICE_X8Y73          LUT6 (Prop_lut6_I0_O)        0.043    20.482 f  m0/update_xy0/Counter/XLXI_9_i_1__0/O
+                         net (fo=18, routed)          0.948    21.430    out1/SM1/HTS6/MSEG/XLXN_79
+    SLICE_X5Y68          LUT3 (Prop_lut3_I2_O)        0.043    21.473 r  out1/SM1/HTS6/MSEG/XLXI_49/O
+                         net (fo=2, routed)           0.355    21.828    out1/SM1/HTS6/MSEG/XLXN_121
+    SLICE_X4Y69          LUT4 (Prop_lut4_I1_O)        0.043    21.871 r  out1/SM1/HTS6/MSEG/XLXI_28/O
+                         net (fo=1, routed)           0.356    22.227    out1/M2/P_Data[54]
+    SLICE_X6Y69          LUT4 (Prop_lut4_I3_O)        0.043    22.270 r  out1/M2/buffer[54]_i_1/O
+                         net (fo=1, routed)           0.000    22.270    out1/M2/buffer[54]
+    SLICE_X6Y69          FDRE                                         r  out1/M2/buffer_reg[54]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/update_xy0/Counter/count_reg[15]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            out1/M2/buffer_reg[52]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        22.192ns  (logic 5.433ns (24.482%)  route 16.759ns (75.518%))
+  Logic Levels:           45  (CARRY4=21 FDCE=1 LUT2=2 LUT3=4 LUT4=4 LUT5=3 LUT6=10)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y60         FDCE                         0.000     0.000 r  m0/update_xy0/Counter/count_reg[15]/C
+    SLICE_X21Y60         FDCE (Prop_fdce_C_Q)         0.223     0.223 f  m0/update_xy0/Counter/count_reg[15]/Q
+                         net (fo=35, routed)          1.753     1.976    m0/update_xy0/Counter/out[15]
+    SLICE_X18Y63         LUT3 (Prop_lut3_I2_O)        0.043     2.019 r  m0/update_xy0/Counter/XLXI_7_i_106__0/O
+                         net (fo=2, routed)           0.469     2.488    m0/update_xy0/Counter/XLXI_7_i_106__0_n_0
+    SLICE_X12Y63         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283     2.771 r  m0/update_xy0/Counter/XLXI_7_i_98__0/CO[3]
+                         net (fo=1, routed)           0.000     2.771    m0/update_xy0/Counter/XLXI_7_i_98__0_n_0
+    SLICE_X12Y64         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     2.879 r  m0/update_xy0/Counter/XLXI_7_i_53/O[0]
+                         net (fo=4, routed)           0.536     3.416    m0/update_xy0/Counter/XLXI_7_i_53_n_7
+    SLICE_X17Y63         LUT3 (Prop_lut3_I2_O)        0.134     3.550 r  m0/update_xy0/Counter/XLXI_7_i_99/O
+                         net (fo=1, routed)           0.151     3.700    m0/update_xy0/Counter/XLXI_7_i_99_n_0
+    SLICE_X17Y63         LUT5 (Prop_lut5_I4_O)        0.137     3.837 r  m0/update_xy0/Counter/XLXI_7_i_43/O
+                         net (fo=2, routed)           0.741     4.578    m0/update_xy0/Counter/XLXI_7_i_43_n_0
+    SLICE_X15Y63         LUT6 (Prop_lut6_I0_O)        0.043     4.621 r  m0/update_xy0/Counter/XLXI_7_i_47__0/O
+                         net (fo=1, routed)           0.000     4.621    m0/update_xy0/Counter/XLXI_7_i_47__0_n_0
+    SLICE_X15Y63         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     4.814 r  m0/update_xy0/Counter/XLXI_7_i_12/CO[3]
+                         net (fo=1, routed)           0.000     4.814    m0/update_xy0/Counter/XLXI_7_i_12_n_0
+    SLICE_X15Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.867 r  m0/update_xy0/Counter/XLXI_7_i_5__0/CO[3]
+                         net (fo=1, routed)           0.000     4.867    m0/update_xy0/Counter/XLXI_7_i_5__0_n_0
+    SLICE_X15Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.920 r  m0/update_xy0/Counter/XLXI_7_i_6__1/CO[3]
+                         net (fo=1, routed)           0.000     4.920    m0/update_xy0/Counter/XLXI_7_i_6__1_n_0
+    SLICE_X15Y66         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.111     5.031 r  m0/update_xy0/Counter/XLXI_7_i_10/O[2]
+                         net (fo=13, routed)          1.168     6.199    m0/update_xy0/Counter/XLXI_7_i_10_n_5
+    SLICE_X19Y69         LUT2 (Prop_lut2_I1_O)        0.122     6.321 r  m0/update_xy0/Counter/XLXI_7_i_165/O
+                         net (fo=1, routed)           0.000     6.321    m0/update_xy0/Counter/XLXI_7_i_165_n_0
+    SLICE_X19Y69         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     6.588 r  m0/update_xy0/Counter/XLXI_7_i_82/CO[3]
+                         net (fo=1, routed)           0.000     6.588    m0/update_xy0/Counter/XLXI_7_i_82_n_0
+    SLICE_X19Y70         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166     6.754 r  m0/update_xy0/Counter/XLXI_7_i_38__0/O[1]
+                         net (fo=3, routed)           0.445     7.199    m0/update_xy0/Counter/XLXI_7_i_38__0_n_6
+    SLICE_X18Y70         LUT4 (Prop_lut4_I2_O)        0.123     7.322 r  m0/update_xy0/Counter/XLXI_7_i_80__0/O
+                         net (fo=1, routed)           0.000     7.322    m0/update_xy0/Counter/XLXI_7_i_80__0_n_0
+    SLICE_X18Y70         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     7.578 r  m0/update_xy0/Counter/XLXI_7_i_29__0/CO[3]
+                         net (fo=1, routed)           0.000     7.578    m0/update_xy0/Counter/XLXI_7_i_29__0_n_0
+    SLICE_X18Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     7.632 r  m0/update_xy0/Counter/XLXI_7_i_8__1/CO[3]
+                         net (fo=1, routed)           0.000     7.632    m0/update_xy0/Counter/XLXI_7_i_8__1_n_0
+    SLICE_X18Y72         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133     7.765 r  m0/update_xy0/Counter/XLXI_7_i_3__1/CO[0]
+                         net (fo=60, routed)          1.089     8.854    m0/update_xy0/Counter/XLXI_7_i_3__1_n_3
+    SLICE_X10Y77         LUT3 (Prop_lut3_I2_O)        0.128     8.982 r  m0/update_xy0/Counter/XLXI_7_i_14__1/O
+                         net (fo=49, routed)          1.466    10.448    m0/update_xy0/Counter/XLXI_7_i_14__1_n_0
+    SLICE_X16Y70         LUT6 (Prop_lut6_I4_O)        0.043    10.491 r  m0/update_xy0/Counter/XLXI_7_i_178/O
+                         net (fo=1, routed)           0.376    10.867    m0/update_xy0/Counter/XLXI_7_i_178_n_0
+    SLICE_X15Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.190    11.057 r  m0/update_xy0/Counter/XLXI_7_i_100__0/CO[3]
+                         net (fo=1, routed)           0.000    11.057    m0/update_xy0/Counter/XLXI_7_i_100__0_n_0
+    SLICE_X15Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.110 r  m0/update_xy0/Counter/XLXI_7_i_50/CO[3]
+                         net (fo=1, routed)           0.000    11.110    m0/update_xy0/Counter/XLXI_7_i_50_n_0
+    SLICE_X15Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.163 r  m0/update_xy0/Counter/XLXI_7_i_55__1/CO[3]
+                         net (fo=1, routed)           0.000    11.163    m0/update_xy0/Counter/XLXI_7_i_55__1_n_0
+    SLICE_X15Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.216 r  m0/update_xy0/Counter/XLXI_7_i_30__0/CO[3]
+                         net (fo=1, routed)           0.007    11.223    m0/update_xy0/Counter/XLXI_7_i_30__0_n_0
+    SLICE_X15Y75         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.389 r  m0/update_xy0/Counter/XLXI_7_i_77__0/O[1]
+                         net (fo=3, routed)           0.554    11.943    m0/update_xy0/Counter/XLXI_7_i_77__0_n_6
+    SLICE_X11Y76         LUT3 (Prop_lut3_I2_O)        0.129    12.072 r  m0/update_xy0/Counter/XLXI_7_i_95__0/O
+                         net (fo=1, routed)           0.437    12.509    m0/update_xy0/Counter/XLXI_7_i_95__0_n_0
+    SLICE_X17Y75         LUT5 (Prop_lut5_I4_O)        0.136    12.645 r  m0/update_xy0/Counter/XLXI_7_i_42__0/O
+                         net (fo=2, routed)           0.392    13.038    m0/update_xy0/Counter/XLXI_7_i_42__0_n_0
+    SLICE_X12Y75         LUT6 (Prop_lut6_I0_O)        0.043    13.081 r  m0/update_xy0/Counter/XLXI_7_i_46__1/O
+                         net (fo=1, routed)           0.000    13.081    m0/update_xy0/Counter/XLXI_7_i_46__1_n_0
+    SLICE_X12Y75         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    13.337 r  m0/update_xy0/Counter/XLXI_7_i_17__0/CO[3]
+                         net (fo=1, routed)           0.000    13.337    m0/update_xy0/Counter/XLXI_7_i_17__0_n_0
+    SLICE_X12Y76         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.112    13.449 r  m0/update_xy0/Counter/XLXI_8_i_26__0/O[2]
+                         net (fo=5, routed)           0.642    14.090    m0/update_xy0/Counter/XLXI_8_i_26__0_n_5
+    SLICE_X14Y78         LUT2 (Prop_lut2_I0_O)        0.127    14.217 r  m0/update_xy0/Counter/XLXI_7_i_149__0/O
+                         net (fo=1, routed)           0.000    14.217    m0/update_xy0/Counter/XLXI_7_i_149__0_n_0
+    SLICE_X14Y78         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.292    14.509 r  m0/update_xy0/Counter/XLXI_7_i_78/O[3]
+                         net (fo=3, routed)           0.703    15.212    m0/update_xy0/Counter/XLXI_7_i_78_n_4
+    SLICE_X17Y74         LUT6 (Prop_lut6_I0_O)        0.120    15.332 r  m0/update_xy0/Counter/XLXI_7_i_88__0/O
+                         net (fo=1, routed)           0.288    15.620    m0/update_xy0/Counter/XLXI_7_i_88__0_n_0
+    SLICE_X14Y74         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283    15.903 r  m0/update_xy0/Counter/XLXI_7_i_37__0/CO[3]
+                         net (fo=1, routed)           0.007    15.911    m0/update_xy0/Counter/XLXI_7_i_37__0_n_0
+    SLICE_X14Y75         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    16.044 r  m0/update_xy0/Counter/XLXI_7_i_16__1/CO[0]
+                         net (fo=20, routed)          1.211    17.255    m0/update_xy0/Counter/XLXI_7_i_16__1_n_3
+    SLICE_X7Y77          LUT5 (Prop_lut5_I3_O)        0.134    17.389 r  m0/update_xy0/Counter/XLXI_8_i_41/O
+                         net (fo=3, routed)           0.371    17.760    m0/update_xy0/Counter/XLXI_8_i_41_n_0
+    SLICE_X6Y77          LUT6 (Prop_lut6_I1_O)        0.136    17.896 r  m0/update_xy0/Counter/XLXI_8_i_28__0/O
+                         net (fo=3, routed)           0.499    18.396    m0/update_xy0/Counter/XLXI_8_i_28__0_n_0
+    SLICE_X7Y76          LUT6 (Prop_lut6_I1_O)        0.043    18.439 r  m0/update_xy0/Counter/XLXI_8_i_20__0/O
+                         net (fo=3, routed)           0.446    18.884    m0/update_xy0/Counter/XLXI_8_i_20__0_n_0
+    SLICE_X7Y75          LUT6 (Prop_lut6_I3_O)        0.043    18.927 r  m0/update_xy0/Counter/XLXI_8_i_17__0/O
+                         net (fo=3, routed)           0.454    19.381    m0/update_xy0/Counter/XLXI_8_i_17__0_n_0
+    SLICE_X7Y74          LUT6 (Prop_lut6_I4_O)        0.043    19.424 r  m0/update_xy0/Counter/XLXI_8_i_8__0/O
+                         net (fo=3, routed)           0.518    19.942    m0/update_xy0/Counter/XLXI_8_i_8__0_n_0
+    SLICE_X8Y74          LUT6 (Prop_lut6_I1_O)        0.043    19.985 r  m0/update_xy0/Counter/XLXI_8_i_2__0/O
+                         net (fo=3, routed)           0.454    20.439    m0/update_xy0/Counter/XLXI_8_i_2__0_n_0
+    SLICE_X8Y73          LUT6 (Prop_lut6_I0_O)        0.043    20.482 r  m0/update_xy0/Counter/XLXI_9_i_1__0/O
+                         net (fo=18, routed)          0.780    21.262    out1/SM1/HTS6/MSEG/XLXN_79
+    SLICE_X5Y70          LUT4 (Prop_lut4_I3_O)        0.043    21.305 r  out1/SM1/HTS6/MSEG/XLXI_8/O
+                         net (fo=2, routed)           0.363    21.667    out1/SM1/HTS6/MSEG/XLXN_132
+    SLICE_X5Y70          LUT4 (Prop_lut4_I2_O)        0.043    21.710 r  out1/SM1/HTS6/MSEG/XLXI_29/O
+                         net (fo=1, routed)           0.438    22.149    out1/M2/P_Data[52]
+    SLICE_X5Y69          LUT4 (Prop_lut4_I3_O)        0.043    22.192 r  out1/M2/buffer[52]_i_1/O
+                         net (fo=1, routed)           0.000    22.192    out1/M2/buffer[52]
+    SLICE_X5Y69          FDRE                                         r  out1/M2/buffer_reg[52]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/update_xy0/Counter/count_reg[15]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            out1/M2/buffer_reg[51]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        22.180ns  (logic 5.433ns (24.495%)  route 16.747ns (75.505%))
+  Logic Levels:           45  (CARRY4=21 FDCE=1 LUT2=2 LUT3=6 LUT4=2 LUT5=3 LUT6=10)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y60         FDCE                         0.000     0.000 r  m0/update_xy0/Counter/count_reg[15]/C
+    SLICE_X21Y60         FDCE (Prop_fdce_C_Q)         0.223     0.223 f  m0/update_xy0/Counter/count_reg[15]/Q
+                         net (fo=35, routed)          1.753     1.976    m0/update_xy0/Counter/out[15]
+    SLICE_X18Y63         LUT3 (Prop_lut3_I2_O)        0.043     2.019 r  m0/update_xy0/Counter/XLXI_7_i_106__0/O
+                         net (fo=2, routed)           0.469     2.488    m0/update_xy0/Counter/XLXI_7_i_106__0_n_0
+    SLICE_X12Y63         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283     2.771 r  m0/update_xy0/Counter/XLXI_7_i_98__0/CO[3]
+                         net (fo=1, routed)           0.000     2.771    m0/update_xy0/Counter/XLXI_7_i_98__0_n_0
+    SLICE_X12Y64         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     2.879 r  m0/update_xy0/Counter/XLXI_7_i_53/O[0]
+                         net (fo=4, routed)           0.536     3.416    m0/update_xy0/Counter/XLXI_7_i_53_n_7
+    SLICE_X17Y63         LUT3 (Prop_lut3_I2_O)        0.134     3.550 r  m0/update_xy0/Counter/XLXI_7_i_99/O
+                         net (fo=1, routed)           0.151     3.700    m0/update_xy0/Counter/XLXI_7_i_99_n_0
+    SLICE_X17Y63         LUT5 (Prop_lut5_I4_O)        0.137     3.837 r  m0/update_xy0/Counter/XLXI_7_i_43/O
+                         net (fo=2, routed)           0.741     4.578    m0/update_xy0/Counter/XLXI_7_i_43_n_0
+    SLICE_X15Y63         LUT6 (Prop_lut6_I0_O)        0.043     4.621 r  m0/update_xy0/Counter/XLXI_7_i_47__0/O
+                         net (fo=1, routed)           0.000     4.621    m0/update_xy0/Counter/XLXI_7_i_47__0_n_0
+    SLICE_X15Y63         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     4.814 r  m0/update_xy0/Counter/XLXI_7_i_12/CO[3]
+                         net (fo=1, routed)           0.000     4.814    m0/update_xy0/Counter/XLXI_7_i_12_n_0
+    SLICE_X15Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.867 r  m0/update_xy0/Counter/XLXI_7_i_5__0/CO[3]
+                         net (fo=1, routed)           0.000     4.867    m0/update_xy0/Counter/XLXI_7_i_5__0_n_0
+    SLICE_X15Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.920 r  m0/update_xy0/Counter/XLXI_7_i_6__1/CO[3]
+                         net (fo=1, routed)           0.000     4.920    m0/update_xy0/Counter/XLXI_7_i_6__1_n_0
+    SLICE_X15Y66         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.111     5.031 r  m0/update_xy0/Counter/XLXI_7_i_10/O[2]
+                         net (fo=13, routed)          1.168     6.199    m0/update_xy0/Counter/XLXI_7_i_10_n_5
+    SLICE_X19Y69         LUT2 (Prop_lut2_I1_O)        0.122     6.321 r  m0/update_xy0/Counter/XLXI_7_i_165/O
+                         net (fo=1, routed)           0.000     6.321    m0/update_xy0/Counter/XLXI_7_i_165_n_0
+    SLICE_X19Y69         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     6.588 r  m0/update_xy0/Counter/XLXI_7_i_82/CO[3]
+                         net (fo=1, routed)           0.000     6.588    m0/update_xy0/Counter/XLXI_7_i_82_n_0
+    SLICE_X19Y70         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166     6.754 r  m0/update_xy0/Counter/XLXI_7_i_38__0/O[1]
+                         net (fo=3, routed)           0.445     7.199    m0/update_xy0/Counter/XLXI_7_i_38__0_n_6
+    SLICE_X18Y70         LUT4 (Prop_lut4_I2_O)        0.123     7.322 r  m0/update_xy0/Counter/XLXI_7_i_80__0/O
+                         net (fo=1, routed)           0.000     7.322    m0/update_xy0/Counter/XLXI_7_i_80__0_n_0
+    SLICE_X18Y70         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     7.578 r  m0/update_xy0/Counter/XLXI_7_i_29__0/CO[3]
+                         net (fo=1, routed)           0.000     7.578    m0/update_xy0/Counter/XLXI_7_i_29__0_n_0
+    SLICE_X18Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     7.632 r  m0/update_xy0/Counter/XLXI_7_i_8__1/CO[3]
+                         net (fo=1, routed)           0.000     7.632    m0/update_xy0/Counter/XLXI_7_i_8__1_n_0
+    SLICE_X18Y72         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133     7.765 r  m0/update_xy0/Counter/XLXI_7_i_3__1/CO[0]
+                         net (fo=60, routed)          1.089     8.854    m0/update_xy0/Counter/XLXI_7_i_3__1_n_3
+    SLICE_X10Y77         LUT3 (Prop_lut3_I2_O)        0.128     8.982 r  m0/update_xy0/Counter/XLXI_7_i_14__1/O
+                         net (fo=49, routed)          1.466    10.448    m0/update_xy0/Counter/XLXI_7_i_14__1_n_0
+    SLICE_X16Y70         LUT6 (Prop_lut6_I4_O)        0.043    10.491 r  m0/update_xy0/Counter/XLXI_7_i_178/O
+                         net (fo=1, routed)           0.376    10.867    m0/update_xy0/Counter/XLXI_7_i_178_n_0
+    SLICE_X15Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.190    11.057 r  m0/update_xy0/Counter/XLXI_7_i_100__0/CO[3]
+                         net (fo=1, routed)           0.000    11.057    m0/update_xy0/Counter/XLXI_7_i_100__0_n_0
+    SLICE_X15Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.110 r  m0/update_xy0/Counter/XLXI_7_i_50/CO[3]
+                         net (fo=1, routed)           0.000    11.110    m0/update_xy0/Counter/XLXI_7_i_50_n_0
+    SLICE_X15Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.163 r  m0/update_xy0/Counter/XLXI_7_i_55__1/CO[3]
+                         net (fo=1, routed)           0.000    11.163    m0/update_xy0/Counter/XLXI_7_i_55__1_n_0
+    SLICE_X15Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.216 r  m0/update_xy0/Counter/XLXI_7_i_30__0/CO[3]
+                         net (fo=1, routed)           0.007    11.223    m0/update_xy0/Counter/XLXI_7_i_30__0_n_0
+    SLICE_X15Y75         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.389 r  m0/update_xy0/Counter/XLXI_7_i_77__0/O[1]
+                         net (fo=3, routed)           0.554    11.943    m0/update_xy0/Counter/XLXI_7_i_77__0_n_6
+    SLICE_X11Y76         LUT3 (Prop_lut3_I2_O)        0.129    12.072 r  m0/update_xy0/Counter/XLXI_7_i_95__0/O
+                         net (fo=1, routed)           0.437    12.509    m0/update_xy0/Counter/XLXI_7_i_95__0_n_0
+    SLICE_X17Y75         LUT5 (Prop_lut5_I4_O)        0.136    12.645 r  m0/update_xy0/Counter/XLXI_7_i_42__0/O
+                         net (fo=2, routed)           0.392    13.038    m0/update_xy0/Counter/XLXI_7_i_42__0_n_0
+    SLICE_X12Y75         LUT6 (Prop_lut6_I0_O)        0.043    13.081 r  m0/update_xy0/Counter/XLXI_7_i_46__1/O
+                         net (fo=1, routed)           0.000    13.081    m0/update_xy0/Counter/XLXI_7_i_46__1_n_0
+    SLICE_X12Y75         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    13.337 r  m0/update_xy0/Counter/XLXI_7_i_17__0/CO[3]
+                         net (fo=1, routed)           0.000    13.337    m0/update_xy0/Counter/XLXI_7_i_17__0_n_0
+    SLICE_X12Y76         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.112    13.449 r  m0/update_xy0/Counter/XLXI_8_i_26__0/O[2]
+                         net (fo=5, routed)           0.642    14.090    m0/update_xy0/Counter/XLXI_8_i_26__0_n_5
+    SLICE_X14Y78         LUT2 (Prop_lut2_I0_O)        0.127    14.217 r  m0/update_xy0/Counter/XLXI_7_i_149__0/O
+                         net (fo=1, routed)           0.000    14.217    m0/update_xy0/Counter/XLXI_7_i_149__0_n_0
+    SLICE_X14Y78         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.292    14.509 r  m0/update_xy0/Counter/XLXI_7_i_78/O[3]
+                         net (fo=3, routed)           0.703    15.212    m0/update_xy0/Counter/XLXI_7_i_78_n_4
+    SLICE_X17Y74         LUT6 (Prop_lut6_I0_O)        0.120    15.332 r  m0/update_xy0/Counter/XLXI_7_i_88__0/O
+                         net (fo=1, routed)           0.288    15.620    m0/update_xy0/Counter/XLXI_7_i_88__0_n_0
+    SLICE_X14Y74         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283    15.903 r  m0/update_xy0/Counter/XLXI_7_i_37__0/CO[3]
+                         net (fo=1, routed)           0.007    15.911    m0/update_xy0/Counter/XLXI_7_i_37__0_n_0
+    SLICE_X14Y75         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    16.044 r  m0/update_xy0/Counter/XLXI_7_i_16__1/CO[0]
+                         net (fo=20, routed)          1.211    17.255    m0/update_xy0/Counter/XLXI_7_i_16__1_n_3
+    SLICE_X7Y77          LUT5 (Prop_lut5_I3_O)        0.134    17.389 r  m0/update_xy0/Counter/XLXI_8_i_41/O
+                         net (fo=3, routed)           0.371    17.760    m0/update_xy0/Counter/XLXI_8_i_41_n_0
+    SLICE_X6Y77          LUT6 (Prop_lut6_I1_O)        0.136    17.896 r  m0/update_xy0/Counter/XLXI_8_i_28__0/O
+                         net (fo=3, routed)           0.499    18.396    m0/update_xy0/Counter/XLXI_8_i_28__0_n_0
+    SLICE_X7Y76          LUT6 (Prop_lut6_I1_O)        0.043    18.439 r  m0/update_xy0/Counter/XLXI_8_i_20__0/O
+                         net (fo=3, routed)           0.446    18.884    m0/update_xy0/Counter/XLXI_8_i_20__0_n_0
+    SLICE_X7Y75          LUT6 (Prop_lut6_I3_O)        0.043    18.927 r  m0/update_xy0/Counter/XLXI_8_i_17__0/O
+                         net (fo=3, routed)           0.454    19.381    m0/update_xy0/Counter/XLXI_8_i_17__0_n_0
+    SLICE_X7Y74          LUT6 (Prop_lut6_I4_O)        0.043    19.424 r  m0/update_xy0/Counter/XLXI_8_i_8__0/O
+                         net (fo=3, routed)           0.514    19.938    m0/update_xy0/Counter/XLXI_8_i_8__0_n_0
+    SLICE_X8Y74          LUT6 (Prop_lut6_I3_O)        0.043    19.981 r  m0/update_xy0/Counter/XLXI_8_i_4__0/O
+                         net (fo=3, routed)           0.443    20.424    m0/update_xy0/Counter/XLXI_8_i_4__0_n_0
+    SLICE_X8Y73          LUT6 (Prop_lut6_I2_O)        0.043    20.467 f  m0/update_xy0/Counter/XLXI_8_i_1__0/O
+                         net (fo=18, routed)          0.987    21.454    out1/SM1/HTS6/MSEG/XLXN_84
+    SLICE_X4Y68          LUT3 (Prop_lut3_I1_O)        0.043    21.497 r  out1/SM1/HTS6/MSEG/XLXI_54/O
+                         net (fo=1, routed)           0.239    21.736    out1/SM1/HTS6/MSEG/XLXN_145
+    SLICE_X4Y68          LUT3 (Prop_lut3_I1_O)        0.043    21.779 r  out1/SM1/HTS6/MSEG/XLXI_32/O
+                         net (fo=1, routed)           0.358    22.137    out1/M2/P_Data[51]
+    SLICE_X3Y69          LUT4 (Prop_lut4_I3_O)        0.043    22.180 r  out1/M2/buffer[51]_i_1/O
+                         net (fo=1, routed)           0.000    22.180    out1/M2/buffer[51]
+    SLICE_X3Y69          FDRE                                         r  out1/M2/buffer_reg[51]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/update_xy0/Counter/count_reg[15]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            out1/M2/buffer_reg[55]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        22.168ns  (logic 5.433ns (24.508%)  route 16.735ns (75.492%))
+  Logic Levels:           45  (CARRY4=21 FDCE=1 LUT2=2 LUT3=4 LUT4=4 LUT5=3 LUT6=10)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y60         FDCE                         0.000     0.000 r  m0/update_xy0/Counter/count_reg[15]/C
+    SLICE_X21Y60         FDCE (Prop_fdce_C_Q)         0.223     0.223 f  m0/update_xy0/Counter/count_reg[15]/Q
+                         net (fo=35, routed)          1.753     1.976    m0/update_xy0/Counter/out[15]
+    SLICE_X18Y63         LUT3 (Prop_lut3_I2_O)        0.043     2.019 r  m0/update_xy0/Counter/XLXI_7_i_106__0/O
+                         net (fo=2, routed)           0.469     2.488    m0/update_xy0/Counter/XLXI_7_i_106__0_n_0
+    SLICE_X12Y63         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283     2.771 r  m0/update_xy0/Counter/XLXI_7_i_98__0/CO[3]
+                         net (fo=1, routed)           0.000     2.771    m0/update_xy0/Counter/XLXI_7_i_98__0_n_0
+    SLICE_X12Y64         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     2.879 r  m0/update_xy0/Counter/XLXI_7_i_53/O[0]
+                         net (fo=4, routed)           0.536     3.416    m0/update_xy0/Counter/XLXI_7_i_53_n_7
+    SLICE_X17Y63         LUT3 (Prop_lut3_I2_O)        0.134     3.550 r  m0/update_xy0/Counter/XLXI_7_i_99/O
+                         net (fo=1, routed)           0.151     3.700    m0/update_xy0/Counter/XLXI_7_i_99_n_0
+    SLICE_X17Y63         LUT5 (Prop_lut5_I4_O)        0.137     3.837 r  m0/update_xy0/Counter/XLXI_7_i_43/O
+                         net (fo=2, routed)           0.741     4.578    m0/update_xy0/Counter/XLXI_7_i_43_n_0
+    SLICE_X15Y63         LUT6 (Prop_lut6_I0_O)        0.043     4.621 r  m0/update_xy0/Counter/XLXI_7_i_47__0/O
+                         net (fo=1, routed)           0.000     4.621    m0/update_xy0/Counter/XLXI_7_i_47__0_n_0
+    SLICE_X15Y63         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     4.814 r  m0/update_xy0/Counter/XLXI_7_i_12/CO[3]
+                         net (fo=1, routed)           0.000     4.814    m0/update_xy0/Counter/XLXI_7_i_12_n_0
+    SLICE_X15Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.867 r  m0/update_xy0/Counter/XLXI_7_i_5__0/CO[3]
+                         net (fo=1, routed)           0.000     4.867    m0/update_xy0/Counter/XLXI_7_i_5__0_n_0
+    SLICE_X15Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.920 r  m0/update_xy0/Counter/XLXI_7_i_6__1/CO[3]
+                         net (fo=1, routed)           0.000     4.920    m0/update_xy0/Counter/XLXI_7_i_6__1_n_0
+    SLICE_X15Y66         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.111     5.031 r  m0/update_xy0/Counter/XLXI_7_i_10/O[2]
+                         net (fo=13, routed)          1.168     6.199    m0/update_xy0/Counter/XLXI_7_i_10_n_5
+    SLICE_X19Y69         LUT2 (Prop_lut2_I1_O)        0.122     6.321 r  m0/update_xy0/Counter/XLXI_7_i_165/O
+                         net (fo=1, routed)           0.000     6.321    m0/update_xy0/Counter/XLXI_7_i_165_n_0
+    SLICE_X19Y69         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     6.588 r  m0/update_xy0/Counter/XLXI_7_i_82/CO[3]
+                         net (fo=1, routed)           0.000     6.588    m0/update_xy0/Counter/XLXI_7_i_82_n_0
+    SLICE_X19Y70         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166     6.754 r  m0/update_xy0/Counter/XLXI_7_i_38__0/O[1]
+                         net (fo=3, routed)           0.445     7.199    m0/update_xy0/Counter/XLXI_7_i_38__0_n_6
+    SLICE_X18Y70         LUT4 (Prop_lut4_I2_O)        0.123     7.322 r  m0/update_xy0/Counter/XLXI_7_i_80__0/O
+                         net (fo=1, routed)           0.000     7.322    m0/update_xy0/Counter/XLXI_7_i_80__0_n_0
+    SLICE_X18Y70         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     7.578 r  m0/update_xy0/Counter/XLXI_7_i_29__0/CO[3]
+                         net (fo=1, routed)           0.000     7.578    m0/update_xy0/Counter/XLXI_7_i_29__0_n_0
+    SLICE_X18Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     7.632 r  m0/update_xy0/Counter/XLXI_7_i_8__1/CO[3]
+                         net (fo=1, routed)           0.000     7.632    m0/update_xy0/Counter/XLXI_7_i_8__1_n_0
+    SLICE_X18Y72         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133     7.765 r  m0/update_xy0/Counter/XLXI_7_i_3__1/CO[0]
+                         net (fo=60, routed)          1.089     8.854    m0/update_xy0/Counter/XLXI_7_i_3__1_n_3
+    SLICE_X10Y77         LUT3 (Prop_lut3_I2_O)        0.128     8.982 r  m0/update_xy0/Counter/XLXI_7_i_14__1/O
+                         net (fo=49, routed)          1.466    10.448    m0/update_xy0/Counter/XLXI_7_i_14__1_n_0
+    SLICE_X16Y70         LUT6 (Prop_lut6_I4_O)        0.043    10.491 r  m0/update_xy0/Counter/XLXI_7_i_178/O
+                         net (fo=1, routed)           0.376    10.867    m0/update_xy0/Counter/XLXI_7_i_178_n_0
+    SLICE_X15Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.190    11.057 r  m0/update_xy0/Counter/XLXI_7_i_100__0/CO[3]
+                         net (fo=1, routed)           0.000    11.057    m0/update_xy0/Counter/XLXI_7_i_100__0_n_0
+    SLICE_X15Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.110 r  m0/update_xy0/Counter/XLXI_7_i_50/CO[3]
+                         net (fo=1, routed)           0.000    11.110    m0/update_xy0/Counter/XLXI_7_i_50_n_0
+    SLICE_X15Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.163 r  m0/update_xy0/Counter/XLXI_7_i_55__1/CO[3]
+                         net (fo=1, routed)           0.000    11.163    m0/update_xy0/Counter/XLXI_7_i_55__1_n_0
+    SLICE_X15Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.216 r  m0/update_xy0/Counter/XLXI_7_i_30__0/CO[3]
+                         net (fo=1, routed)           0.007    11.223    m0/update_xy0/Counter/XLXI_7_i_30__0_n_0
+    SLICE_X15Y75         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.389 r  m0/update_xy0/Counter/XLXI_7_i_77__0/O[1]
+                         net (fo=3, routed)           0.554    11.943    m0/update_xy0/Counter/XLXI_7_i_77__0_n_6
+    SLICE_X11Y76         LUT3 (Prop_lut3_I2_O)        0.129    12.072 r  m0/update_xy0/Counter/XLXI_7_i_95__0/O
+                         net (fo=1, routed)           0.437    12.509    m0/update_xy0/Counter/XLXI_7_i_95__0_n_0
+    SLICE_X17Y75         LUT5 (Prop_lut5_I4_O)        0.136    12.645 r  m0/update_xy0/Counter/XLXI_7_i_42__0/O
+                         net (fo=2, routed)           0.392    13.038    m0/update_xy0/Counter/XLXI_7_i_42__0_n_0
+    SLICE_X12Y75         LUT6 (Prop_lut6_I0_O)        0.043    13.081 r  m0/update_xy0/Counter/XLXI_7_i_46__1/O
+                         net (fo=1, routed)           0.000    13.081    m0/update_xy0/Counter/XLXI_7_i_46__1_n_0
+    SLICE_X12Y75         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    13.337 r  m0/update_xy0/Counter/XLXI_7_i_17__0/CO[3]
+                         net (fo=1, routed)           0.000    13.337    m0/update_xy0/Counter/XLXI_7_i_17__0_n_0
+    SLICE_X12Y76         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.112    13.449 r  m0/update_xy0/Counter/XLXI_8_i_26__0/O[2]
+                         net (fo=5, routed)           0.642    14.090    m0/update_xy0/Counter/XLXI_8_i_26__0_n_5
+    SLICE_X14Y78         LUT2 (Prop_lut2_I0_O)        0.127    14.217 r  m0/update_xy0/Counter/XLXI_7_i_149__0/O
+                         net (fo=1, routed)           0.000    14.217    m0/update_xy0/Counter/XLXI_7_i_149__0_n_0
+    SLICE_X14Y78         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.292    14.509 r  m0/update_xy0/Counter/XLXI_7_i_78/O[3]
+                         net (fo=3, routed)           0.703    15.212    m0/update_xy0/Counter/XLXI_7_i_78_n_4
+    SLICE_X17Y74         LUT6 (Prop_lut6_I0_O)        0.120    15.332 r  m0/update_xy0/Counter/XLXI_7_i_88__0/O
+                         net (fo=1, routed)           0.288    15.620    m0/update_xy0/Counter/XLXI_7_i_88__0_n_0
+    SLICE_X14Y74         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283    15.903 r  m0/update_xy0/Counter/XLXI_7_i_37__0/CO[3]
+                         net (fo=1, routed)           0.007    15.911    m0/update_xy0/Counter/XLXI_7_i_37__0_n_0
+    SLICE_X14Y75         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    16.044 r  m0/update_xy0/Counter/XLXI_7_i_16__1/CO[0]
+                         net (fo=20, routed)          1.211    17.255    m0/update_xy0/Counter/XLXI_7_i_16__1_n_3
+    SLICE_X7Y77          LUT5 (Prop_lut5_I3_O)        0.134    17.389 r  m0/update_xy0/Counter/XLXI_8_i_41/O
+                         net (fo=3, routed)           0.371    17.760    m0/update_xy0/Counter/XLXI_8_i_41_n_0
+    SLICE_X6Y77          LUT6 (Prop_lut6_I1_O)        0.136    17.896 r  m0/update_xy0/Counter/XLXI_8_i_28__0/O
+                         net (fo=3, routed)           0.499    18.396    m0/update_xy0/Counter/XLXI_8_i_28__0_n_0
+    SLICE_X7Y76          LUT6 (Prop_lut6_I1_O)        0.043    18.439 r  m0/update_xy0/Counter/XLXI_8_i_20__0/O
+                         net (fo=3, routed)           0.446    18.884    m0/update_xy0/Counter/XLXI_8_i_20__0_n_0
+    SLICE_X7Y75          LUT6 (Prop_lut6_I3_O)        0.043    18.927 r  m0/update_xy0/Counter/XLXI_8_i_17__0/O
+                         net (fo=3, routed)           0.454    19.381    m0/update_xy0/Counter/XLXI_8_i_17__0_n_0
+    SLICE_X7Y74          LUT6 (Prop_lut6_I4_O)        0.043    19.424 r  m0/update_xy0/Counter/XLXI_8_i_8__0/O
+                         net (fo=3, routed)           0.514    19.938    m0/update_xy0/Counter/XLXI_8_i_8__0_n_0
+    SLICE_X8Y74          LUT6 (Prop_lut6_I3_O)        0.043    19.981 r  m0/update_xy0/Counter/XLXI_8_i_4__0/O
+                         net (fo=3, routed)           0.445    20.426    m0/update_xy0/Counter/XLXI_8_i_4__0_n_0
+    SLICE_X8Y73          LUT6 (Prop_lut6_I1_O)        0.043    20.469 f  m0/update_xy0/Counter/XLXI_10_i_1__0/O
+                         net (fo=18, routed)          0.887    21.357    out1/SM1/HTS6/MSEG/XLXN_81
+    SLICE_X6Y70          LUT4 (Prop_lut4_I1_O)        0.043    21.400 r  out1/SM1/HTS6/MSEG/XLXI_10/O
+                         net (fo=1, routed)           0.432    21.831    out1/SM1/HTS6/MSEG/XLXN_93
+    SLICE_X5Y70          LUT4 (Prop_lut4_I0_O)        0.043    21.874 r  out1/SM1/HTS6/MSEG/XLXI_26/O
+                         net (fo=1, routed)           0.251    22.125    out1/M2/P_Data[55]
+    SLICE_X6Y69          LUT4 (Prop_lut4_I3_O)        0.043    22.168 r  out1/M2/buffer[55]_i_1/O
+                         net (fo=1, routed)           0.000    22.168    out1/M2/buffer[55]
+    SLICE_X6Y69          FDRE                                         r  out1/M2/buffer_reg[55]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/update_xy0/Counter/count_reg[15]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            out1/M2/buffer_reg[53]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        22.105ns  (logic 5.433ns (24.578%)  route 16.672ns (75.422%))
+  Logic Levels:           45  (CARRY4=21 FDCE=1 LUT2=2 LUT3=5 LUT4=3 LUT5=3 LUT6=10)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y60         FDCE                         0.000     0.000 r  m0/update_xy0/Counter/count_reg[15]/C
+    SLICE_X21Y60         FDCE (Prop_fdce_C_Q)         0.223     0.223 f  m0/update_xy0/Counter/count_reg[15]/Q
+                         net (fo=35, routed)          1.753     1.976    m0/update_xy0/Counter/out[15]
+    SLICE_X18Y63         LUT3 (Prop_lut3_I2_O)        0.043     2.019 r  m0/update_xy0/Counter/XLXI_7_i_106__0/O
+                         net (fo=2, routed)           0.469     2.488    m0/update_xy0/Counter/XLXI_7_i_106__0_n_0
+    SLICE_X12Y63         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283     2.771 r  m0/update_xy0/Counter/XLXI_7_i_98__0/CO[3]
+                         net (fo=1, routed)           0.000     2.771    m0/update_xy0/Counter/XLXI_7_i_98__0_n_0
+    SLICE_X12Y64         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     2.879 r  m0/update_xy0/Counter/XLXI_7_i_53/O[0]
+                         net (fo=4, routed)           0.536     3.416    m0/update_xy0/Counter/XLXI_7_i_53_n_7
+    SLICE_X17Y63         LUT3 (Prop_lut3_I2_O)        0.134     3.550 r  m0/update_xy0/Counter/XLXI_7_i_99/O
+                         net (fo=1, routed)           0.151     3.700    m0/update_xy0/Counter/XLXI_7_i_99_n_0
+    SLICE_X17Y63         LUT5 (Prop_lut5_I4_O)        0.137     3.837 r  m0/update_xy0/Counter/XLXI_7_i_43/O
+                         net (fo=2, routed)           0.741     4.578    m0/update_xy0/Counter/XLXI_7_i_43_n_0
+    SLICE_X15Y63         LUT6 (Prop_lut6_I0_O)        0.043     4.621 r  m0/update_xy0/Counter/XLXI_7_i_47__0/O
+                         net (fo=1, routed)           0.000     4.621    m0/update_xy0/Counter/XLXI_7_i_47__0_n_0
+    SLICE_X15Y63         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     4.814 r  m0/update_xy0/Counter/XLXI_7_i_12/CO[3]
+                         net (fo=1, routed)           0.000     4.814    m0/update_xy0/Counter/XLXI_7_i_12_n_0
+    SLICE_X15Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.867 r  m0/update_xy0/Counter/XLXI_7_i_5__0/CO[3]
+                         net (fo=1, routed)           0.000     4.867    m0/update_xy0/Counter/XLXI_7_i_5__0_n_0
+    SLICE_X15Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.920 r  m0/update_xy0/Counter/XLXI_7_i_6__1/CO[3]
+                         net (fo=1, routed)           0.000     4.920    m0/update_xy0/Counter/XLXI_7_i_6__1_n_0
+    SLICE_X15Y66         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.111     5.031 r  m0/update_xy0/Counter/XLXI_7_i_10/O[2]
+                         net (fo=13, routed)          1.168     6.199    m0/update_xy0/Counter/XLXI_7_i_10_n_5
+    SLICE_X19Y69         LUT2 (Prop_lut2_I1_O)        0.122     6.321 r  m0/update_xy0/Counter/XLXI_7_i_165/O
+                         net (fo=1, routed)           0.000     6.321    m0/update_xy0/Counter/XLXI_7_i_165_n_0
+    SLICE_X19Y69         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     6.588 r  m0/update_xy0/Counter/XLXI_7_i_82/CO[3]
+                         net (fo=1, routed)           0.000     6.588    m0/update_xy0/Counter/XLXI_7_i_82_n_0
+    SLICE_X19Y70         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166     6.754 r  m0/update_xy0/Counter/XLXI_7_i_38__0/O[1]
+                         net (fo=3, routed)           0.445     7.199    m0/update_xy0/Counter/XLXI_7_i_38__0_n_6
+    SLICE_X18Y70         LUT4 (Prop_lut4_I2_O)        0.123     7.322 r  m0/update_xy0/Counter/XLXI_7_i_80__0/O
+                         net (fo=1, routed)           0.000     7.322    m0/update_xy0/Counter/XLXI_7_i_80__0_n_0
+    SLICE_X18Y70         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     7.578 r  m0/update_xy0/Counter/XLXI_7_i_29__0/CO[3]
+                         net (fo=1, routed)           0.000     7.578    m0/update_xy0/Counter/XLXI_7_i_29__0_n_0
+    SLICE_X18Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     7.632 r  m0/update_xy0/Counter/XLXI_7_i_8__1/CO[3]
+                         net (fo=1, routed)           0.000     7.632    m0/update_xy0/Counter/XLXI_7_i_8__1_n_0
+    SLICE_X18Y72         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133     7.765 r  m0/update_xy0/Counter/XLXI_7_i_3__1/CO[0]
+                         net (fo=60, routed)          1.089     8.854    m0/update_xy0/Counter/XLXI_7_i_3__1_n_3
+    SLICE_X10Y77         LUT3 (Prop_lut3_I2_O)        0.128     8.982 r  m0/update_xy0/Counter/XLXI_7_i_14__1/O
+                         net (fo=49, routed)          1.466    10.448    m0/update_xy0/Counter/XLXI_7_i_14__1_n_0
+    SLICE_X16Y70         LUT6 (Prop_lut6_I4_O)        0.043    10.491 r  m0/update_xy0/Counter/XLXI_7_i_178/O
+                         net (fo=1, routed)           0.376    10.867    m0/update_xy0/Counter/XLXI_7_i_178_n_0
+    SLICE_X15Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.190    11.057 r  m0/update_xy0/Counter/XLXI_7_i_100__0/CO[3]
+                         net (fo=1, routed)           0.000    11.057    m0/update_xy0/Counter/XLXI_7_i_100__0_n_0
+    SLICE_X15Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.110 r  m0/update_xy0/Counter/XLXI_7_i_50/CO[3]
+                         net (fo=1, routed)           0.000    11.110    m0/update_xy0/Counter/XLXI_7_i_50_n_0
+    SLICE_X15Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.163 r  m0/update_xy0/Counter/XLXI_7_i_55__1/CO[3]
+                         net (fo=1, routed)           0.000    11.163    m0/update_xy0/Counter/XLXI_7_i_55__1_n_0
+    SLICE_X15Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.216 r  m0/update_xy0/Counter/XLXI_7_i_30__0/CO[3]
+                         net (fo=1, routed)           0.007    11.223    m0/update_xy0/Counter/XLXI_7_i_30__0_n_0
+    SLICE_X15Y75         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.389 r  m0/update_xy0/Counter/XLXI_7_i_77__0/O[1]
+                         net (fo=3, routed)           0.554    11.943    m0/update_xy0/Counter/XLXI_7_i_77__0_n_6
+    SLICE_X11Y76         LUT3 (Prop_lut3_I2_O)        0.129    12.072 r  m0/update_xy0/Counter/XLXI_7_i_95__0/O
+                         net (fo=1, routed)           0.437    12.509    m0/update_xy0/Counter/XLXI_7_i_95__0_n_0
+    SLICE_X17Y75         LUT5 (Prop_lut5_I4_O)        0.136    12.645 r  m0/update_xy0/Counter/XLXI_7_i_42__0/O
+                         net (fo=2, routed)           0.392    13.038    m0/update_xy0/Counter/XLXI_7_i_42__0_n_0
+    SLICE_X12Y75         LUT6 (Prop_lut6_I0_O)        0.043    13.081 r  m0/update_xy0/Counter/XLXI_7_i_46__1/O
+                         net (fo=1, routed)           0.000    13.081    m0/update_xy0/Counter/XLXI_7_i_46__1_n_0
+    SLICE_X12Y75         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    13.337 r  m0/update_xy0/Counter/XLXI_7_i_17__0/CO[3]
+                         net (fo=1, routed)           0.000    13.337    m0/update_xy0/Counter/XLXI_7_i_17__0_n_0
+    SLICE_X12Y76         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.112    13.449 r  m0/update_xy0/Counter/XLXI_8_i_26__0/O[2]
+                         net (fo=5, routed)           0.642    14.090    m0/update_xy0/Counter/XLXI_8_i_26__0_n_5
+    SLICE_X14Y78         LUT2 (Prop_lut2_I0_O)        0.127    14.217 r  m0/update_xy0/Counter/XLXI_7_i_149__0/O
+                         net (fo=1, routed)           0.000    14.217    m0/update_xy0/Counter/XLXI_7_i_149__0_n_0
+    SLICE_X14Y78         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.292    14.509 r  m0/update_xy0/Counter/XLXI_7_i_78/O[3]
+                         net (fo=3, routed)           0.703    15.212    m0/update_xy0/Counter/XLXI_7_i_78_n_4
+    SLICE_X17Y74         LUT6 (Prop_lut6_I0_O)        0.120    15.332 r  m0/update_xy0/Counter/XLXI_7_i_88__0/O
+                         net (fo=1, routed)           0.288    15.620    m0/update_xy0/Counter/XLXI_7_i_88__0_n_0
+    SLICE_X14Y74         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283    15.903 r  m0/update_xy0/Counter/XLXI_7_i_37__0/CO[3]
+                         net (fo=1, routed)           0.007    15.911    m0/update_xy0/Counter/XLXI_7_i_37__0_n_0
+    SLICE_X14Y75         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    16.044 r  m0/update_xy0/Counter/XLXI_7_i_16__1/CO[0]
+                         net (fo=20, routed)          1.211    17.255    m0/update_xy0/Counter/XLXI_7_i_16__1_n_3
+    SLICE_X7Y77          LUT5 (Prop_lut5_I3_O)        0.134    17.389 r  m0/update_xy0/Counter/XLXI_8_i_41/O
+                         net (fo=3, routed)           0.371    17.760    m0/update_xy0/Counter/XLXI_8_i_41_n_0
+    SLICE_X6Y77          LUT6 (Prop_lut6_I1_O)        0.136    17.896 r  m0/update_xy0/Counter/XLXI_8_i_28__0/O
+                         net (fo=3, routed)           0.499    18.396    m0/update_xy0/Counter/XLXI_8_i_28__0_n_0
+    SLICE_X7Y76          LUT6 (Prop_lut6_I1_O)        0.043    18.439 r  m0/update_xy0/Counter/XLXI_8_i_20__0/O
+                         net (fo=3, routed)           0.446    18.884    m0/update_xy0/Counter/XLXI_8_i_20__0_n_0
+    SLICE_X7Y75          LUT6 (Prop_lut6_I3_O)        0.043    18.927 r  m0/update_xy0/Counter/XLXI_8_i_17__0/O
+                         net (fo=3, routed)           0.454    19.381    m0/update_xy0/Counter/XLXI_8_i_17__0_n_0
+    SLICE_X7Y74          LUT6 (Prop_lut6_I4_O)        0.043    19.424 r  m0/update_xy0/Counter/XLXI_8_i_8__0/O
+                         net (fo=3, routed)           0.514    19.938    m0/update_xy0/Counter/XLXI_8_i_8__0_n_0
+    SLICE_X8Y74          LUT6 (Prop_lut6_I3_O)        0.043    19.981 r  m0/update_xy0/Counter/XLXI_8_i_4__0/O
+                         net (fo=3, routed)           0.443    20.424    m0/update_xy0/Counter/XLXI_8_i_4__0_n_0
+    SLICE_X8Y73          LUT6 (Prop_lut6_I2_O)        0.043    20.467 r  m0/update_xy0/Counter/XLXI_8_i_1__0/O
+                         net (fo=18, routed)          0.984    21.451    out1/SM1/HTS6/MSEG/XLXN_84
+    SLICE_X6Y69          LUT4 (Prop_lut4_I2_O)        0.043    21.494 r  out1/SM1/HTS6/MSEG/XLXI_12/O
+                         net (fo=1, routed)           0.426    21.920    out1/SM1/HTS6/MSEG/XLXN_120
+    SLICE_X5Y69          LUT3 (Prop_lut3_I1_O)        0.043    21.963 r  out1/SM1/HTS6/MSEG/XLXI_30/O
+                         net (fo=1, routed)           0.099    22.062    out1/M2/P_Data[53]
+    SLICE_X5Y69          LUT4 (Prop_lut4_I3_O)        0.043    22.105 r  out1/M2/buffer[53]_i_1/O
+                         net (fo=1, routed)           0.000    22.105    out1/M2/buffer[53]
+    SLICE_X5Y69          FDRE                                         r  out1/M2/buffer_reg[53]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/update_xy0/Counter/count_reg[15]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            out1/M2/buffer_reg[50]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        21.980ns  (logic 5.433ns (24.718%)  route 16.547ns (75.282%))
+  Logic Levels:           45  (CARRY4=21 FDCE=1 LUT2=2 LUT3=5 LUT4=3 LUT5=3 LUT6=10)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y60         FDCE                         0.000     0.000 r  m0/update_xy0/Counter/count_reg[15]/C
+    SLICE_X21Y60         FDCE (Prop_fdce_C_Q)         0.223     0.223 f  m0/update_xy0/Counter/count_reg[15]/Q
+                         net (fo=35, routed)          1.753     1.976    m0/update_xy0/Counter/out[15]
+    SLICE_X18Y63         LUT3 (Prop_lut3_I2_O)        0.043     2.019 r  m0/update_xy0/Counter/XLXI_7_i_106__0/O
+                         net (fo=2, routed)           0.469     2.488    m0/update_xy0/Counter/XLXI_7_i_106__0_n_0
+    SLICE_X12Y63         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283     2.771 r  m0/update_xy0/Counter/XLXI_7_i_98__0/CO[3]
+                         net (fo=1, routed)           0.000     2.771    m0/update_xy0/Counter/XLXI_7_i_98__0_n_0
+    SLICE_X12Y64         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     2.879 r  m0/update_xy0/Counter/XLXI_7_i_53/O[0]
+                         net (fo=4, routed)           0.536     3.416    m0/update_xy0/Counter/XLXI_7_i_53_n_7
+    SLICE_X17Y63         LUT3 (Prop_lut3_I2_O)        0.134     3.550 r  m0/update_xy0/Counter/XLXI_7_i_99/O
+                         net (fo=1, routed)           0.151     3.700    m0/update_xy0/Counter/XLXI_7_i_99_n_0
+    SLICE_X17Y63         LUT5 (Prop_lut5_I4_O)        0.137     3.837 r  m0/update_xy0/Counter/XLXI_7_i_43/O
+                         net (fo=2, routed)           0.741     4.578    m0/update_xy0/Counter/XLXI_7_i_43_n_0
+    SLICE_X15Y63         LUT6 (Prop_lut6_I0_O)        0.043     4.621 r  m0/update_xy0/Counter/XLXI_7_i_47__0/O
+                         net (fo=1, routed)           0.000     4.621    m0/update_xy0/Counter/XLXI_7_i_47__0_n_0
+    SLICE_X15Y63         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     4.814 r  m0/update_xy0/Counter/XLXI_7_i_12/CO[3]
+                         net (fo=1, routed)           0.000     4.814    m0/update_xy0/Counter/XLXI_7_i_12_n_0
+    SLICE_X15Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.867 r  m0/update_xy0/Counter/XLXI_7_i_5__0/CO[3]
+                         net (fo=1, routed)           0.000     4.867    m0/update_xy0/Counter/XLXI_7_i_5__0_n_0
+    SLICE_X15Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.920 r  m0/update_xy0/Counter/XLXI_7_i_6__1/CO[3]
+                         net (fo=1, routed)           0.000     4.920    m0/update_xy0/Counter/XLXI_7_i_6__1_n_0
+    SLICE_X15Y66         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.111     5.031 r  m0/update_xy0/Counter/XLXI_7_i_10/O[2]
+                         net (fo=13, routed)          1.168     6.199    m0/update_xy0/Counter/XLXI_7_i_10_n_5
+    SLICE_X19Y69         LUT2 (Prop_lut2_I1_O)        0.122     6.321 r  m0/update_xy0/Counter/XLXI_7_i_165/O
+                         net (fo=1, routed)           0.000     6.321    m0/update_xy0/Counter/XLXI_7_i_165_n_0
+    SLICE_X19Y69         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     6.588 r  m0/update_xy0/Counter/XLXI_7_i_82/CO[3]
+                         net (fo=1, routed)           0.000     6.588    m0/update_xy0/Counter/XLXI_7_i_82_n_0
+    SLICE_X19Y70         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166     6.754 r  m0/update_xy0/Counter/XLXI_7_i_38__0/O[1]
+                         net (fo=3, routed)           0.445     7.199    m0/update_xy0/Counter/XLXI_7_i_38__0_n_6
+    SLICE_X18Y70         LUT4 (Prop_lut4_I2_O)        0.123     7.322 r  m0/update_xy0/Counter/XLXI_7_i_80__0/O
+                         net (fo=1, routed)           0.000     7.322    m0/update_xy0/Counter/XLXI_7_i_80__0_n_0
+    SLICE_X18Y70         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     7.578 r  m0/update_xy0/Counter/XLXI_7_i_29__0/CO[3]
+                         net (fo=1, routed)           0.000     7.578    m0/update_xy0/Counter/XLXI_7_i_29__0_n_0
+    SLICE_X18Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     7.632 r  m0/update_xy0/Counter/XLXI_7_i_8__1/CO[3]
+                         net (fo=1, routed)           0.000     7.632    m0/update_xy0/Counter/XLXI_7_i_8__1_n_0
+    SLICE_X18Y72         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133     7.765 r  m0/update_xy0/Counter/XLXI_7_i_3__1/CO[0]
+                         net (fo=60, routed)          1.089     8.854    m0/update_xy0/Counter/XLXI_7_i_3__1_n_3
+    SLICE_X10Y77         LUT3 (Prop_lut3_I2_O)        0.128     8.982 r  m0/update_xy0/Counter/XLXI_7_i_14__1/O
+                         net (fo=49, routed)          1.466    10.448    m0/update_xy0/Counter/XLXI_7_i_14__1_n_0
+    SLICE_X16Y70         LUT6 (Prop_lut6_I4_O)        0.043    10.491 r  m0/update_xy0/Counter/XLXI_7_i_178/O
+                         net (fo=1, routed)           0.376    10.867    m0/update_xy0/Counter/XLXI_7_i_178_n_0
+    SLICE_X15Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.190    11.057 r  m0/update_xy0/Counter/XLXI_7_i_100__0/CO[3]
+                         net (fo=1, routed)           0.000    11.057    m0/update_xy0/Counter/XLXI_7_i_100__0_n_0
+    SLICE_X15Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.110 r  m0/update_xy0/Counter/XLXI_7_i_50/CO[3]
+                         net (fo=1, routed)           0.000    11.110    m0/update_xy0/Counter/XLXI_7_i_50_n_0
+    SLICE_X15Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.163 r  m0/update_xy0/Counter/XLXI_7_i_55__1/CO[3]
+                         net (fo=1, routed)           0.000    11.163    m0/update_xy0/Counter/XLXI_7_i_55__1_n_0
+    SLICE_X15Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.216 r  m0/update_xy0/Counter/XLXI_7_i_30__0/CO[3]
+                         net (fo=1, routed)           0.007    11.223    m0/update_xy0/Counter/XLXI_7_i_30__0_n_0
+    SLICE_X15Y75         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.389 r  m0/update_xy0/Counter/XLXI_7_i_77__0/O[1]
+                         net (fo=3, routed)           0.554    11.943    m0/update_xy0/Counter/XLXI_7_i_77__0_n_6
+    SLICE_X11Y76         LUT3 (Prop_lut3_I2_O)        0.129    12.072 r  m0/update_xy0/Counter/XLXI_7_i_95__0/O
+                         net (fo=1, routed)           0.437    12.509    m0/update_xy0/Counter/XLXI_7_i_95__0_n_0
+    SLICE_X17Y75         LUT5 (Prop_lut5_I4_O)        0.136    12.645 r  m0/update_xy0/Counter/XLXI_7_i_42__0/O
+                         net (fo=2, routed)           0.392    13.038    m0/update_xy0/Counter/XLXI_7_i_42__0_n_0
+    SLICE_X12Y75         LUT6 (Prop_lut6_I0_O)        0.043    13.081 r  m0/update_xy0/Counter/XLXI_7_i_46__1/O
+                         net (fo=1, routed)           0.000    13.081    m0/update_xy0/Counter/XLXI_7_i_46__1_n_0
+    SLICE_X12Y75         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    13.337 r  m0/update_xy0/Counter/XLXI_7_i_17__0/CO[3]
+                         net (fo=1, routed)           0.000    13.337    m0/update_xy0/Counter/XLXI_7_i_17__0_n_0
+    SLICE_X12Y76         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.112    13.449 r  m0/update_xy0/Counter/XLXI_8_i_26__0/O[2]
+                         net (fo=5, routed)           0.642    14.090    m0/update_xy0/Counter/XLXI_8_i_26__0_n_5
+    SLICE_X14Y78         LUT2 (Prop_lut2_I0_O)        0.127    14.217 r  m0/update_xy0/Counter/XLXI_7_i_149__0/O
+                         net (fo=1, routed)           0.000    14.217    m0/update_xy0/Counter/XLXI_7_i_149__0_n_0
+    SLICE_X14Y78         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.292    14.509 r  m0/update_xy0/Counter/XLXI_7_i_78/O[3]
+                         net (fo=3, routed)           0.703    15.212    m0/update_xy0/Counter/XLXI_7_i_78_n_4
+    SLICE_X17Y74         LUT6 (Prop_lut6_I0_O)        0.120    15.332 r  m0/update_xy0/Counter/XLXI_7_i_88__0/O
+                         net (fo=1, routed)           0.288    15.620    m0/update_xy0/Counter/XLXI_7_i_88__0_n_0
+    SLICE_X14Y74         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283    15.903 r  m0/update_xy0/Counter/XLXI_7_i_37__0/CO[3]
+                         net (fo=1, routed)           0.007    15.911    m0/update_xy0/Counter/XLXI_7_i_37__0_n_0
+    SLICE_X14Y75         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    16.044 r  m0/update_xy0/Counter/XLXI_7_i_16__1/CO[0]
+                         net (fo=20, routed)          1.211    17.255    m0/update_xy0/Counter/XLXI_7_i_16__1_n_3
+    SLICE_X7Y77          LUT5 (Prop_lut5_I3_O)        0.134    17.389 r  m0/update_xy0/Counter/XLXI_8_i_41/O
+                         net (fo=3, routed)           0.371    17.760    m0/update_xy0/Counter/XLXI_8_i_41_n_0
+    SLICE_X6Y77          LUT6 (Prop_lut6_I1_O)        0.136    17.896 r  m0/update_xy0/Counter/XLXI_8_i_28__0/O
+                         net (fo=3, routed)           0.499    18.396    m0/update_xy0/Counter/XLXI_8_i_28__0_n_0
+    SLICE_X7Y76          LUT6 (Prop_lut6_I1_O)        0.043    18.439 r  m0/update_xy0/Counter/XLXI_8_i_20__0/O
+                         net (fo=3, routed)           0.446    18.884    m0/update_xy0/Counter/XLXI_8_i_20__0_n_0
+    SLICE_X7Y75          LUT6 (Prop_lut6_I3_O)        0.043    18.927 r  m0/update_xy0/Counter/XLXI_8_i_17__0/O
+                         net (fo=3, routed)           0.454    19.381    m0/update_xy0/Counter/XLXI_8_i_17__0_n_0
+    SLICE_X7Y74          LUT6 (Prop_lut6_I4_O)        0.043    19.424 r  m0/update_xy0/Counter/XLXI_8_i_8__0/O
+                         net (fo=3, routed)           0.518    19.942    m0/update_xy0/Counter/XLXI_8_i_8__0_n_0
+    SLICE_X8Y74          LUT6 (Prop_lut6_I1_O)        0.043    19.985 r  m0/update_xy0/Counter/XLXI_8_i_2__0/O
+                         net (fo=3, routed)           0.454    20.439    m0/update_xy0/Counter/XLXI_8_i_2__0_n_0
+    SLICE_X8Y73          LUT6 (Prop_lut6_I0_O)        0.043    20.482 r  m0/update_xy0/Counter/XLXI_9_i_1__0/O
+                         net (fo=18, routed)          0.780    21.262    out1/SM1/HTS6/MSEG/XLXN_79
+    SLICE_X4Y70          LUT3 (Prop_lut3_I2_O)        0.043    21.305 r  out1/SM1/HTS6/MSEG/XLXI_58/O
+                         net (fo=1, routed)           0.355    21.659    out1/SM1/HTS6/MSEG/XLXN_158
+    SLICE_X4Y70          LUT4 (Prop_lut4_I0_O)        0.043    21.702 r  out1/SM1/HTS6/MSEG/XLXI_27/O
+                         net (fo=1, routed)           0.235    21.937    out1/M2/P_Data[50]
+    SLICE_X3Y70          LUT4 (Prop_lut4_I3_O)        0.043    21.980 r  out1/M2/buffer[50]_i_1/O
+                         net (fo=1, routed)           0.000    21.980    out1/M2/buffer[50]
+    SLICE_X3Y70          FDRE                                         r  out1/M2/buffer_reg[50]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/update_xy0/Counter/count_reg[15]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            out1/M2/buffer_reg[49]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        21.927ns  (logic 5.433ns (24.778%)  route 16.494ns (75.222%))
+  Logic Levels:           45  (CARRY4=21 FDCE=1 LUT2=2 LUT3=5 LUT4=3 LUT5=3 LUT6=10)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y60         FDCE                         0.000     0.000 r  m0/update_xy0/Counter/count_reg[15]/C
+    SLICE_X21Y60         FDCE (Prop_fdce_C_Q)         0.223     0.223 f  m0/update_xy0/Counter/count_reg[15]/Q
+                         net (fo=35, routed)          1.753     1.976    m0/update_xy0/Counter/out[15]
+    SLICE_X18Y63         LUT3 (Prop_lut3_I2_O)        0.043     2.019 r  m0/update_xy0/Counter/XLXI_7_i_106__0/O
+                         net (fo=2, routed)           0.469     2.488    m0/update_xy0/Counter/XLXI_7_i_106__0_n_0
+    SLICE_X12Y63         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283     2.771 r  m0/update_xy0/Counter/XLXI_7_i_98__0/CO[3]
+                         net (fo=1, routed)           0.000     2.771    m0/update_xy0/Counter/XLXI_7_i_98__0_n_0
+    SLICE_X12Y64         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     2.879 r  m0/update_xy0/Counter/XLXI_7_i_53/O[0]
+                         net (fo=4, routed)           0.536     3.416    m0/update_xy0/Counter/XLXI_7_i_53_n_7
+    SLICE_X17Y63         LUT3 (Prop_lut3_I2_O)        0.134     3.550 r  m0/update_xy0/Counter/XLXI_7_i_99/O
+                         net (fo=1, routed)           0.151     3.700    m0/update_xy0/Counter/XLXI_7_i_99_n_0
+    SLICE_X17Y63         LUT5 (Prop_lut5_I4_O)        0.137     3.837 r  m0/update_xy0/Counter/XLXI_7_i_43/O
+                         net (fo=2, routed)           0.741     4.578    m0/update_xy0/Counter/XLXI_7_i_43_n_0
+    SLICE_X15Y63         LUT6 (Prop_lut6_I0_O)        0.043     4.621 r  m0/update_xy0/Counter/XLXI_7_i_47__0/O
+                         net (fo=1, routed)           0.000     4.621    m0/update_xy0/Counter/XLXI_7_i_47__0_n_0
+    SLICE_X15Y63         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     4.814 r  m0/update_xy0/Counter/XLXI_7_i_12/CO[3]
+                         net (fo=1, routed)           0.000     4.814    m0/update_xy0/Counter/XLXI_7_i_12_n_0
+    SLICE_X15Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.867 r  m0/update_xy0/Counter/XLXI_7_i_5__0/CO[3]
+                         net (fo=1, routed)           0.000     4.867    m0/update_xy0/Counter/XLXI_7_i_5__0_n_0
+    SLICE_X15Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.920 r  m0/update_xy0/Counter/XLXI_7_i_6__1/CO[3]
+                         net (fo=1, routed)           0.000     4.920    m0/update_xy0/Counter/XLXI_7_i_6__1_n_0
+    SLICE_X15Y66         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.111     5.031 r  m0/update_xy0/Counter/XLXI_7_i_10/O[2]
+                         net (fo=13, routed)          1.168     6.199    m0/update_xy0/Counter/XLXI_7_i_10_n_5
+    SLICE_X19Y69         LUT2 (Prop_lut2_I1_O)        0.122     6.321 r  m0/update_xy0/Counter/XLXI_7_i_165/O
+                         net (fo=1, routed)           0.000     6.321    m0/update_xy0/Counter/XLXI_7_i_165_n_0
+    SLICE_X19Y69         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     6.588 r  m0/update_xy0/Counter/XLXI_7_i_82/CO[3]
+                         net (fo=1, routed)           0.000     6.588    m0/update_xy0/Counter/XLXI_7_i_82_n_0
+    SLICE_X19Y70         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166     6.754 r  m0/update_xy0/Counter/XLXI_7_i_38__0/O[1]
+                         net (fo=3, routed)           0.445     7.199    m0/update_xy0/Counter/XLXI_7_i_38__0_n_6
+    SLICE_X18Y70         LUT4 (Prop_lut4_I2_O)        0.123     7.322 r  m0/update_xy0/Counter/XLXI_7_i_80__0/O
+                         net (fo=1, routed)           0.000     7.322    m0/update_xy0/Counter/XLXI_7_i_80__0_n_0
+    SLICE_X18Y70         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     7.578 r  m0/update_xy0/Counter/XLXI_7_i_29__0/CO[3]
+                         net (fo=1, routed)           0.000     7.578    m0/update_xy0/Counter/XLXI_7_i_29__0_n_0
+    SLICE_X18Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     7.632 r  m0/update_xy0/Counter/XLXI_7_i_8__1/CO[3]
+                         net (fo=1, routed)           0.000     7.632    m0/update_xy0/Counter/XLXI_7_i_8__1_n_0
+    SLICE_X18Y72         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133     7.765 r  m0/update_xy0/Counter/XLXI_7_i_3__1/CO[0]
+                         net (fo=60, routed)          1.089     8.854    m0/update_xy0/Counter/XLXI_7_i_3__1_n_3
+    SLICE_X10Y77         LUT3 (Prop_lut3_I2_O)        0.128     8.982 r  m0/update_xy0/Counter/XLXI_7_i_14__1/O
+                         net (fo=49, routed)          1.466    10.448    m0/update_xy0/Counter/XLXI_7_i_14__1_n_0
+    SLICE_X16Y70         LUT6 (Prop_lut6_I4_O)        0.043    10.491 r  m0/update_xy0/Counter/XLXI_7_i_178/O
+                         net (fo=1, routed)           0.376    10.867    m0/update_xy0/Counter/XLXI_7_i_178_n_0
+    SLICE_X15Y71         CARRY4 (Prop_carry4_DI[3]_CO[3])
+                                                      0.190    11.057 r  m0/update_xy0/Counter/XLXI_7_i_100__0/CO[3]
+                         net (fo=1, routed)           0.000    11.057    m0/update_xy0/Counter/XLXI_7_i_100__0_n_0
+    SLICE_X15Y72         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.110 r  m0/update_xy0/Counter/XLXI_7_i_50/CO[3]
+                         net (fo=1, routed)           0.000    11.110    m0/update_xy0/Counter/XLXI_7_i_50_n_0
+    SLICE_X15Y73         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.163 r  m0/update_xy0/Counter/XLXI_7_i_55__1/CO[3]
+                         net (fo=1, routed)           0.000    11.163    m0/update_xy0/Counter/XLXI_7_i_55__1_n_0
+    SLICE_X15Y74         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053    11.216 r  m0/update_xy0/Counter/XLXI_7_i_30__0/CO[3]
+                         net (fo=1, routed)           0.007    11.223    m0/update_xy0/Counter/XLXI_7_i_30__0_n_0
+    SLICE_X15Y75         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166    11.389 r  m0/update_xy0/Counter/XLXI_7_i_77__0/O[1]
+                         net (fo=3, routed)           0.554    11.943    m0/update_xy0/Counter/XLXI_7_i_77__0_n_6
+    SLICE_X11Y76         LUT3 (Prop_lut3_I2_O)        0.129    12.072 r  m0/update_xy0/Counter/XLXI_7_i_95__0/O
+                         net (fo=1, routed)           0.437    12.509    m0/update_xy0/Counter/XLXI_7_i_95__0_n_0
+    SLICE_X17Y75         LUT5 (Prop_lut5_I4_O)        0.136    12.645 r  m0/update_xy0/Counter/XLXI_7_i_42__0/O
+                         net (fo=2, routed)           0.392    13.038    m0/update_xy0/Counter/XLXI_7_i_42__0_n_0
+    SLICE_X12Y75         LUT6 (Prop_lut6_I0_O)        0.043    13.081 r  m0/update_xy0/Counter/XLXI_7_i_46__1/O
+                         net (fo=1, routed)           0.000    13.081    m0/update_xy0/Counter/XLXI_7_i_46__1_n_0
+    SLICE_X12Y75         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256    13.337 r  m0/update_xy0/Counter/XLXI_7_i_17__0/CO[3]
+                         net (fo=1, routed)           0.000    13.337    m0/update_xy0/Counter/XLXI_7_i_17__0_n_0
+    SLICE_X12Y76         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.112    13.449 r  m0/update_xy0/Counter/XLXI_8_i_26__0/O[2]
+                         net (fo=5, routed)           0.642    14.090    m0/update_xy0/Counter/XLXI_8_i_26__0_n_5
+    SLICE_X14Y78         LUT2 (Prop_lut2_I0_O)        0.127    14.217 r  m0/update_xy0/Counter/XLXI_7_i_149__0/O
+                         net (fo=1, routed)           0.000    14.217    m0/update_xy0/Counter/XLXI_7_i_149__0_n_0
+    SLICE_X14Y78         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.292    14.509 r  m0/update_xy0/Counter/XLXI_7_i_78/O[3]
+                         net (fo=3, routed)           0.703    15.212    m0/update_xy0/Counter/XLXI_7_i_78_n_4
+    SLICE_X17Y74         LUT6 (Prop_lut6_I0_O)        0.120    15.332 r  m0/update_xy0/Counter/XLXI_7_i_88__0/O
+                         net (fo=1, routed)           0.288    15.620    m0/update_xy0/Counter/XLXI_7_i_88__0_n_0
+    SLICE_X14Y74         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283    15.903 r  m0/update_xy0/Counter/XLXI_7_i_37__0/CO[3]
+                         net (fo=1, routed)           0.007    15.911    m0/update_xy0/Counter/XLXI_7_i_37__0_n_0
+    SLICE_X14Y75         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133    16.044 r  m0/update_xy0/Counter/XLXI_7_i_16__1/CO[0]
+                         net (fo=20, routed)          1.211    17.255    m0/update_xy0/Counter/XLXI_7_i_16__1_n_3
+    SLICE_X7Y77          LUT5 (Prop_lut5_I3_O)        0.134    17.389 r  m0/update_xy0/Counter/XLXI_8_i_41/O
+                         net (fo=3, routed)           0.371    17.760    m0/update_xy0/Counter/XLXI_8_i_41_n_0
+    SLICE_X6Y77          LUT6 (Prop_lut6_I1_O)        0.136    17.896 r  m0/update_xy0/Counter/XLXI_8_i_28__0/O
+                         net (fo=3, routed)           0.499    18.396    m0/update_xy0/Counter/XLXI_8_i_28__0_n_0
+    SLICE_X7Y76          LUT6 (Prop_lut6_I1_O)        0.043    18.439 r  m0/update_xy0/Counter/XLXI_8_i_20__0/O
+                         net (fo=3, routed)           0.446    18.884    m0/update_xy0/Counter/XLXI_8_i_20__0_n_0
+    SLICE_X7Y75          LUT6 (Prop_lut6_I3_O)        0.043    18.927 r  m0/update_xy0/Counter/XLXI_8_i_17__0/O
+                         net (fo=3, routed)           0.454    19.381    m0/update_xy0/Counter/XLXI_8_i_17__0_n_0
+    SLICE_X7Y74          LUT6 (Prop_lut6_I4_O)        0.043    19.424 r  m0/update_xy0/Counter/XLXI_8_i_8__0/O
+                         net (fo=3, routed)           0.518    19.942    m0/update_xy0/Counter/XLXI_8_i_8__0_n_0
+    SLICE_X8Y74          LUT6 (Prop_lut6_I1_O)        0.043    19.985 r  m0/update_xy0/Counter/XLXI_8_i_2__0/O
+                         net (fo=3, routed)           0.454    20.439    m0/update_xy0/Counter/XLXI_8_i_2__0_n_0
+    SLICE_X8Y73          LUT6 (Prop_lut6_I0_O)        0.043    20.482 r  m0/update_xy0/Counter/XLXI_9_i_1__0/O
+                         net (fo=18, routed)          0.768    21.250    out1/SM1/HTS6/MSEG/XLXN_79
+    SLICE_X4Y70          LUT4 (Prop_lut4_I3_O)        0.043    21.293 r  out1/SM1/HTS6/MSEG/XLXI_21/O
+                         net (fo=1, routed)           0.448    21.740    out1/SM1/HTS6/MSEG/XLXN_153
+    SLICE_X3Y70          LUT3 (Prop_lut3_I1_O)        0.043    21.783 r  out1/SM1/HTS6/MSEG/XLXI_31/O
+                         net (fo=1, routed)           0.101    21.884    out1/M2/P_Data[49]
+    SLICE_X3Y70          LUT4 (Prop_lut4_I3_O)        0.043    21.927 r  out1/M2/buffer[49]_i_1/O
+                         net (fo=1, routed)           0.000    21.927    out1/M2/buffer[49]
+    SLICE_X3Y70          FDRE                                         r  out1/M2/buffer_reg[49]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/update_xy0/Counter/count_reg[15]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            out1/M2/buffer_reg[63]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        15.482ns  (logic 3.111ns (20.095%)  route 12.371ns (79.905%))
+  Logic Levels:           30  (CARRY4=11 FDCE=1 LUT2=1 LUT3=3 LUT4=3 LUT5=3 LUT6=8)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y60         FDCE                         0.000     0.000 r  m0/update_xy0/Counter/count_reg[15]/C
+    SLICE_X21Y60         FDCE (Prop_fdce_C_Q)         0.223     0.223 f  m0/update_xy0/Counter/count_reg[15]/Q
+                         net (fo=35, routed)          1.753     1.976    m0/update_xy0/Counter/out[15]
+    SLICE_X18Y63         LUT3 (Prop_lut3_I2_O)        0.043     2.019 r  m0/update_xy0/Counter/XLXI_7_i_106__0/O
+                         net (fo=2, routed)           0.469     2.488    m0/update_xy0/Counter/XLXI_7_i_106__0_n_0
+    SLICE_X12Y63         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283     2.771 r  m0/update_xy0/Counter/XLXI_7_i_98__0/CO[3]
+                         net (fo=1, routed)           0.000     2.771    m0/update_xy0/Counter/XLXI_7_i_98__0_n_0
+    SLICE_X12Y64         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     2.879 r  m0/update_xy0/Counter/XLXI_7_i_53/O[0]
+                         net (fo=4, routed)           0.536     3.416    m0/update_xy0/Counter/XLXI_7_i_53_n_7
+    SLICE_X17Y63         LUT3 (Prop_lut3_I2_O)        0.134     3.550 r  m0/update_xy0/Counter/XLXI_7_i_99/O
+                         net (fo=1, routed)           0.151     3.700    m0/update_xy0/Counter/XLXI_7_i_99_n_0
+    SLICE_X17Y63         LUT5 (Prop_lut5_I4_O)        0.137     3.837 r  m0/update_xy0/Counter/XLXI_7_i_43/O
+                         net (fo=2, routed)           0.741     4.578    m0/update_xy0/Counter/XLXI_7_i_43_n_0
+    SLICE_X15Y63         LUT6 (Prop_lut6_I0_O)        0.043     4.621 r  m0/update_xy0/Counter/XLXI_7_i_47__0/O
+                         net (fo=1, routed)           0.000     4.621    m0/update_xy0/Counter/XLXI_7_i_47__0_n_0
+    SLICE_X15Y63         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     4.814 r  m0/update_xy0/Counter/XLXI_7_i_12/CO[3]
+                         net (fo=1, routed)           0.000     4.814    m0/update_xy0/Counter/XLXI_7_i_12_n_0
+    SLICE_X15Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.867 r  m0/update_xy0/Counter/XLXI_7_i_5__0/CO[3]
+                         net (fo=1, routed)           0.000     4.867    m0/update_xy0/Counter/XLXI_7_i_5__0_n_0
+    SLICE_X15Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.920 r  m0/update_xy0/Counter/XLXI_7_i_6__1/CO[3]
+                         net (fo=1, routed)           0.000     4.920    m0/update_xy0/Counter/XLXI_7_i_6__1_n_0
+    SLICE_X15Y66         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.111     5.031 r  m0/update_xy0/Counter/XLXI_7_i_10/O[2]
+                         net (fo=13, routed)          1.168     6.199    m0/update_xy0/Counter/XLXI_7_i_10_n_5
+    SLICE_X19Y69         LUT2 (Prop_lut2_I1_O)        0.122     6.321 r  m0/update_xy0/Counter/XLXI_7_i_165/O
+                         net (fo=1, routed)           0.000     6.321    m0/update_xy0/Counter/XLXI_7_i_165_n_0
+    SLICE_X19Y69         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     6.588 r  m0/update_xy0/Counter/XLXI_7_i_82/CO[3]
+                         net (fo=1, routed)           0.000     6.588    m0/update_xy0/Counter/XLXI_7_i_82_n_0
+    SLICE_X19Y70         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166     6.754 r  m0/update_xy0/Counter/XLXI_7_i_38__0/O[1]
+                         net (fo=3, routed)           0.445     7.199    m0/update_xy0/Counter/XLXI_7_i_38__0_n_6
+    SLICE_X18Y70         LUT4 (Prop_lut4_I2_O)        0.123     7.322 r  m0/update_xy0/Counter/XLXI_7_i_80__0/O
+                         net (fo=1, routed)           0.000     7.322    m0/update_xy0/Counter/XLXI_7_i_80__0_n_0
+    SLICE_X18Y70         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     7.578 r  m0/update_xy0/Counter/XLXI_7_i_29__0/CO[3]
+                         net (fo=1, routed)           0.000     7.578    m0/update_xy0/Counter/XLXI_7_i_29__0_n_0
+    SLICE_X18Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     7.632 r  m0/update_xy0/Counter/XLXI_7_i_8__1/CO[3]
+                         net (fo=1, routed)           0.000     7.632    m0/update_xy0/Counter/XLXI_7_i_8__1_n_0
+    SLICE_X18Y72         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133     7.765 r  m0/update_xy0/Counter/XLXI_7_i_3__1/CO[0]
+                         net (fo=60, routed)          1.080     8.845    m0/update_xy0/Counter/XLXI_7_i_3__1_n_3
+    SLICE_X11Y78         LUT5 (Prop_lut5_I3_O)        0.128     8.973 r  m0/update_xy0/Counter/XLXI_7_i_4/O
+                         net (fo=31, routed)          1.033    10.006    m0/update_xy0/Counter/y_index[19]
+    SLICE_X18Y77         LUT6 (Prop_lut6_I4_O)        0.043    10.049 r  m0/update_xy0/Counter/XLXI_8_i_33/O
+                         net (fo=3, routed)           0.384    10.433    m0/update_xy0/Counter/XLXI_8_i_33_n_0
+    SLICE_X18Y77         LUT6 (Prop_lut6_I1_O)        0.043    10.476 r  m0/update_xy0/Counter/XLXI_8_i_28/O
+                         net (fo=3, routed)           0.443    10.919    m0/update_xy0/Counter/XLXI_8_i_28_n_0
+    SLICE_X19Y76         LUT6 (Prop_lut6_I0_O)        0.043    10.962 r  m0/update_xy0/Counter/XLXI_8_i_24/O
+                         net (fo=5, routed)           0.394    11.356    m0/update_xy0/Counter/XLXI_8_i_24_n_0
+    SLICE_X18Y76         LUT6 (Prop_lut6_I3_O)        0.043    11.399 r  m0/update_xy0/Counter/XLXI_8_i_19/O
+                         net (fo=5, routed)           0.571    11.970    m0/update_xy0/Counter/XLXI_8_i_19_n_0
+    SLICE_X18Y73         LUT6 (Prop_lut6_I3_O)        0.043    12.013 r  m0/update_xy0/Counter/XLXI_8_i_14/O
+                         net (fo=6, routed)           0.731    12.745    m0/update_xy0/Counter/XLXI_8_i_14_n_0
+    SLICE_X11Y71         LUT6 (Prop_lut6_I3_O)        0.043    12.788 r  m0/update_xy0/Counter/XLXI_8_i_7/O
+                         net (fo=3, routed)           0.378    13.165    m0/update_xy0/Counter/XLXI_8_i_7_n_0
+    SLICE_X10Y71         LUT5 (Prop_lut5_I0_O)        0.043    13.208 r  m0/update_xy0/Counter/XLXI_9_i_3/O
+                         net (fo=1, routed)           0.363    13.571    m0/update_xy0/Counter/XLXI_9_i_3_n_0
+    SLICE_X10Y71         LUT6 (Prop_lut6_I1_O)        0.043    13.614 r  m0/update_xy0/Counter/XLXI_9_i_1/O
+                         net (fo=18, routed)          0.923    14.536    out1/SM1/HTS7/MSEG/XLXN_79
+    SLICE_X7Y66          LUT4 (Prop_lut4_I3_O)        0.043    14.579 r  out1/SM1/HTS7/MSEG/XLXI_7/O
+                         net (fo=2, routed)           0.367    14.946    out1/SM1/HTS7/MSEG/XLXN_133
+    SLICE_X6Y67          LUT4 (Prop_lut4_I3_O)        0.043    14.989 r  out1/SM1/HTS7/MSEG/XLXI_26/O
+                         net (fo=1, routed)           0.441    15.431    out1/M2/P_Data[63]
+    SLICE_X3Y67          LUT3 (Prop_lut3_I1_O)        0.051    15.482 r  out1/M2/buffer[63]_i_2/O
+                         net (fo=1, routed)           0.000    15.482    out1/M2/buffer[63]
+    SLICE_X3Y67          FDRE                                         r  out1/M2/buffer_reg[63]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/update_xy0/Counter/count_reg[15]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            out1/M2/buffer_reg[62]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        15.470ns  (logic 3.103ns (20.058%)  route 12.367ns (79.942%))
+  Logic Levels:           30  (CARRY4=11 FDCE=1 LUT2=1 LUT3=3 LUT4=3 LUT5=3 LUT6=8)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y60         FDCE                         0.000     0.000 r  m0/update_xy0/Counter/count_reg[15]/C
+    SLICE_X21Y60         FDCE (Prop_fdce_C_Q)         0.223     0.223 f  m0/update_xy0/Counter/count_reg[15]/Q
+                         net (fo=35, routed)          1.753     1.976    m0/update_xy0/Counter/out[15]
+    SLICE_X18Y63         LUT3 (Prop_lut3_I2_O)        0.043     2.019 r  m0/update_xy0/Counter/XLXI_7_i_106__0/O
+                         net (fo=2, routed)           0.469     2.488    m0/update_xy0/Counter/XLXI_7_i_106__0_n_0
+    SLICE_X12Y63         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283     2.771 r  m0/update_xy0/Counter/XLXI_7_i_98__0/CO[3]
+                         net (fo=1, routed)           0.000     2.771    m0/update_xy0/Counter/XLXI_7_i_98__0_n_0
+    SLICE_X12Y64         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     2.879 r  m0/update_xy0/Counter/XLXI_7_i_53/O[0]
+                         net (fo=4, routed)           0.536     3.416    m0/update_xy0/Counter/XLXI_7_i_53_n_7
+    SLICE_X17Y63         LUT3 (Prop_lut3_I2_O)        0.134     3.550 r  m0/update_xy0/Counter/XLXI_7_i_99/O
+                         net (fo=1, routed)           0.151     3.700    m0/update_xy0/Counter/XLXI_7_i_99_n_0
+    SLICE_X17Y63         LUT5 (Prop_lut5_I4_O)        0.137     3.837 r  m0/update_xy0/Counter/XLXI_7_i_43/O
+                         net (fo=2, routed)           0.741     4.578    m0/update_xy0/Counter/XLXI_7_i_43_n_0
+    SLICE_X15Y63         LUT6 (Prop_lut6_I0_O)        0.043     4.621 r  m0/update_xy0/Counter/XLXI_7_i_47__0/O
+                         net (fo=1, routed)           0.000     4.621    m0/update_xy0/Counter/XLXI_7_i_47__0_n_0
+    SLICE_X15Y63         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     4.814 r  m0/update_xy0/Counter/XLXI_7_i_12/CO[3]
+                         net (fo=1, routed)           0.000     4.814    m0/update_xy0/Counter/XLXI_7_i_12_n_0
+    SLICE_X15Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.867 r  m0/update_xy0/Counter/XLXI_7_i_5__0/CO[3]
+                         net (fo=1, routed)           0.000     4.867    m0/update_xy0/Counter/XLXI_7_i_5__0_n_0
+    SLICE_X15Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.920 r  m0/update_xy0/Counter/XLXI_7_i_6__1/CO[3]
+                         net (fo=1, routed)           0.000     4.920    m0/update_xy0/Counter/XLXI_7_i_6__1_n_0
+    SLICE_X15Y66         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.111     5.031 r  m0/update_xy0/Counter/XLXI_7_i_10/O[2]
+                         net (fo=13, routed)          1.168     6.199    m0/update_xy0/Counter/XLXI_7_i_10_n_5
+    SLICE_X19Y69         LUT2 (Prop_lut2_I1_O)        0.122     6.321 r  m0/update_xy0/Counter/XLXI_7_i_165/O
+                         net (fo=1, routed)           0.000     6.321    m0/update_xy0/Counter/XLXI_7_i_165_n_0
+    SLICE_X19Y69         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     6.588 r  m0/update_xy0/Counter/XLXI_7_i_82/CO[3]
+                         net (fo=1, routed)           0.000     6.588    m0/update_xy0/Counter/XLXI_7_i_82_n_0
+    SLICE_X19Y70         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166     6.754 r  m0/update_xy0/Counter/XLXI_7_i_38__0/O[1]
+                         net (fo=3, routed)           0.445     7.199    m0/update_xy0/Counter/XLXI_7_i_38__0_n_6
+    SLICE_X18Y70         LUT4 (Prop_lut4_I2_O)        0.123     7.322 r  m0/update_xy0/Counter/XLXI_7_i_80__0/O
+                         net (fo=1, routed)           0.000     7.322    m0/update_xy0/Counter/XLXI_7_i_80__0_n_0
+    SLICE_X18Y70         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     7.578 r  m0/update_xy0/Counter/XLXI_7_i_29__0/CO[3]
+                         net (fo=1, routed)           0.000     7.578    m0/update_xy0/Counter/XLXI_7_i_29__0_n_0
+    SLICE_X18Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     7.632 r  m0/update_xy0/Counter/XLXI_7_i_8__1/CO[3]
+                         net (fo=1, routed)           0.000     7.632    m0/update_xy0/Counter/XLXI_7_i_8__1_n_0
+    SLICE_X18Y72         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133     7.765 r  m0/update_xy0/Counter/XLXI_7_i_3__1/CO[0]
+                         net (fo=60, routed)          1.080     8.845    m0/update_xy0/Counter/XLXI_7_i_3__1_n_3
+    SLICE_X11Y78         LUT5 (Prop_lut5_I3_O)        0.128     8.973 r  m0/update_xy0/Counter/XLXI_7_i_4/O
+                         net (fo=31, routed)          1.033    10.006    m0/update_xy0/Counter/y_index[19]
+    SLICE_X18Y77         LUT6 (Prop_lut6_I4_O)        0.043    10.049 r  m0/update_xy0/Counter/XLXI_8_i_33/O
+                         net (fo=3, routed)           0.384    10.433    m0/update_xy0/Counter/XLXI_8_i_33_n_0
+    SLICE_X18Y77         LUT6 (Prop_lut6_I1_O)        0.043    10.476 r  m0/update_xy0/Counter/XLXI_8_i_28/O
+                         net (fo=3, routed)           0.443    10.919    m0/update_xy0/Counter/XLXI_8_i_28_n_0
+    SLICE_X19Y76         LUT6 (Prop_lut6_I0_O)        0.043    10.962 r  m0/update_xy0/Counter/XLXI_8_i_24/O
+                         net (fo=5, routed)           0.394    11.356    m0/update_xy0/Counter/XLXI_8_i_24_n_0
+    SLICE_X18Y76         LUT6 (Prop_lut6_I3_O)        0.043    11.399 r  m0/update_xy0/Counter/XLXI_8_i_19/O
+                         net (fo=5, routed)           0.571    11.970    m0/update_xy0/Counter/XLXI_8_i_19_n_0
+    SLICE_X18Y73         LUT6 (Prop_lut6_I3_O)        0.043    12.013 r  m0/update_xy0/Counter/XLXI_8_i_14/O
+                         net (fo=6, routed)           0.731    12.745    m0/update_xy0/Counter/XLXI_8_i_14_n_0
+    SLICE_X11Y71         LUT6 (Prop_lut6_I3_O)        0.043    12.788 r  m0/update_xy0/Counter/XLXI_8_i_7/O
+                         net (fo=3, routed)           0.378    13.165    m0/update_xy0/Counter/XLXI_8_i_7_n_0
+    SLICE_X10Y71         LUT5 (Prop_lut5_I0_O)        0.043    13.208 r  m0/update_xy0/Counter/XLXI_9_i_3/O
+                         net (fo=1, routed)           0.363    13.571    m0/update_xy0/Counter/XLXI_9_i_3_n_0
+    SLICE_X10Y71         LUT6 (Prop_lut6_I1_O)        0.043    13.614 f  m0/update_xy0/Counter/XLXI_9_i_1/O
+                         net (fo=18, routed)          0.932    14.546    out1/SM1/HTS7/MSEG/XLXN_79
+    SLICE_X4Y64          LUT3 (Prop_lut3_I2_O)        0.043    14.589 r  out1/SM1/HTS7/MSEG/XLXI_50/O
+                         net (fo=1, routed)           0.355    14.943    out1/SM1/HTS7/MSEG/XLXN_106
+    SLICE_X4Y64          LUT4 (Prop_lut4_I0_O)        0.043    14.986 r  out1/SM1/HTS7/MSEG/XLXI_28/O
+                         net (fo=1, routed)           0.440    15.427    out1/M2/P_Data[62]
+    SLICE_X4Y65          LUT4 (Prop_lut4_I3_O)        0.043    15.470 r  out1/M2/buffer[62]_i_1/O
+                         net (fo=1, routed)           0.000    15.470    out1/M2/buffer[62]
+    SLICE_X4Y65          FDRE                                         r  out1/M2/buffer_reg[62]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m0/update_xy0/Counter/count_reg[15]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            out1/M2/buffer_reg[57]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        15.377ns  (logic 3.202ns (20.823%)  route 12.175ns (79.177%))
+  Logic Levels:           30  (CARRY4=11 FDCE=1 LUT2=1 LUT3=4 LUT4=3 LUT5=2 LUT6=8)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X21Y60         FDCE                         0.000     0.000 r  m0/update_xy0/Counter/count_reg[15]/C
+    SLICE_X21Y60         FDCE (Prop_fdce_C_Q)         0.223     0.223 f  m0/update_xy0/Counter/count_reg[15]/Q
+                         net (fo=35, routed)          1.753     1.976    m0/update_xy0/Counter/out[15]
+    SLICE_X18Y63         LUT3 (Prop_lut3_I2_O)        0.043     2.019 r  m0/update_xy0/Counter/XLXI_7_i_106__0/O
+                         net (fo=2, routed)           0.469     2.488    m0/update_xy0/Counter/XLXI_7_i_106__0_n_0
+    SLICE_X12Y63         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.283     2.771 r  m0/update_xy0/Counter/XLXI_7_i_98__0/CO[3]
+                         net (fo=1, routed)           0.000     2.771    m0/update_xy0/Counter/XLXI_7_i_98__0_n_0
+    SLICE_X12Y64         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     2.879 r  m0/update_xy0/Counter/XLXI_7_i_53/O[0]
+                         net (fo=4, routed)           0.536     3.416    m0/update_xy0/Counter/XLXI_7_i_53_n_7
+    SLICE_X17Y63         LUT3 (Prop_lut3_I2_O)        0.134     3.550 r  m0/update_xy0/Counter/XLXI_7_i_99/O
+                         net (fo=1, routed)           0.151     3.700    m0/update_xy0/Counter/XLXI_7_i_99_n_0
+    SLICE_X17Y63         LUT5 (Prop_lut5_I4_O)        0.137     3.837 r  m0/update_xy0/Counter/XLXI_7_i_43/O
+                         net (fo=2, routed)           0.741     4.578    m0/update_xy0/Counter/XLXI_7_i_43_n_0
+    SLICE_X15Y63         LUT6 (Prop_lut6_I0_O)        0.043     4.621 r  m0/update_xy0/Counter/XLXI_7_i_47__0/O
+                         net (fo=1, routed)           0.000     4.621    m0/update_xy0/Counter/XLXI_7_i_47__0_n_0
+    SLICE_X15Y63         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.193     4.814 r  m0/update_xy0/Counter/XLXI_7_i_12/CO[3]
+                         net (fo=1, routed)           0.000     4.814    m0/update_xy0/Counter/XLXI_7_i_12_n_0
+    SLICE_X15Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.867 r  m0/update_xy0/Counter/XLXI_7_i_5__0/CO[3]
+                         net (fo=1, routed)           0.000     4.867    m0/update_xy0/Counter/XLXI_7_i_5__0_n_0
+    SLICE_X15Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.053     4.920 r  m0/update_xy0/Counter/XLXI_7_i_6__1/CO[3]
+                         net (fo=1, routed)           0.000     4.920    m0/update_xy0/Counter/XLXI_7_i_6__1_n_0
+    SLICE_X15Y66         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.111     5.031 r  m0/update_xy0/Counter/XLXI_7_i_10/O[2]
+                         net (fo=13, routed)          1.168     6.199    m0/update_xy0/Counter/XLXI_7_i_10_n_5
+    SLICE_X19Y69         LUT2 (Prop_lut2_I1_O)        0.122     6.321 r  m0/update_xy0/Counter/XLXI_7_i_165/O
+                         net (fo=1, routed)           0.000     6.321    m0/update_xy0/Counter/XLXI_7_i_165_n_0
+    SLICE_X19Y69         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.267     6.588 r  m0/update_xy0/Counter/XLXI_7_i_82/CO[3]
+                         net (fo=1, routed)           0.000     6.588    m0/update_xy0/Counter/XLXI_7_i_82_n_0
+    SLICE_X19Y70         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.166     6.754 r  m0/update_xy0/Counter/XLXI_7_i_38__0/O[1]
+                         net (fo=3, routed)           0.445     7.199    m0/update_xy0/Counter/XLXI_7_i_38__0_n_6
+    SLICE_X18Y70         LUT4 (Prop_lut4_I2_O)        0.123     7.322 r  m0/update_xy0/Counter/XLXI_7_i_80__0/O
+                         net (fo=1, routed)           0.000     7.322    m0/update_xy0/Counter/XLXI_7_i_80__0_n_0
+    SLICE_X18Y70         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.256     7.578 r  m0/update_xy0/Counter/XLXI_7_i_29__0/CO[3]
+                         net (fo=1, routed)           0.000     7.578    m0/update_xy0/Counter/XLXI_7_i_29__0_n_0
+    SLICE_X18Y71         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.054     7.632 r  m0/update_xy0/Counter/XLXI_7_i_8__1/CO[3]
+                         net (fo=1, routed)           0.000     7.632    m0/update_xy0/Counter/XLXI_7_i_8__1_n_0
+    SLICE_X18Y72         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.133     7.765 r  m0/update_xy0/Counter/XLXI_7_i_3__1/CO[0]
+                         net (fo=60, routed)          1.080     8.845    m0/update_xy0/Counter/XLXI_7_i_3__1_n_3
+    SLICE_X11Y78         LUT5 (Prop_lut5_I3_O)        0.128     8.973 r  m0/update_xy0/Counter/XLXI_7_i_4/O
+                         net (fo=31, routed)          1.033    10.006    m0/update_xy0/Counter/y_index[19]
+    SLICE_X18Y77         LUT6 (Prop_lut6_I4_O)        0.043    10.049 r  m0/update_xy0/Counter/XLXI_8_i_33/O
+                         net (fo=3, routed)           0.384    10.433    m0/update_xy0/Counter/XLXI_8_i_33_n_0
+    SLICE_X18Y77         LUT6 (Prop_lut6_I1_O)        0.043    10.476 r  m0/update_xy0/Counter/XLXI_8_i_28/O
+                         net (fo=3, routed)           0.443    10.919    m0/update_xy0/Counter/XLXI_8_i_28_n_0
+    SLICE_X19Y76         LUT6 (Prop_lut6_I0_O)        0.043    10.962 r  m0/update_xy0/Counter/XLXI_8_i_24/O
+                         net (fo=5, routed)           0.394    11.356    m0/update_xy0/Counter/XLXI_8_i_24_n_0
+    SLICE_X18Y76         LUT6 (Prop_lut6_I3_O)        0.043    11.399 r  m0/update_xy0/Counter/XLXI_8_i_19/O
+                         net (fo=5, routed)           0.571    11.970    m0/update_xy0/Counter/XLXI_8_i_19_n_0
+    SLICE_X18Y73         LUT6 (Prop_lut6_I3_O)        0.043    12.013 r  m0/update_xy0/Counter/XLXI_8_i_14/O
+                         net (fo=6, routed)           0.733    12.747    m0/update_xy0/Counter/XLXI_8_i_14_n_0
+    SLICE_X11Y71         LUT6 (Prop_lut6_I3_O)        0.043    12.790 r  m0/update_xy0/Counter/XLXI_8_i_8/O
+                         net (fo=1, routed)           0.355    13.144    m0/update_xy0/Counter/XLXI_8_i_8_n_0
+    SLICE_X11Y71         LUT6 (Prop_lut6_I4_O)        0.043    13.187 r  m0/update_xy0/Counter/XLXI_8_i_2/O
+                         net (fo=2, routed)           0.328    13.515    m0/update_xy0/Counter/XLXI_8_i_2_n_0
+    SLICE_X10Y70         LUT3 (Prop_lut3_I0_O)        0.051    13.566 f  m0/update_xy0/Counter/XLXI_10_i_1/O
+                         net (fo=18, routed)          1.027    14.594    out1/SM1/HTS7/MSEG/XLXN_81
+    SLICE_X6Y64          LUT4 (Prop_lut4_I1_O)        0.134    14.728 r  out1/SM1/HTS7/MSEG/XLXI_21/O
+                         net (fo=1, routed)           0.363    15.091    out1/SM1/HTS7/MSEG/XLXN_153
+    SLICE_X6Y64          LUT3 (Prop_lut3_I1_O)        0.043    15.134 r  out1/SM1/HTS7/MSEG/XLXI_31/O
+                         net (fo=1, routed)           0.201    15.334    out1/M2/P_Data[57]
+    SLICE_X6Y66          LUT4 (Prop_lut4_I3_O)        0.043    15.377 r  out1/M2/buffer[57]_i_1/O
+                         net (fo=1, routed)           0.000    15.377    out1/M2/buffer[57]
+    SLICE_X6Y66          FDRE                                         r  out1/M2/buffer_reg[57]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 out1/M2/start_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            out1/M2/start_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.202ns  (logic 0.100ns (49.389%)  route 0.102ns (50.611%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y66          FDRE                         0.000     0.000 r  out1/M2/start_reg[0]/C
+    SLICE_X1Y66          FDRE (Prop_fdre_C_Q)         0.100     0.100 r  out1/M2/start_reg[0]/Q
+                         net (fo=5, routed)           0.102     0.202    out1/M2/start[0]
+    SLICE_X1Y65          FDRE                                         r  out1/M2/start_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.203ns  (logic 0.100ns (49.342%)  route 0.103ns (50.658%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y40         FDRE                         0.000     0.000 r  vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C
+    SLICE_X48Y40         FDRE (Prop_fdre_C_Q)         0.100     0.100 r  vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/Q
+                         net (fo=2, routed)           0.103     0.203    vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe[0]
+    SLICE_X48Y40         FDRE                                         r  vga_display0/rom1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 m1/clkdiv_reg[20]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            out1/M2/start_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.205ns  (logic 0.100ns (48.855%)  route 0.105ns (51.145%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y67          FDRE                         0.000     0.000 r  m1/clkdiv_reg[20]/C
+    SLICE_X0Y67          FDRE (Prop_fdre_C_Q)         0.100     0.100 r  m1/clkdiv_reg[20]/Q
+                         net (fo=2, routed)           0.105     0.205    out1/M2/Serial
+    SLICE_X1Y66          FDRE                                         r  out1/M2/start_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 out1/M2/buffer_reg[20]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            out1/M2/buffer_reg[19]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.206ns  (logic 0.128ns (62.063%)  route 0.078ns (37.937%))
+  Logic Levels:           2  (FDRE=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y76          FDRE                         0.000     0.000 r  out1/M2/buffer_reg[20]/C
+    SLICE_X0Y76          FDRE (Prop_fdre_C_Q)         0.100     0.100 r  out1/M2/buffer_reg[20]/Q
+                         net (fo=1, routed)           0.078     0.178    out1/M2/in10[19]
+    SLICE_X1Y76          LUT3 (Prop_lut3_I1_O)        0.028     0.206 r  out1/M2/buffer[19]_i_1/O
+                         net (fo=1, routed)           0.000     0.206    out1/M2/buffer[19]
+    SLICE_X1Y76          FDRE                                         r  out1/M2/buffer_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.209ns  (logic 0.100ns (47.812%)  route 0.109ns (52.188%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y18         FDRE                         0.000     0.000 r  vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[1]/C
+    SLICE_X26Y18         FDRE (Prop_fdre_C_Q)         0.100     0.100 r  vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[1]/Q
+                         net (fo=12, routed)          0.109     0.209    vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe[1]
+    SLICE_X26Y18         FDRE                                         r  vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 out1/M2/buffer_reg[49]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            out1/M2/buffer_reg[48]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.211ns  (logic 0.128ns (60.799%)  route 0.083ns (39.201%))
+  Logic Levels:           2  (FDRE=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y70          FDRE                         0.000     0.000 r  out1/M2/buffer_reg[49]/C
+    SLICE_X3Y70          FDRE (Prop_fdre_C_Q)         0.100     0.100 r  out1/M2/buffer_reg[49]/Q
+                         net (fo=1, routed)           0.083     0.183    out1/M2/in10[48]
+    SLICE_X2Y70          LUT3 (Prop_lut3_I1_O)        0.028     0.211 r  out1/M2/buffer[48]_i_1/O
+                         net (fo=1, routed)           0.000     0.211    out1/M2/buffer[48]
+    SLICE_X2Y70          FDRE                                         r  out1/M2/buffer_reg[48]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.228ns  (logic 0.100ns (43.929%)  route 0.128ns (56.071%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X26Y18         FDRE                         0.000     0.000 r  vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/C
+    SLICE_X26Y18         FDRE (Prop_fdre_C_Q)         0.100     0.100 r  vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]/Q
+                         net (fo=11, routed)          0.128     0.228    vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe[0]
+    SLICE_X26Y18         FDRE                                         r  vga_display0/rom_output_vic/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 in0/F0_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            in0/left_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.246ns  (logic 0.128ns (51.943%)  route 0.118ns (48.057%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y56          FDRE                         0.000     0.000 r  in0/F0_reg/C
+    SLICE_X4Y56          FDRE (Prop_fdre_C_Q)         0.100     0.100 f  in0/F0_reg/Q
+                         net (fo=4, routed)           0.118     0.218    in0/F0_reg_n_0
+    SLICE_X7Y56          LUT6 (Prop_lut6_I0_O)        0.028     0.246 r  in0/left_i_1/O
+                         net (fo=1, routed)           0.000     0.246    in0/left_i_1_n_0
+    SLICE_X7Y56          FDRE                                         r  in0/left_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 in0/ps2_clk_sync_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            in0/ps2_clk_sync_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.250ns  (logic 0.100ns (39.930%)  route 0.150ns (60.070%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y56          FDRE                         0.000     0.000 r  in0/ps2_clk_sync_reg[0]/C
+    SLICE_X0Y56          FDRE (Prop_fdre_C_Q)         0.100     0.100 r  in0/ps2_clk_sync_reg[0]/Q
+                         net (fo=1, routed)           0.150     0.250    in0/ps2_clk_sync[0]
+    SLICE_X0Y56          FDRE                                         r  in0/ps2_clk_sync_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 out1/M2/buffer_reg[31]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            out1/M2/buffer_reg[30]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.252ns  (logic 0.146ns (58.029%)  route 0.106ns (41.971%))
+  Logic Levels:           2  (FDRE=1 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y75          FDRE                         0.000     0.000 r  out1/M2/buffer_reg[31]/C
+    SLICE_X2Y75          FDRE (Prop_fdre_C_Q)         0.118     0.118 r  out1/M2/buffer_reg[31]/Q
+                         net (fo=1, routed)           0.106     0.224    out1/M2/in10[30]
+    SLICE_X2Y74          LUT3 (Prop_lut3_I1_O)        0.028     0.252 r  out1/M2/buffer[30]_i_1/O
+                         net (fo=1, routed)           0.000     0.252    out1/M2/buffer[30]
+    SLICE_X2Y74          FDRE                                         r  out1/M2/buffer_reg[30]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

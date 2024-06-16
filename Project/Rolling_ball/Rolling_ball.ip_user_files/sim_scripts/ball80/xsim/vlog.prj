@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../Rolling_ball.gen/sources_1/ip/ball80_5/sim/ball80.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

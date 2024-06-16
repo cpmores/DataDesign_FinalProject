@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ball86_synth_1" LaunchDir="D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball86_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ball62_synth_1" LaunchDir="D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball62_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ball90_synth_1" LaunchDir="D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball90_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ball80_synth_1" LaunchDir="D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball80_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ball86_synth_1"/>
+		<Parent Id="ball62_synth_1"/>
+		<Parent Id="ball90_synth_1"/>
+		<Parent Id="ball80_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="ball86_synth_1"/>
+		<Parent Id="ball62_synth_1"/>
+		<Parent Id="ball90_synth_1"/>
+		<Parent Id="ball80_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

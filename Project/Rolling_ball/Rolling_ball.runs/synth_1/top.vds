@@ -1,0 +1,807 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Jun 16 12:57:51 2024
+# Process ID: 11524
+# Current directory: D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/top.vds
+# Journal file: D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1\vivado.jou
+# Running On: LAPTOP-IJHTN70K, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 16858 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 504.770 ; gain = 183.500
+Command: read_checkpoint -auto_incremental -incremental D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7k160tffg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21596
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1379.988 ; gain = 440.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'a', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'b', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'c', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'd', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'e', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'f', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'g', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'p', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'jump', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/ball_control.v:22]
+INFO: [Synth 8-11241] undeclared symbol 'clkdiv', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/update_xy.v:17]
+WARNING: [Synth 8-8895] 'clkdiv' is already implicitly declared on line 17 [D:/git_repo/DataDesign_FinalProject/Project/code/update_xy.v:19]
+INFO: [Synth 8-11241] undeclared symbol 'within_map', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:93]
+INFO: [Synth 8-11241] undeclared symbol 'within_gameover', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:94]
+INFO: [Synth 8-11241] undeclared symbol 'within_victory', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:95]
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ball62' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball62_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball62' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball62_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (12) of module 'ball62' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:122]
+INFO: [Synth 8-6157] synthesizing module 'ball' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:128]
+INFO: [Synth 8-6157] synthesizing module 'ball80' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball80_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball80' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball80_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball80' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:134]
+INFO: [Synth 8-6157] synthesizing module 'ball86' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball86_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball86' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball86_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball86' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:140]
+INFO: [Synth 8-6157] synthesizing module 'ball90' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball90_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball90' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball90_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball90' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:146]
+INFO: [Synth 8-6157] synthesizing module 'ball92' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball92_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball92' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball92_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (14) of module 'ball92' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:152]
+WARNING: [Synth 8-689] width (12) of port connection 'douta' does not match port width (16) of module 'ball92' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:153]
+INFO: [Synth 8-6157] synthesizing module 'output_vic' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/output_vic_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'output_vic' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/output_vic_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'output_new_gameover' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/output_new_gameover_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'output_new_gameover' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/output_new_gameover_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (15) of module 'output_new_gameover' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:164]
+INFO: [Synth 8-6157] synthesizing module 'flocation' [D:/git_repo/DataDesign_FinalProject/Project/code/flocation.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'flocation' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/flocation.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'px' does not match port width (9) of module 'flocation' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:169]
+INFO: [Synth 8-6157] synthesizing module 'map' [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:1]
+WARNING: [Synth 8-567] referenced signal 'index_x' should be on the sensitivity list [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:458]
+WARNING: [Synth 8-567] referenced signal 'index_y' should be on the sensitivity list [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:458]
+INFO: [Synth 8-6155] done synthesizing module 'map' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:1]
+WARNING: [Synth 8-7071] port 'data_state' of module 'map' is unconnected for instance 'map0' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:176]
+WARNING: [Synth 8-7071] port 'len' of module 'map' is unconnected for instance 'map0' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:176]
+WARNING: [Synth 8-7023] instance 'map0' of module 'map' has 6 connections declared, but only 4 given [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:176]
+INFO: [Synth 8-6157] synthesizing module 'clkdiv' [D:/git_repo/DataDesign_FinalProject/Project/code/clkdiv.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/clkdiv.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vgac' [D:/git_repo/DataDesign_FinalProject/Project/code/vgac.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vgac' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/vgac.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ps2_keyboard' [D:/git_repo/DataDesign_FinalProject/Project/code/ps2_keyboard.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/git_repo/DataDesign_FinalProject/Project/code/ps2_keyboard.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_keyboard' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/ps2_keyboard.v:3]
+WARNING: [Synth 8-7071] port 's' of module 'ps2_keyboard' is unconnected for instance 'in0' [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:53]
+WARNING: [Synth 8-7071] port 'up' of module 'ps2_keyboard' is unconnected for instance 'in0' [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:53]
+WARNING: [Synth 8-7071] port 'down' of module 'ps2_keyboard' is unconnected for instance 'in0' [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:53]
+WARNING: [Synth 8-7023] instance 'in0' of module 'ps2_keyboard' has 18 connections declared, but only 15 given [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:53]
+INFO: [Synth 8-6157] synthesizing module 'ball_control' [D:/git_repo/DataDesign_FinalProject/Project/code/ball_control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'update_xy' [D:/git_repo/DataDesign_FinalProject/Project/code/update_xy.v:1]
+INFO: [Synth 8-6157] synthesizing module 'counter_64' [D:/git_repo/DataDesign_FinalProject/Project/code/counter_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'counter_64' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/counter_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'update_xy' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/update_xy.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ballbounce' [D:/git_repo/DataDesign_FinalProject/Project/code/ballbounce.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ballbounce' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/ballbounce.v:1]
+WARNING: [Synth 8-689] width (10) of port connection 'px' does not match port width (9) of module 'flocation' [D:/git_repo/DataDesign_FinalProject/Project/code/ball_control.v:46]
+WARNING: [Synth 8-7071] port 'data_map' of module 'map' is unconnected for instance 'map0' [D:/git_repo/DataDesign_FinalProject/Project/code/ball_control.v:53]
+WARNING: [Synth 8-7071] port 'len' of module 'map' is unconnected for instance 'map0' [D:/git_repo/DataDesign_FinalProject/Project/code/ball_control.v:53]
+WARNING: [Synth 8-7023] instance 'map0' of module 'map' has 6 connections declared, but only 4 given [D:/git_repo/DataDesign_FinalProject/Project/code/ball_control.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'ball_control' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/ball_control.v:3]
+WARNING: [Synth 8-689] width (9) of port connection 'x_ball' does not match port width (10) of module 'ball_control' [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:77]
+INFO: [Synth 8-6157] synthesizing module 'Sseg_Dev' [D:/git_repo/DataDesign_FinalProject/Project/code/Sseg_Dev.v:1]
+INFO: [Synth 8-6157] synthesizing module 'P2S' [D:/git_repo/DataDesign_FinalProject/Project/code/P2S_IO.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'P2S' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/P2S_IO.v:1]
+INFO: [Synth 8-6157] synthesizing module 'HexTo8SEG' [D:/git_repo/DataDesign_FinalProject/Project/code/HexTo8SEG.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Hex2Seg' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MyMC14495' [D:/git_repo/DataDesign_FinalProject/Project/code/MyMC14495.vf:23]
+INFO: [Synth 8-6157] synthesizing module 'AND4' [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1001]
+INFO: [Synth 8-6155] done synthesizing module 'AND4' (0#1) [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1001]
+INFO: [Synth 8-6157] synthesizing module 'OR4' [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:97028]
+INFO: [Synth 8-6155] done synthesizing module 'OR4' (0#1) [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:97028]
+INFO: [Synth 8-6157] synthesizing module 'OR3' [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96980]
+INFO: [Synth 8-6155] done synthesizing module 'OR3' (0#1) [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96980]
+INFO: [Synth 8-6157] synthesizing module 'INV' [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78119]
+INFO: [Synth 8-6155] done synthesizing module 'INV' (0#1) [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78119]
+INFO: [Synth 8-6157] synthesizing module 'AND3' [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:953]
+INFO: [Synth 8-6155] done synthesizing module 'AND3' (0#1) [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:953]
+INFO: [Synth 8-6157] synthesizing module 'AND2' [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:905]
+INFO: [Synth 8-6155] done synthesizing module 'AND2' (0#1) [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:905]
+INFO: [Synth 8-6157] synthesizing module 'OR2' [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96934]
+INFO: [Synth 8-6155] done synthesizing module 'OR2' (0#1) [G:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96934]
+INFO: [Synth 8-6155] done synthesizing module 'MyMC14495' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/MyMC14495.vf:23]
+INFO: [Synth 8-6155] done synthesizing module 'Hex2Seg' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'HexTo8SEG' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/HexTo8SEG.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Sseg_Dev' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/Sseg_Dev.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:3]
+WARNING: [Synth 8-3848] Net len in module/entity map does not have driver. [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:7]
+WARNING: [Synth 8-3848] Net beep in module/entity top does not have driver. [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:12]
+WARNING: [Synth 8-7129] Port len[10] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[9] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[8] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[7] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[6] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[5] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[4] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[3] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[2] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[1] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[0] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port beep in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port playmusic in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1499.871 ; gain = 560.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1499.871 ; gain = 560.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1499.871 ; gain = 560.680
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1499.871 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 320 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_vic_4/output_vic/output_vic_in_context.xdc] for cell 'vga_display0/rom_output_vic'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_vic_4/output_vic/output_vic_in_context.xdc] for cell 'vga_display0/rom_output_vic'
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball92_3/ball92/ball92_in_context.xdc] for cell 'vga_display0/rom_ball92'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball92_3/ball92/ball92_in_context.xdc] for cell 'vga_display0/rom_ball92'
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball/ball/ball_in_context.xdc] for cell 'vga_display0/rom0'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball/ball/ball_in_context.xdc] for cell 'vga_display0/rom0'
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball86_3/ball86/ball86_in_context.xdc] for cell 'vga_display0/rom_ball86'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball86_3/ball86/ball86_in_context.xdc] for cell 'vga_display0/rom_ball86'
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball62/ball62/ball62_in_context.xdc] for cell 'vga_display0/rom_ball62'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball62/ball62/ball62_in_context.xdc] for cell 'vga_display0/rom_ball62'
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball90_2/ball90/ball90_in_context.xdc] for cell 'vga_display0/rom_ball90'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball90_2/ball90/ball90_in_context.xdc] for cell 'vga_display0/rom_ball90'
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/ball80/ball80_in_context.xdc] for cell 'vga_display0/rom_ball80'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/ball80/ball80_in_context.xdc] for cell 'vga_display0/rom_ball80'
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_new_gameover_10/output_new_gameover/output_new_gameover_in_context.xdc] for cell 'vga_display0/rom1'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_new_gameover_10/output_new_gameover/output_new_gameover_in_context.xdc] for cell 'vga_display0/rom1'
+Parsing XDC File [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'b[3]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:25]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'b[2]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:29]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'b[1]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:33]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'b[0]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:37]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'g[3]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:41]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'g[2]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:45]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'g[1]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:49]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'g[0]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:53]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'r[3]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:57]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'r[2]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:61]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'r[1]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:65]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'r[0]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:69]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'clk' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:73]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'hs' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:75]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'ps2_clk' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:79]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'ps2_data' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:81]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'rd' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:83]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'rstn' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:87]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'seg_clk' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:89]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'seg_clrn' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:93]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'seg_en' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:97]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'seg_out' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:101]
+CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'vs' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:105]
+Finished Parsing XDC File [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1604.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 320 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 88 instances
+  AND4 => LUT4: 72 instances
+  INV => LUT1: 40 instances
+  OR2 => LUT2: 56 instances
+  OR3 => LUT3: 24 instances
+  OR4 => LUT4: 32 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1604.047 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1604.047 ; gain = 664.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tffg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1604.047 ; gain = 664.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_output_vic. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball92. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball86. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball62. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball90. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball80. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1604.047 ; gain = 664.855
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'state_reg' [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:460]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1604.047 ; gain = 664.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 6     
+	   2 Input   11 Bit       Adders := 8     
+	   2 Input   10 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	                9 Bit    Wide XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input   12 Bit        Muxes := 2     
+	   4 Input   12 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 3     
+	  88 Input    4 Bit        Muxes := 10    
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 5     
+	  17 Input    2 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 20    
+	  17 Input    1 Bit        Muxes := 11    
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP addr_victory1, operation Mode is: (D+(A:0x3fffff64))*(B:0xf0).
+DSP Report: operator addr_victory1 is absorbed into DSP addr_victory1.
+DSP Report: operator addr_victory2 is absorbed into DSP addr_victory1.
+DSP Report: Generating DSP addr_victory, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffff38).
+DSP Report: operator addr_victory is absorbed into DSP addr_victory.
+DSP Report: Generating DSP addr_gameover1, operation Mode is: (D+(A:0x3fffff60))*(B:0xa1).
+DSP Report: operator addr_gameover1 is absorbed into DSP addr_gameover1.
+DSP Report: operator addr_gameover2 is absorbed into DSP addr_gameover1.
+DSP Report: Generating DSP addr_gameover, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffff10).
+DSP Report: operator addr_gameover is absorbed into DSP addr_gameover.
+DSP Report: Generating DSP addr_ball923, operation Mode is: (D+(A:0x3ffffec2))*(B:0x5c).
+DSP Report: operator addr_ball923 is absorbed into DSP addr_ball923.
+DSP Report: operator addr_ball924 is absorbed into DSP addr_ball923.
+DSP Report: Generating DSP addr_ball92, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffffb6).
+DSP Report: operator addr_ball92 is absorbed into DSP addr_ball92.
+DSP Report: Generating DSP addr_ball903, operation Mode is: (D+(A:0x3ffffec1))*(B:0x5a).
+DSP Report: operator addr_ball903 is absorbed into DSP addr_ball903.
+DSP Report: operator addr_ball904 is absorbed into DSP addr_ball903.
+DSP Report: Generating DSP addr_ball90, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffffb5).
+DSP Report: operator addr_ball90 is absorbed into DSP addr_ball90.
+DSP Report: Generating DSP addr_ball863, operation Mode is: (D+(A:0x3ffffebf))*(B:0x56).
+DSP Report: operator addr_ball863 is absorbed into DSP addr_ball863.
+DSP Report: operator addr_ball864 is absorbed into DSP addr_ball863.
+DSP Report: Generating DSP addr_ball86, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffffb3).
+DSP Report: operator addr_ball86 is absorbed into DSP addr_ball86.
+DSP Report: Generating DSP addr_ball803, operation Mode is: (D+(A:0x3ffffebc))*(B:0x50).
+DSP Report: operator addr_ball803 is absorbed into DSP addr_ball803.
+DSP Report: operator addr_ball804 is absorbed into DSP addr_ball803.
+DSP Report: Generating DSP addr_ball80, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffffb0).
+DSP Report: operator addr_ball80 is absorbed into DSP addr_ball80.
+DSP Report: Generating DSP addr_ball723, operation Mode is: (D+(A:0x3ffffeb8))*(B:0x48).
+DSP Report: operator addr_ball723 is absorbed into DSP addr_ball723.
+DSP Report: operator addr_ball724 is absorbed into DSP addr_ball723.
+DSP Report: Generating DSP addr_ball72, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffffac).
+DSP Report: operator addr_ball72 is absorbed into DSP addr_ball72.
+DSP Report: Generating DSP addr_ball623, operation Mode is: (D+(A:0x3ffffeb3))*(B:0x3e).
+DSP Report: operator addr_ball623 is absorbed into DSP addr_ball623.
+DSP Report: operator addr_ball624 is absorbed into DSP addr_ball623.
+DSP Report: Generating DSP addr_ball62, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffffa7).
+DSP Report: operator addr_ball62 is absorbed into DSP addr_ball62.
+WARNING: [Synth 8-7129] Port len[10] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[9] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[8] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[7] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[6] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[5] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[4] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[3] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[2] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[1] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port len[0] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[99] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[98] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[97] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[96] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[95] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[94] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[93] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[92] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[91] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[90] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[89] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[88] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[87] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[86] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[85] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[84] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[83] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[82] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[81] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[80] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[79] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[78] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[77] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[76] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[75] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[74] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[73] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[72] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[71] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[70] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[69] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[68] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[67] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[66] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[65] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[64] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[63] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[62] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[61] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[60] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[59] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[58] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[57] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[56] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[55] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[54] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[53] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[52] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[51] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[50] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[49] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[48] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[47] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[46] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[45] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[44] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[43] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[42] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[41] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[40] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[39] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[38] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[37] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[36] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[35] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[34] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[33] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[32] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[31] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[30] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[29] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[28] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[27] in module map is either unconnected or has no load
+WARNING: [Synth 8-7129] Port index_y[26] in module map is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (state_reg[2]) is unused and will be removed from module map.
+WARNING: [Synth 8-3332] Sequential element (map0/state_reg[2]) is unused and will be removed from module ball_control.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 1604.047 ; gain = 664.855
+---------------------------------------------------------------------------------
+ Sort Area is  addr_victory1_0 : 0 0 : 333 403 : Used 1 time 0
+ Sort Area is  addr_victory1_0 : 0 1 : 70 403 : Used 1 time 0
+ Sort Area is  addr_gameover1_3 : 0 0 : 292 362 : Used 1 time 0
+ Sort Area is  addr_gameover1_3 : 0 1 : 70 362 : Used 1 time 0
+ Sort Area is  addr_ball923_5 : 0 0 : 290 358 : Used 1 time 0
+ Sort Area is  addr_ball923_5 : 0 1 : 68 358 : Used 1 time 0
+ Sort Area is  addr_ball723_c : 0 0 : 276 344 : Used 1 time 0
+ Sort Area is  addr_ball723_c : 0 1 : 68 344 : Used 1 time 0
+ Sort Area is  addr_ball803_b : 0 0 : 276 344 : Used 1 time 0
+ Sort Area is  addr_ball803_b : 0 1 : 68 344 : Used 1 time 0
+ Sort Area is  addr_ball863_a : 0 0 : 276 344 : Used 1 time 0
+ Sort Area is  addr_ball863_a : 0 1 : 68 344 : Used 1 time 0
+ Sort Area is  addr_ball903_8 : 0 0 : 276 344 : Used 1 time 0
+ Sort Area is  addr_ball903_8 : 0 1 : 68 344 : Used 1 time 0
+ Sort Area is  addr_ball623_d : 0 0 : 251 319 : Used 1 time 0
+ Sort Area is  addr_ball623_d : 0 1 : 68 319 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|vga_display | (D+(A:0x3fffff64))*(B:0xf0)       | 16     | 8      | -      | 9      | 24     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+(A:0x0):B+(C:0xffffffffff38) | 30     | 10     | 9      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|vga_display | (D+(A:0x3fffff60))*(B:0xa1)       | 15     | 8      | -      | 9      | 23     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+(A:0x0):B+(C:0xffffffffff10) | 30     | 10     | 9      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|vga_display | (D+(A:0x3ffffec2))*(B:0x5c)       | 14     | 7      | -      | 9      | 21     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+(A:0x0):B+(C:0xffffffffffb6) | 30     | 10     | 8      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|vga_display | (D+(A:0x3ffffec1))*(B:0x5a)       | 13     | 7      | -      | 9      | 20     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+(A:0x0):B+(C:0xffffffffffb5) | 30     | 10     | 8      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|vga_display | (D+(A:0x3ffffebf))*(B:0x56)       | 13     | 7      | -      | 9      | 20     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+(A:0x0):B+(C:0xffffffffffb3) | 30     | 10     | 8      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|vga_display | (D+(A:0x3ffffebc))*(B:0x50)       | 13     | 7      | -      | 9      | 20     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+(A:0x0):B+(C:0xffffffffffb0) | 30     | 10     | 8      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|vga_display | (D+(A:0x3ffffeb8))*(B:0x48)       | 13     | 7      | -      | 9      | 20     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+(A:0x0):B+(C:0xffffffffffac) | 30     | 10     | 8      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|vga_display | (D+(A:0x3ffffeb3))*(B:0x3e)       | 12     | 6      | -      | 9      | 18     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+(A:0x0):B+(C:0xffffffffffa7) | 30     | 10     | 8      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:48 . Memory (MB): peak = 1604.047 ; gain = 664.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:48 . Memory (MB): peak = 1604.047 ; gain = 664.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:49 . Memory (MB): peak = 1611.664 ; gain = 672.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1626.453 ; gain = 687.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1626.453 ; gain = 687.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1626.453 ; gain = 687.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1626.453 ; gain = 687.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1626.453 ; gain = 687.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1626.453 ; gain = 687.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|vga_display | D'+A*B       | 30     | 8      | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+A':B'+C | 0      | 10     | -      | -      | 16     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vga_display | D'+A*B       | 30     | 8      | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+A':B'+C | 0      | 10     | -      | -      | 15     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vga_display | D'+A*B       | 30     | 7      | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+A':B'+C | 0      | 10     | -      | -      | 14     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vga_display | D'+A*B       | 30     | 7      | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+A':B'+C | 0      | 10     | -      | -      | 13     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vga_display | D'+A*B       | 30     | 7      | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+A':B'+C | 0      | 10     | -      | -      | 13     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vga_display | D'+A*B       | 30     | 7      | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+A':B'+C | 0      | 10     | -      | -      | 13     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vga_display | D'+A*B       | 30     | 7      | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+A':B'+C | 0      | 10     | -      | -      | 13     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vga_display | D'+A*B       | 30     | 6      | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+A':B'+C | 0      | 10     | -      | -      | 12     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------------+----------+
+|      |BlackBox name       |Instances |
++------+--------------------+----------+
+|1     |P2S                 |         1|
+|2     |ball62              |         1|
+|3     |ball                |         1|
+|4     |ball80              |         1|
+|5     |ball86              |         1|
+|6     |ball90              |         1|
+|7     |ball92              |         1|
+|8     |output_vic          |         1|
+|9     |output_new_gameover |         1|
++------+--------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |P2S                 |     1|
+|2     |ball                |     1|
+|3     |ball62              |     1|
+|4     |ball80              |     1|
+|5     |ball86              |     1|
+|6     |ball90              |     1|
+|7     |ball92              |     1|
+|8     |output_new_gameover |     1|
+|9     |output_vic          |     1|
+|10    |AND2                |     8|
+|11    |AND3                |    88|
+|12    |AND4                |    72|
+|13    |BUFG                |     3|
+|14    |CARRY4              |   341|
+|15    |DSP48E1             |    16|
+|17    |INV                 |     9|
+|18    |LUT1                |    55|
+|19    |LUT2                |   331|
+|20    |LUT3                |   404|
+|21    |LUT4                |   372|
+|22    |LUT5                |   387|
+|23    |LUT6                |   676|
+|24    |MUXF7               |    13|
+|25    |MUXF8               |     1|
+|26    |OR2                 |    56|
+|27    |OR3                 |    24|
+|28    |OR4                 |    32|
+|29    |FDCE                |    46|
+|30    |FDPE                |     5|
+|31    |FDRE                |   112|
+|32    |LD                  |     4|
+|33    |IBUF                |     4|
+|34    |OBUF                |    19|
+|35    |OBUFT               |     1|
++------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:55 . Memory (MB): peak = 1626.453 ; gain = 687.262
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 111 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:52 . Memory (MB): peak = 1626.453 ; gain = 583.086
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:55 . Memory (MB): peak = 1626.453 ; gain = 687.262
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [D:/git_repo/DataDesign_FinalProject/Project/code/P2S.edf]
+Finished Parsing EDIF File [D:/git_repo/DataDesign_FinalProject/Project/code/P2S.edf]
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1634.504 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 664 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[14]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[15]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[16]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[17]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[18]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[19]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[20]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[21]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[22]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[23]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[24]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[25]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[26]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[27]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[28]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[29]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[30]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[31]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[32]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[33]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[34]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[35]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[36]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[37]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[38]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[39]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[40]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[41]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[42]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[43]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[44]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[45]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[46]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[47]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[48]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[49]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[50]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[51]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[52]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[53]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[54]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[55]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[56]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[57]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[58]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[59]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[60]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[61]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[62]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[63]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[8]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/P_Data_IBUF[9]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/Serial_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/clk_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. out1/M2/rst_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, seg_en_OBUF_inst, from the path connected to top-level port: seg_en 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, seg_out_OBUF_inst, from the path connected to top-level port: seg_out 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, seg_clrn_OBUF_inst, from the path connected to top-level port: seg_clrn 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, seg_clk_OBUF_inst, from the path connected to top-level port: seg_clk 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1660.781 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 293 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 88 instances
+  AND4 => LUT4: 72 instances
+  INV => LUT1: 9 instances
+  LD => LDCE: 4 instances
+  OR2 => LUT2: 56 instances
+  OR3 => LUT3: 24 instances
+  OR4 => LUT4: 32 instances
+
+Synth Design complete | Checksum: 8861c43a
+INFO: [Common 17-83] Releasing license: Synthesis
+101 Infos, 201 Warnings, 23 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:01:02 . Memory (MB): peak = 1660.781 ; gain = 1144.039
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1660.781 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 16 12:59:06 2024...
