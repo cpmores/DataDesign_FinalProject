@@ -1,0 +1,2 @@
+output_vic.v,verilog,xil_defaultlib,../../../../Rolling_ball.gen/sources_1/ip/output_vic_4/sim/output_vic.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

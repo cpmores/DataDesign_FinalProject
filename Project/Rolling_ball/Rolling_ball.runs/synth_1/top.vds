@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sat Jun 15 22:42:16 2024
-# Process ID: 13268
+# Start of session at: Sun Jun 16 12:57:51 2024
+# Process ID: 11524
 # Current directory: D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/top.vds
@@ -12,7 +12,7 @@
 # Running On: LAPTOP-IJHTN70K, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 16858 MB
 #-----------------------------------------------------------
 source top.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 503.918 ; gain = 182.336
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 504.770 ; gain = 183.500
 Command: read_checkpoint -auto_incremental -incremental D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/utils_1/imports/synth_1/top.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -25,9 +25,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 9172
+INFO: [Synth 8-7075] Helper process launched with PID 21596
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1378.508 ; gain = 440.637
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1379.988 ; gain = 440.797
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'a', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
 INFO: [Synth 8-11241] undeclared symbol 'b', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v:11]
@@ -45,36 +45,37 @@ INFO: [Synth 8-11241] undeclared symbol 'within_gameover', assumed default net t
 INFO: [Synth 8-11241] undeclared symbol 'within_victory', assumed default net type 'wire' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:95]
 INFO: [Synth 8-6157] synthesizing module 'top' [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:3]
 INFO: [Synth 8-6157] synthesizing module 'vga_display' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:3]
-INFO: [Synth 8-6157] synthesizing module 'ball62' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball62_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ball62' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball62_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ball62' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball62_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball62' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball62_stub.v:6]
 WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (12) of module 'ball62' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:122]
-INFO: [Synth 8-6157] synthesizing module 'ball' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ball' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ball' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball_stub.v:6]
 WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:128]
-INFO: [Synth 8-6157] synthesizing module 'ball80' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball80_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ball80' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball80_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ball80' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball80_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball80' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball80_stub.v:6]
 WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball80' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:134]
-INFO: [Synth 8-6157] synthesizing module 'ball86' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball86_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ball86' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball86_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ball86' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball86_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball86' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball86_stub.v:6]
 WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball86' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:140]
-INFO: [Synth 8-6157] synthesizing module 'ball90' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball90_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ball90' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball90_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ball90' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball90_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball90' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball90_stub.v:6]
 WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (13) of module 'ball90' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:146]
-INFO: [Synth 8-6157] synthesizing module 'ball92' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball92_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ball92' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/ball92_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ball92' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball92_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ball92' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/ball92_stub.v:6]
 WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (14) of module 'ball92' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:152]
 WARNING: [Synth 8-689] width (12) of port connection 'douta' does not match port width (16) of module 'ball92' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:153]
-INFO: [Synth 8-6157] synthesizing module 'output_vic' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/output_vic_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'output_vic' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/output_vic_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'output_new_gameover' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/output_new_gameover_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'output_new_gameover' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-13268-LAPTOP-IJHTN70K/realtime/output_new_gameover_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'output_vic' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/output_vic_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'output_vic' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/output_vic_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'output_new_gameover' [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/output_new_gameover_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'output_new_gameover' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/.Xil/Vivado-11524-LAPTOP-IJHTN70K/realtime/output_new_gameover_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (15) of module 'output_new_gameover' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:164]
 INFO: [Synth 8-6157] synthesizing module 'flocation' [D:/git_repo/DataDesign_FinalProject/Project/code/flocation.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'flocation' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/flocation.v:1]
 WARNING: [Synth 8-689] width (32) of port connection 'px' does not match port width (9) of module 'flocation' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:169]
-INFO: [Synth 8-6157] synthesizing module 'map' [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:3]
-WARNING: [Synth 8-567] referenced signal 'index_x' should be on the sensitivity list [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:460]
-WARNING: [Synth 8-567] referenced signal 'index_y' should be on the sensitivity list [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:460]
-INFO: [Synth 8-6155] done synthesizing module 'map' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:3]
+INFO: [Synth 8-6157] synthesizing module 'map' [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:1]
+WARNING: [Synth 8-567] referenced signal 'index_x' should be on the sensitivity list [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:458]
+WARNING: [Synth 8-567] referenced signal 'index_y' should be on the sensitivity list [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:458]
+INFO: [Synth 8-6155] done synthesizing module 'map' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:1]
 WARNING: [Synth 8-7071] port 'data_state' of module 'map' is unconnected for instance 'map0' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:176]
 WARNING: [Synth 8-7071] port 'len' of module 'map' is unconnected for instance 'map0' [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:176]
 WARNING: [Synth 8-7023] instance 'map0' of module 'map' has 6 connections declared, but only 4 given [D:/git_repo/DataDesign_FinalProject/Project/code/vga_display.v:176]
@@ -128,7 +129,7 @@ INFO: [Synth 8-6155] done synthesizing module 'Hex2Seg' (0#1) [D:/git_repo/DataD
 INFO: [Synth 8-6155] done synthesizing module 'HexTo8SEG' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/HexTo8SEG.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'Sseg_Dev' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/Sseg_Dev.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:3]
-WARNING: [Synth 8-3848] Net len in module/entity map does not have driver. [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:9]
+WARNING: [Synth 8-3848] Net len in module/entity map does not have driver. [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:7]
 WARNING: [Synth 8-3848] Net beep in module/entity top does not have driver. [D:/git_repo/DataDesign_FinalProject/Project/code/top.v:12]
 WARNING: [Synth 8-7129] Port len[10] in module map is either unconnected or has no load
 WARNING: [Synth 8-7129] Port len[9] in module map is either unconnected or has no load
@@ -145,24 +146,26 @@ WARNING: [Synth 8-7129] Port clk in module map is either unconnected or has no l
 WARNING: [Synth 8-7129] Port beep in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port playmusic in module top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1497.738 ; gain = 559.867
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1499.871 ; gain = 560.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1497.738 ; gain = 559.867
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1499.871 ; gain = 560.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1497.738 ; gain = 559.867
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1499.871 ; gain = 560.680
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1497.738 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1499.871 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 320 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_vic_4/output_vic/output_vic_in_context.xdc] for cell 'vga_display0/rom_output_vic'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_vic_4/output_vic/output_vic_in_context.xdc] for cell 'vga_display0/rom_output_vic'
 Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball92_3/ball92/ball92_in_context.xdc] for cell 'vga_display0/rom_ball92'
 Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball92_3/ball92/ball92_in_context.xdc] for cell 'vga_display0/rom_ball92'
 Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball/ball/ball_in_context.xdc] for cell 'vga_display0/rom0'
@@ -175,10 +178,8 @@ Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolli
 Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball90_2/ball90/ball90_in_context.xdc] for cell 'vga_display0/rom_ball90'
 Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/ball80/ball80_in_context.xdc] for cell 'vga_display0/rom_ball80'
 Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/ball80/ball80_in_context.xdc] for cell 'vga_display0/rom_ball80'
-Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_vic_3/output_vic/output_vic_in_context.xdc] for cell 'vga_display0/rom_output_vic'
-Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_vic_3/output_vic/output_vic_in_context.xdc] for cell 'vga_display0/rom_output_vic'
-Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_new_gameover_7/output_new_gameover/output_new_gameover_in_context.xdc] for cell 'vga_display0/rom1'
-Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_new_gameover_7/output_new_gameover/output_new_gameover_in_context.xdc] for cell 'vga_display0/rom1'
+Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_new_gameover_10/output_new_gameover/output_new_gameover_in_context.xdc] for cell 'vga_display0/rom1'
+Finished Parsing XDC File [d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_new_gameover_10/output_new_gameover/output_new_gameover_in_context.xdc] for cell 'vga_display0/rom1'
 Parsing XDC File [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc]
 CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'b[3]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:25]
 CRITICAL WARNING: [Common 17-69] Command failed: Cannot change direction of connected port 'b[2]' [D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc:29]
@@ -210,7 +211,7 @@ Parsing XDC File [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolli
 Finished Parsing XDC File [D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1599.672 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1604.047 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 320 instances were transformed.
   AND2 => LUT2: 8 instances
@@ -221,36 +222,36 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OR3 => LUT3: 24 instances
   OR4 => LUT4: 32 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1599.672 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1604.047 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1599.672 ; gain = 661.801
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1604.047 ; gain = 664.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k160tffg676-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1599.672 ; gain = 661.801
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1604.047 ; gain = 664.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_output_vic. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball92. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball86. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball62. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball90. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_ball80. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom_output_vic. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vga_display0/rom1. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1599.672 ; gain = 661.801
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1604.047 ; gain = 664.855
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'state_reg' [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:462]
+WARNING: [Synth 8-327] inferring latch for variable 'state_reg' [D:/git_repo/DataDesign_FinalProject/Project/code/map.v:460]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1599.672 ; gain = 661.801
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1604.047 ; gain = 664.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -300,10 +301,15 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-DSP Report: Generating DSP addr_gameover1, operation Mode is: (D+(A:0x3fffffd8))*(B:0x1da).
+DSP Report: Generating DSP addr_victory1, operation Mode is: (D+(A:0x3fffff64))*(B:0xf0).
+DSP Report: operator addr_victory1 is absorbed into DSP addr_victory1.
+DSP Report: operator addr_victory2 is absorbed into DSP addr_victory1.
+DSP Report: Generating DSP addr_victory, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffff38).
+DSP Report: operator addr_victory is absorbed into DSP addr_victory.
+DSP Report: Generating DSP addr_gameover1, operation Mode is: (D+(A:0x3fffff60))*(B:0xa1).
 DSP Report: operator addr_gameover1 is absorbed into DSP addr_gameover1.
 DSP Report: operator addr_gameover2 is absorbed into DSP addr_gameover1.
-DSP Report: Generating DSP addr_gameover, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffff88).
+DSP Report: Generating DSP addr_gameover, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffff10).
 DSP Report: operator addr_gameover is absorbed into DSP addr_gameover.
 DSP Report: Generating DSP addr_ball923, operation Mode is: (D+(A:0x3ffffec2))*(B:0x5c).
 DSP Report: operator addr_ball923 is absorbed into DSP addr_ball923.
@@ -423,24 +429,26 @@ WARNING: [Synth 8-7129] Port index_y[27] in module map is either unconnected or 
 WARNING: [Synth 8-7129] Port index_y[26] in module map is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3332] Sequential element (state_reg[2]) is unused and will be removed from module map.
-WARNING: [Synth 8-3332] Sequential element (m0/map0/state_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (map0/state_reg[2]) is unused and will be removed from module ball_control.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1599.672 ; gain = 661.801
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 1604.047 ; gain = 664.855
 ---------------------------------------------------------------------------------
- Sort Area is  addr_gameover1_0 : 0 0 : 456 525 : Used 1 time 0
- Sort Area is  addr_gameover1_0 : 0 1 : 69 525 : Used 1 time 0
- Sort Area is  addr_ball923_3 : 0 0 : 290 359 : Used 1 time 0
- Sort Area is  addr_ball923_3 : 0 1 : 69 359 : Used 1 time 0
- Sort Area is  addr_ball723_9 : 0 0 : 276 345 : Used 1 time 0
- Sort Area is  addr_ball723_9 : 0 1 : 69 345 : Used 1 time 0
- Sort Area is  addr_ball803_8 : 0 0 : 276 345 : Used 1 time 0
- Sort Area is  addr_ball803_8 : 0 1 : 69 345 : Used 1 time 0
- Sort Area is  addr_ball863_7 : 0 0 : 276 345 : Used 1 time 0
- Sort Area is  addr_ball863_7 : 0 1 : 69 345 : Used 1 time 0
- Sort Area is  addr_ball903_5 : 0 0 : 276 345 : Used 1 time 0
- Sort Area is  addr_ball903_5 : 0 1 : 69 345 : Used 1 time 0
- Sort Area is  addr_ball623_a : 0 0 : 251 320 : Used 1 time 0
- Sort Area is  addr_ball623_a : 0 1 : 69 320 : Used 1 time 0
+ Sort Area is  addr_victory1_0 : 0 0 : 333 403 : Used 1 time 0
+ Sort Area is  addr_victory1_0 : 0 1 : 70 403 : Used 1 time 0
+ Sort Area is  addr_gameover1_3 : 0 0 : 292 362 : Used 1 time 0
+ Sort Area is  addr_gameover1_3 : 0 1 : 70 362 : Used 1 time 0
+ Sort Area is  addr_ball923_5 : 0 0 : 290 358 : Used 1 time 0
+ Sort Area is  addr_ball923_5 : 0 1 : 68 358 : Used 1 time 0
+ Sort Area is  addr_ball723_c : 0 0 : 276 344 : Used 1 time 0
+ Sort Area is  addr_ball723_c : 0 1 : 68 344 : Used 1 time 0
+ Sort Area is  addr_ball803_b : 0 0 : 276 344 : Used 1 time 0
+ Sort Area is  addr_ball803_b : 0 1 : 68 344 : Used 1 time 0
+ Sort Area is  addr_ball863_a : 0 0 : 276 344 : Used 1 time 0
+ Sort Area is  addr_ball863_a : 0 1 : 68 344 : Used 1 time 0
+ Sort Area is  addr_ball903_8 : 0 0 : 276 344 : Used 1 time 0
+ Sort Area is  addr_ball903_8 : 0 1 : 68 344 : Used 1 time 0
+ Sort Area is  addr_ball623_d : 0 0 : 251 319 : Used 1 time 0
+ Sort Area is  addr_ball623_d : 0 1 : 68 319 : Used 1 time 0
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
@@ -449,8 +457,10 @@ DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding R
 +------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|vga_display | (D+(A:0x3fffffd8))*(B:0x1da)      | 16     | 9      | -      | 9      | 25     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
-|vga_display | PCIN+(A:0x0):B+(C:0xffffffffff88) | 30     | 10     | 8      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|vga_display | (D+(A:0x3fffff64))*(B:0xf0)       | 16     | 8      | -      | 9      | 24     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+(A:0x0):B+(C:0xffffffffff38) | 30     | 10     | 9      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|vga_display | (D+(A:0x3fffff60))*(B:0xa1)       | 15     | 8      | -      | 9      | 23     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+(A:0x0):B+(C:0xffffffffff10) | 30     | 10     | 9      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 |vga_display | (D+(A:0x3ffffec2))*(B:0x5c)       | 14     | 7      | -      | 9      | 21     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
 |vga_display | PCIN+(A:0x0):B+(C:0xffffffffffb6) | 30     | 10     | 8      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
 |vga_display | (D+(A:0x3ffffec1))*(B:0x5a)       | 13     | 7      | -      | 9      | 20     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
@@ -473,19 +483,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1599.672 ; gain = 661.801
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:48 . Memory (MB): peak = 1604.047 ; gain = 664.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1599.672 ; gain = 661.801
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:48 . Memory (MB): peak = 1604.047 ; gain = 664.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1599.672 ; gain = 661.801
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:49 . Memory (MB): peak = 1611.664 ; gain = 672.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -503,37 +513,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1626.453 ; gain = 687.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1626.453 ; gain = 687.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1626.453 ; gain = 687.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1626.453 ; gain = 687.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1626.453 ; gain = 687.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1626.453 ; gain = 687.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -543,8 +553,10 @@ DSP Final Report (the ' indicates corresponding REG is set)
 +------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|vga_display | D'+A*B       | 30     | 9      | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | D'+A*B       | 30     | 8      | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
 |vga_display | PCIN+A':B'+C | 0      | 10     | -      | -      | 16     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|vga_display | D'+A*B       | 30     | 8      | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|vga_display | PCIN+A':B'+C | 0      | 10     | -      | -      | 15     | 1    | 1    | -    | -    | -     | 0    | 0    | 
 |vga_display | D'+A*B       | 30     | 7      | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
 |vga_display | PCIN+A':B'+C | 0      | 10     | -      | -      | 14     | 1    | 1    | -    | -    | -     | 0    | 0    | 
 |vga_display | D'+A*B       | 30     | 7      | -      | 9      | 0      | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
@@ -592,38 +604,39 @@ Report Cell Usage:
 |11    |AND3                |    88|
 |12    |AND4                |    72|
 |13    |BUFG                |     3|
-|14    |CARRY4              |   346|
-|15    |DSP48E1             |    14|
+|14    |CARRY4              |   341|
+|15    |DSP48E1             |    16|
 |17    |INV                 |     9|
-|18    |LUT1                |    57|
-|19    |LUT2                |   361|
-|20    |LUT3                |   426|
-|21    |LUT4                |   367|
-|22    |LUT5                |   376|
-|23    |LUT6                |   668|
-|24    |MUXF7               |     8|
-|25    |OR2                 |    56|
-|26    |OR3                 |    24|
-|27    |OR4                 |    32|
-|28    |FDCE                |    46|
-|29    |FDPE                |     5|
-|30    |FDRE                |    91|
-|31    |LD                  |     4|
-|32    |IBUF                |     4|
-|33    |OBUF                |    19|
-|34    |OBUFT               |     1|
+|18    |LUT1                |    55|
+|19    |LUT2                |   331|
+|20    |LUT3                |   404|
+|21    |LUT4                |   372|
+|22    |LUT5                |   387|
+|23    |LUT6                |   676|
+|24    |MUXF7               |    13|
+|25    |MUXF8               |     1|
+|26    |OR2                 |    56|
+|27    |OR3                 |    24|
+|28    |OR4                 |    32|
+|29    |FDCE                |    46|
+|30    |FDPE                |     5|
+|31    |FDRE                |   112|
+|32    |LD                  |     4|
+|33    |IBUF                |     4|
+|34    |OBUF                |    19|
+|35    |OBUFT               |     1|
 +------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:55 . Memory (MB): peak = 1626.453 ; gain = 687.262
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 111 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1608.980 ; gain = 569.176
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1608.980 ; gain = 671.109
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:52 . Memory (MB): peak = 1626.453 ; gain = 583.086
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:55 . Memory (MB): peak = 1626.453 ; gain = 687.262
 INFO: [Project 1-571] Translating synthesized netlist
 Parsing EDIF File [D:/git_repo/DataDesign_FinalProject/Project/code/P2S.edf]
 Finished Parsing EDIF File [D:/git_repo/DataDesign_FinalProject/Project/code/P2S.edf]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1617.008 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 661 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1634.504 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 664 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2022.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -770,7 +783,7 @@ Resolution: The tool has removed redundant OBUF. To resolve this warning, check 
 WARNING: [Opt 31-36] Removing redundant OBUF, seg_clk_OBUF_inst, from the path connected to top-level port: seg_clk 
 Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1640.344 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1660.781 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 293 instances were transformed.
   AND2 => LUT2: 8 instances
@@ -782,13 +795,13 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OR3 => LUT3: 24 instances
   OR4 => LUT4: 32 instances
 
-Synth Design complete | Checksum: 6ece9693
+Synth Design complete | Checksum: 8861c43a
 INFO: [Common 17-83] Releasing license: Synthesis
-101 Infos, 200 Warnings, 23 Critical Warnings and 0 Errors encountered.
+101 Infos, 201 Warnings, 23 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1640.344 ; gain = 1123.750
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:01:02 . Memory (MB): peak = 1660.781 ; gain = 1144.039
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1640.344 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1660.781 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jun 15 22:43:14 2024...
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 16 12:59:06 2024...

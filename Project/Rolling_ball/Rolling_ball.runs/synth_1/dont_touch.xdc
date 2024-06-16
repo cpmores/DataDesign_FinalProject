@@ -3,6 +3,9 @@
 
 # XDC: D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc
 
+# IP: ip/output_vic_4/output_vic.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==output_vic || ORIG_REF_NAME==output_vic} -quiet] -quiet
+
 # IP: ip/ball92/ball92.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ball92 || ORIG_REF_NAME==ball92} -quiet] -quiet
 

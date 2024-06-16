@@ -71,7 +71,7 @@ module vga_display(
     end
 
     wire win;
-    assign win=y_ball>200*80;
+    assign win=y_ball>201*80;
     reg victory;
     always @(posedge clk or negedge clrn) begin
         if(clrn==0) begin
@@ -91,8 +91,8 @@ module vga_display(
     assign within_ball90 = (row<400+9 && row>328-9 && col>=x_ball+120-45 && col<= x_ball+120+45 && ~&data_ball90 &&(~gameover) && (~victory));
     assign within_ball92 = (row<400+10 && row>328-10 && col>=x_ball+120-46 && col<= x_ball+120+46 && ~&data_ball92 &&(~gameover) && (~victory));
     assign within_map = col<520 && col>=120 &&(~gameover) && (~victory);
-    assign within_gameover = row<480-178 && row>=178 && col<640-171 && col>=171 && gameover && ~victory;
-    assign within_victory = col<480-69 && col>=69 && victory;
+    assign within_gameover = row<=480-159 && row>=160 && col<=640-239 && col>=240 && gameover && ~victory;
+    assign within_victory = row>=156&& row<=480-158&&col<640-200 && col>=200 && victory;
 
     
 
@@ -102,8 +102,8 @@ module vga_display(
     assign addr_ball86 = (row-321)*86 + col-x_ball-120+43;
     assign addr_ball90 = (row-319)*90 + col-x_ball-120+45;
     assign addr_ball92 = (row-318)*92 + col-x_ball-120+46;
-    assign addr_gameover = (row-40)*474 + col-120;
-    assign addr_victory = row*400 + col-69;
+    assign addr_gameover = (row-160)*161+ col-240;
+    assign addr_victory = (row-156)*240 + col-200;
 
     assign vga_input =  within_victory ? data_victory:
                         within_gameover ? data_gameover:

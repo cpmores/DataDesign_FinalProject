@@ -1,0 +1,25 @@
+reg [3:0]state;
+always @(clk) begin
+    if(index_x == 0) begin
+     state=map1[index_y];
+    end else if(index_x == 1) begin
+     state=map2[index_y];
+    end else if(index_x == 2) begin
+     state=map3[index_y];
+    end else if(index_x == 3) begin
+     state=map4[index_y];
+    end else if(index_x == 4) begin
+     state=map5[index_y];
+    end
+end//xy是对的吗 ?
+
+
+
+assign data_state=state;
+// reg [11:0]data_map_reg;
+// assign data_map=data_map_reg;
+
+assign data_map = (state==0)? 12'h222:
+                (state==1)? 12'hD22:
+                (state==2)?12'hDD2:
+                12'hFFF;

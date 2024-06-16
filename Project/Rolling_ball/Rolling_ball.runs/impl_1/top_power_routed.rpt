@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Sat Jun 15 22:44:36 2024
+| Date             : Sun Jun 16 13:00:40 2024
 | Host             : LAPTOP-IJHTN70K running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 73.925 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 69.086 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 71.827                           |
-| Device Static (W)        | 2.098                            |
+| Dynamic (W)              | 67.004                           |
+| Device Static (W)        | 2.082                            |
 | Effective TJA (C/W)      | 1.9                              |
 | Max Ambient (C)          | 0.0                              |
 | Junction Temperature (C) | 125.0                            |
@@ -52,19 +52,19 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |    28.099 |     3538 |       --- |             --- |
-|   LUT as Logic |    26.182 |     2254 |    101400 |            2.22 |
-|   CARRY4       |     1.766 |      346 |     25350 |            1.36 |
-|   Register     |     0.070 |      260 |    202800 |            0.13 |
-|   F7/F8 Muxes  |     0.050 |       71 |    101400 |            0.07 |
+| Slice Logic    |    27.508 |     3298 |       --- |             --- |
+|   LUT as Logic |    25.611 |     2128 |    101400 |            2.10 |
+|   CARRY4       |     1.753 |      341 |     25350 |            1.35 |
+|   Register     |     0.073 |      277 |    202800 |            0.14 |
+|   F7/F8 Muxes  |     0.040 |       23 |    101400 |            0.02 |
 |   BUFG         |     0.031 |        4 |        32 |           12.50 |
-|   Others       |     0.000 |      195 |       --- |             --- |
-| Signals        |    28.596 |     3554 |       --- |             --- |
-| Block RAM      |     2.621 |     71.5 |       325 |           22.00 |
-| DSPs           |     5.645 |       14 |       600 |            2.33 |
-| I/O            |     6.866 |       24 |       400 |            6.00 |
-| Static Power   |     2.098 |          |           |                 |
-| Total          |    73.925 |          |           |                 |
+|   Others       |     0.000 |      134 |       --- |             --- |
+| Signals        |    25.916 |     3296 |       --- |             --- |
+| Block RAM      |     1.900 |       41 |       325 |           12.62 |
+| DSPs           |     6.119 |       16 |       600 |            2.67 |
+| I/O            |     5.560 |       24 |       400 |            6.00 |
+| Static Power   |     2.082 |          |           |                 |
+| Total          |    69.086 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,16 +74,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |    66.523 |      64.744 |      1.779 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.359 |       0.251 |      0.108 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     1.940 |       1.939 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |    63.063 |      61.291 |      1.772 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.311 |       0.203 |      0.108 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     1.571 |       1.570 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.003 |       0.002 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.312 |       0.229 |      0.083 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.238 |       0.164 |      0.074 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -142,41 +142,42 @@ Table of Contents
 +--------------------+-----------+
 | Name               | Power (W) |
 +--------------------+-----------+
-| top                |    71.827 |
-|   in0              |     0.094 |
-|   m0               |    48.400 |
-|     ballbounce0    |     0.133 |
-|     flocation0     |     6.749 |
+| top                |    67.004 |
+|   in0              |     0.090 |
+|   m0               |    47.138 |
+|     ballbounce0    |     0.137 |
+|     flocation0     |     9.715 |
 |     map0           |     0.005 |
-|     update_xy0     |    41.513 |
-|       Counter      |    35.431 |
-|       m1           |     0.073 |
-|   out1             |     4.388 |
-|     M2             |     4.385 |
+|     update_xy0     |    37.281 |
+|       Counter      |    32.515 |
+|       m1           |     0.075 |
+|   m1               |     0.071 |
+|   out1             |     4.395 |
+|     M2             |     4.391 |
 |     SM1            |     0.003 |
 |       HTS6         |     0.002 |
 |       HTS7         |     0.002 |
-|   vga_display0     |    16.126 |
-|     c0             |     0.157 |
-|     flocation0     |     0.084 |
-|     m0             |     3.126 |
-|     map0           |     0.019 |
-|     rom0           |     0.387 |
-|       U0           |     0.387 |
-|     rom1           |     1.864 |
-|       U0           |     1.864 |
-|     rom_ball62     |     0.330 |
-|       U0           |     0.330 |
-|     rom_ball80     |     0.393 |
-|       U0           |     0.393 |
-|     rom_ball86     |     0.448 |
-|       U0           |     0.448 |
-|     rom_ball90     |     0.442 |
-|       U0           |     0.442 |
-|     rom_ball92     |     0.512 |
-|       U0           |     0.512 |
-|     rom_output_vic |     1.074 |
-|       U0           |     1.074 |
+|   vga_display0     |    13.796 |
+|     c0             |     0.099 |
+|     flocation0     |     0.134 |
+|     m0             |     1.716 |
+|     map0           |     0.015 |
+|     rom0           |     0.359 |
+|       U0           |     0.359 |
+|     rom1           |     0.634 |
+|       U0           |     0.634 |
+|     rom_ball62     |     0.395 |
+|       U0           |     0.395 |
+|     rom_ball80     |     0.463 |
+|       U0           |     0.463 |
+|     rom_ball86     |     0.490 |
+|       U0           |     0.490 |
+|     rom_ball90     |     0.468 |
+|       U0           |     0.468 |
+|     rom_ball92     |     0.552 |
+|       U0           |     0.552 |
+|     rom_output_vic |     0.861 |
+|       U0           |     0.861 |
 +--------------------+-----------+
 
 

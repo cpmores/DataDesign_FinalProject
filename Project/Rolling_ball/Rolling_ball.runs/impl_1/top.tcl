@@ -123,6 +123,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 8
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 16  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7k160tffg676-2L
@@ -138,14 +139,14 @@ OPTRACE "set parameters" START { }
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/synth_1/top.dcp
+  read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_vic_4/output_vic.xci
   read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball92/ball92.xci
   read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball/ball.xci
   read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball86/ball86.xci
   read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball62/ball62.xci
   read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball90/ball90.xci
   read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball80/ball80.xci
-  read_ip -quiet d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_vic_3/output_vic.xci
-  read_ip -quiet d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_new_gameover_5/output_new_gameover.xci
+  read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_new_gameover_8/output_new_gameover.xci
   read_edif D:/git_repo/DataDesign_FinalProject/Project/code/P2S.edf
 OPTRACE "read constraints: implementation" START { }
   read_xdc D:/git_repo/DataDesign_FinalProject/Project/constraints/top.xdc

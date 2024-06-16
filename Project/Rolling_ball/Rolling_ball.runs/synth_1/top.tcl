@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 8
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k160tffg676-2L
 
@@ -91,8 +93,13 @@ add_files D:/git_repo/DataDesign_FinalProject/Project/imgs/coes/output80.coe
 add_files D:/git_repo/DataDesign_FinalProject/Project/imgs/coes/output92.coe
 add_files D:/git_repo/DataDesign_FinalProject/Project/imgs/coes/output86.coe
 add_files D:/git_repo/DataDesign_FinalProject/Project/imgs/coes/output62.coe
-add_files d:/git_repo/DataDesign_FinalProject/Project/imgs/coes/output_vic_1.coe
-add_files d:/git_repo/DataDesign_FinalProject/Project/imgs/coes/output_over_1.coe
+add_files D:/git_repo/DataDesign_FinalProject/Project/imgs/coes/output_vic_1.coe
+add_files D:/git_repo/DataDesign_FinalProject/Project/imgs/coes/output_over_1.coe
+add_files D:/git_repo/DataDesign_FinalProject/Project/imgs/output_new.coe
+add_files D:/git_repo/DataDesign_FinalProject/Project/imgs/coes/output_vic_2.coe
+add_files D:/git_repo/DataDesign_FinalProject/Project/imgs/coes/output_over_2.coe
+add_files D:/git_repo/DataDesign_FinalProject/Project/imgs/coes/output_over_4.coe
+add_files D:/git_repo/DataDesign_FinalProject/Project/imgs/coes/output_over_5.coe
 read_verilog -library xil_defaultlib {
   D:/git_repo/DataDesign_FinalProject/Project/code/Hex2Seg.v
   D:/git_repo/DataDesign_FinalProject/Project/code/HexTo8SEG.v
@@ -111,6 +118,9 @@ read_verilog -library xil_defaultlib {
   D:/git_repo/DataDesign_FinalProject/Project/code/vgac.v
   D:/git_repo/DataDesign_FinalProject/Project/code/top.v
 }
+read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_vic_4/output_vic.xci
+set_property used_in_implementation false [get_files -all d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_vic_4/output_vic_ooc.xdc]
+
 read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball92/ball92.xci
 set_property used_in_implementation false [get_files -all d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball92_3/ball92_ooc.xdc]
 
@@ -129,11 +139,8 @@ set_property used_in_implementation false [get_files -all d:/git_repo/DataDesign
 read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/ball80/ball80.xci
 set_property used_in_implementation false [get_files -all d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/ball80_5/ball80_ooc.xdc]
 
-read_ip -quiet d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_vic_3/output_vic.xci
-set_property used_in_implementation false [get_files -all d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_vic_3/output_vic_ooc.xdc]
-
-read_ip -quiet d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_new_gameover_5/output_new_gameover.xci
-set_property used_in_implementation false [get_files -all d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_new_gameover_7/output_new_gameover_ooc.xdc]
+read_ip -quiet D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.srcs/sources_1/ip/output_new_gameover_8/output_new_gameover.xci
+set_property used_in_implementation false [get_files -all d:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.gen/sources_1/ip/output_new_gameover_10/output_new_gameover_ooc.xdc]
 
 read_edif D:/git_repo/DataDesign_FinalProject/Project/code/P2S.edf
 OPTRACE "Adding files" END { }
