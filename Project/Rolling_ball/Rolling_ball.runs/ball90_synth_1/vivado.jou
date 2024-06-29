@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Jun 15 19:21:25 2024
+# Process ID: 10928
+# Current directory: D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball90_synth_1
+# Command line: vivado.exe -log ball90.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ball90.tcl
+# Log file: D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball90_synth_1/ball90.vds
+# Journal file: D:/git_repo/DataDesign_FinalProject/Project/Rolling_ball/Rolling_ball.runs/ball90_synth_1\vivado.jou
+# Running On: LAPTOP-IJHTN70K, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 16858 MB
+#-----------------------------------------------------------
+source ball90.tcl -notrace

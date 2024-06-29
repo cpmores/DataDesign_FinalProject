@@ -20,3 +20,17 @@ Reference links:
 > 
 > USTC Final Project
 > https://soc.ustc.edu.cn/Digital/lab8/intro/
+
+
+输入与输出：
+输入：
+	*SW[0]：游戏音乐开关键
+	按键0：开始游戏
+	控制小球：AD：左右移动
+输出：
+	VGA图像显示
+	*蜂鸣器音乐播放
+	七段数码管（游戏进度显示）
+
+
+
